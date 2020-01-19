@@ -1,0 +1,261 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wxn\Desktop\fpga_project\coder\simulation\modelsim
+T_opt
+VAo[_SAMPU;0b<n=b?]G=d2
+04 9 4 work testbench fast 0
+=1-e4a7a009e840-5dfec865-3e1-1bec
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.1c;51
+vcoder
+I1jaFP_l`[9^l9EL`m1K3Z1
+VbL0iT0zP@U[g16dJ?iV5a3
+Z1 dC:\Users\wxn\Desktop\fpga_project\coder\simulation\modelsim
+w1576205106
+8C:/Users/wxn/Desktop/fpga_project/coder/coder.v
+FC:/Users/wxn/Desktop/fpga_project/coder/coder.v
+L0 1
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 hBaI05HR5V>lC;UbI7?_V3
+!s85 0
+!s108 1576978532.413000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/coder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/coder.v|
+vcoding_queue
+IF^j<l_NAc53XFVS?6ekO=2
+V^`?AQGIUQd1]_;Y;Z_S?N2
+R1
+w1576928552
+8C:/Users/wxn/Desktop/fpga_project/coder/coding_queue.v
+FC:/Users/wxn/Desktop/fpga_project/coder/coding_queue.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 4FkmzP11mJI4J?kG2e>[f3
+!s85 0
+!s108 1576978533.253000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/coding_queue.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/coding_queue.v|
+vcontext_encoder
+IQW9UKAOU0oiQIj<K3S0DD2
+VfnEgV>Yze8XUza<OAb7j[3
+R1
+w1576933305
+8C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v
+FC:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 OX2Q==n?zXjghJlFkHgmd3
+!s85 0
+!s108 1576978533.483000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v|
+vencoder_shift_register
+IZ:_gae2BU0`XE17@nbdnz3
+Vkf=^90XH8]S2Ki9L[PMNN0
+R1
+w1576651828
+8C:/Users/wxn/Desktop/fpga_project/coder/encoder_shift_register.v
+FC:/Users/wxn/Desktop/fpga_project/coder/encoder_shift_register.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 [SaVP[RHBP=TI<8RF[Em13
+!s85 0
+!s108 1576978533.163000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/encoder_shift_register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/encoder_shift_register.v|
+vfifo
+I>dKVU[<7@1FBE]jT9>Z=d2
+VA]A<96Vi0A=9fP5V=mW6>1
+R1
+w1576926977
+8C:/Users/wxn/Desktop/fpga_project/coder/fifo.v
+FC:/Users/wxn/Desktop/fpga_project/coder/fifo.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 3hj9R2GCTiD>;5ZdUR<_W1
+!s85 0
+!s108 1576978533.383000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/fifo.v|
+vimg_coding
+IZMmcJYkehRK2KcFKOVeZa1
+VoLVF4eT[onT;DTLm0OS4e1
+R1
+w1576978480
+8C:/Users/wxn/Desktop/fpga_project/coder/img_coding.v
+FC:/Users/wxn/Desktop/fpga_project/coder/img_coding.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ;kl>cRc1D4LL]U<ZJdJ5g2
+!s85 0
+!s108 1576978533.063000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/img_coding.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/img_coding.v|
+vlifted_wavelet_decomposition
+IM747R3EimaT7<8DFlVPQC2
+VhB^bg[oQSWbZ^TTa_]CZX3
+R1
+w1576753969
+8C:/Users/wxn/Desktop/fpga_project/coder/lifted_wavelet_decomposition.v
+FC:/Users/wxn/Desktop/fpga_project/coder/lifted_wavelet_decomposition.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 z<l@d=V03=?V:`=H@38ac3
+!s85 0
+!s108 1576978532.883000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/lifted_wavelet_decomposition.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/lifted_wavelet_decomposition.v|
+vram
+I<IYHzS@eBJR[6ZR1:NUb70
+VMYiid62HCDi1jmPU:HIRV3
+R1
+w1576388996
+8C:/Users/wxn/Desktop/fpga_project/coder/ram.v
+FC:/Users/wxn/Desktop/fpga_project/coder/ram.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ljHWY[A1kk_=j64WBaUcn1
+!s85 0
+!s108 1576978532.693000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/ram.v|
+vrom
+Il0C;6iPNb@BlA^22[ekYg3
+VZKabi9ei0Eii?DC^;fVLk1
+R1
+w1576060335
+8C:/Users/wxn/Desktop/fpga_project/coder/rom.v
+FC:/Users/wxn/Desktop/fpga_project/coder/rom.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 YN]X64nO95[c<zbhQ@]II1
+!s85 0
+!s108 1576978532.503000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/rom.v|
+vshift_ram
+IXZeIh=Wlb`[1CeH1X0BzK2
+VM?M?:cn`zfcFWTfQO8cao2
+R1
+w1576557240
+8C:/Users/wxn/Desktop/fpga_project/coder/shift_ram.v
+FC:/Users/wxn/Desktop/fpga_project/coder/shift_ram.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 nk3b4zdVRN7[6]W93jl841
+!s85 0
+!s108 1576978532.593000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/shift_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/shift_ram.v|
+vtestbench
+I4AP9zIPlPc]hO:i^`4<C30
+V8HScFYPhFn>`1W^1[FaUZ1
+R1
+w1576663491
+8C:/Users/wxn/Desktop/fpga_project/coder/testbench.v
+FC:/Users/wxn/Desktop/fpga_project/coder/testbench.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ;T=>47I06LX:c8j_hDg9g3
+!s85 0
+!s108 1576978533.583000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/testbench.v|
+vwavelet_transform_1D
+IB[o9izc3bmRNcim`e67m@3
+VM^2BmINz8ZS<C=e;S?z5b1
+R1
+w1576755041
+8C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v
+FC:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nwavelet_transform_1@d
+!i10b 1
+!s100 Si`id0`^X_T@RMF5TQRk^3
+!s85 0
+!s108 1576978532.973000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v|
+vwavelet_transform_2D
+IDZBzYOZV3SbcRHJ]BhN=M2
+VJ74A=8zQfchME1VzLj;]L3
+R1
+w1576756893
+8C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_2D.v
+FC:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_2D.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nwavelet_transform_2@d
+!i10b 1
+!s100 KG9f?:XWVL<`4f;GmhgHj0
+!s85 0
+!s108 1576978532.783000
+!s107 C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_2D.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/fpga_project/coder|C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_2D.v|

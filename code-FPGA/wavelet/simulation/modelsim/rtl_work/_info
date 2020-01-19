@@ -1,0 +1,145 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wxn\Desktop\wavelet\simulation\modelsim
+T_opt
+VhYWDNcV0G@Vhd[JcN][Z40
+04 20 4 work wavelet_transform_tb fast 0
+=1-e4a7a009e840-5e224bf1-2cb-226c
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.1c;51
+vcontroller
+Ih`:Nide<he_KM97OofEhH2
+VNK2go?i?6SHaWzZgTeDJ;0
+Z1 dC:\Users\wxn\Desktop\wavelet\simulation\modelsim
+w1579253498
+8C:/Users/wxn/Desktop/wavelet/code/controller.v
+FC:/Users/wxn/Desktop/wavelet/code/controller.v
+L0 1
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/code -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 bJYY8RKGi0z5RJzAPkcLo1
+!s85 0
+!s108 1579305968.785000
+!s107 C:/Users/wxn/Desktop/wavelet/code/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/wavelet/code|C:/Users/wxn/Desktop/wavelet/code/controller.v|
+vfifo
+Id1H_Ne<TbhBmD>DnaL9?n2
+Vza1k4ICaWkZCRh9PKPIA50
+R1
+w1579145030
+8C:/Users/wxn/Desktop/wavelet/ipcore/fifo.v
+FC:/Users/wxn/Desktop/wavelet/ipcore/fifo.v
+L0 39
+R2
+r1
+31
+R3
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/ipcore -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 =z3D_9_XAUXU?dl4NEjU>1
+!s85 0
+!s108 1579305968.875000
+!s107 C:/Users/wxn/Desktop/wavelet/ipcore/fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/wavelet/ipcore|C:/Users/wxn/Desktop/wavelet/ipcore/fifo.v|
+vram
+IJXOP:hccaZ`hT:9=dKkQ@0
+VDRFV06QMi<C>f?ZdW2cUg0
+R1
+w1579140602
+8C:/Users/wxn/Desktop/wavelet/ipcore/ram.v
+FC:/Users/wxn/Desktop/wavelet/ipcore/ram.v
+L0 39
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 zn74Sd^05Ylf_CXVK[OU92
+!s85 0
+!s108 1579305968.685000
+!s107 C:/Users/wxn/Desktop/wavelet/ipcore/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/wavelet/ipcore|C:/Users/wxn/Desktop/wavelet/ipcore/ram.v|
+vwavelet_fast
+I9_;al5=0RTjh50FnZE?W]1
+V9jF:zN]g2d`A59OXIkmgX1
+R1
+w1579250760
+8C:/Users/wxn/Desktop/wavelet/code/wavelet_fast.v
+FC:/Users/wxn/Desktop/wavelet/code/wavelet_fast.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 0j^730g0D=9lDNEFigmj20
+!s85 0
+!s108 1579305968.585000
+!s107 C:/Users/wxn/Desktop/wavelet/code/wavelet_fast.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/wavelet/code|C:/Users/wxn/Desktop/wavelet/code/wavelet_fast.v|
+vwavelet_queue
+IG0NR3MBi>KK8M_TY<<m1K1
+VZWR3WNL3kTfk6<a`U^mbM1
+R1
+w1579244002
+8C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v
+FC:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v
+L0 19
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Oa[<WHUOm?6VK25HEaMW33
+!s85 0
+!s108 1579305969.065000
+!s107 C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/wavelet/code|C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v|
+vwavelet_transform
+ImWn[VHY6@QOJT]zB_n[6E1
+VoACeB6Hj79K[7[Sb1UIP]3
+R1
+w1579252023
+8C:/Users/wxn/Desktop/wavelet/code/wavelet_transform.v
+FC:/Users/wxn/Desktop/wavelet/code/wavelet_transform.v
+L0 19
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 :6WVRz4W?mUjl=<Pf8m4l2
+!s85 0
+!s108 1579305968.965000
+!s107 C:/Users/wxn/Desktop/wavelet/code/wavelet_transform.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/wavelet/code|C:/Users/wxn/Desktop/wavelet/code/wavelet_transform.v|
+vwavelet_transform_tb
+IMNK0@3cG0>6A_9aFl3Kf72
+Vz@f6a;i=ONNN6gB@ZHZdm0
+R1
+w1579174332
+8C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v
+FC:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 1?[Ibfmf8i_M8EOzkTCiK3
+!s85 0
+!s108 1579305969.155000
+!s107 C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/wavelet/code|C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v|

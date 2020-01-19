@@ -1,0 +1,137 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'clk'
+Slack : -4.469
+TNS   : -162.252
+
+Type  : Slow 1200mV 100C Model Setup 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : -2.019
+TNS   : -11.515
+
+Type  : Slow 1200mV 100C Model Setup 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : -1.571
+TNS   : -10.559
+
+Type  : Slow 1200mV 100C Model Hold 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : -2.151
+TNS   : -7.463
+
+Type  : Slow 1200mV 100C Model Hold 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'clk'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'clk'
+Slack : -1.958
+TNS   : -104.467
+
+Type  : Slow 1200mV 100C Model Removal 'clk'
+Slack : 1.594
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -94.235
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -3.781
+TNS   : -136.472
+
+Type  : Slow 1200mV -40C Model Setup 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : -1.722
+TNS   : -9.470
+
+Type  : Slow 1200mV -40C Model Setup 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : -1.258
+TNS   : -8.364
+
+Type  : Slow 1200mV -40C Model Hold 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : -1.935
+TNS   : -6.228
+
+Type  : Slow 1200mV -40C Model Hold 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : 0.097
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'clk'
+Slack : -1.607
+TNS   : -84.820
+
+Type  : Slow 1200mV -40C Model Removal 'clk'
+Slack : 1.359
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -94.235
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -1.488
+TNS   : -39.698
+
+Type  : Fast 1200mV -40C Model Setup 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : -0.434
+TNS   : -2.197
+
+Type  : Fast 1200mV -40C Model Setup 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : -0.226
+TNS   : -0.754
+
+Type  : Fast 1200mV -40C Model Hold 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : -1.042
+TNS   : -4.197
+
+Type  : Fast 1200mV -40C Model Hold 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'clk'
+Slack : -0.361
+TNS   : -16.899
+
+Type  : Fast 1200mV -40C Model Removal 'clk'
+Slack : 0.745
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -78.774
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'wavelet_transform_2D:wavelet_transform_2D_inst1|step.00001000'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step.00000110'
+Slack : 0.352
+TNS   : 0.000
+
+------------------------------------------------------------

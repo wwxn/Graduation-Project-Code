@@ -1,0 +1,6 @@
+module wavelet_transform_tb();
+
+reg	clk;
+reg	rst_n;
+reg	[15:0] data_in_even;
+reg	[15:0] data_in_odd;

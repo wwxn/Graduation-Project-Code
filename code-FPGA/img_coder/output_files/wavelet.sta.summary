@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -23.797
+TNS   : -2205.956
+
+Type  : Slow 1200mV 85C Model Setup 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : -1.405
+TNS   : -2.661
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : 0.734
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.201
+TNS   : -277.618
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -22.346
+TNS   : -2055.279
+
+Type  : Slow 1200mV 0C Model Setup 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : -1.245
+TNS   : -2.325
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.201
+TNS   : -277.618
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -9.755
+TNS   : -868.415
+
+Type  : Fast 1200mV 0C Model Setup 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : -0.090
+TNS   : -0.111
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -189.171
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
+Slack : 0.424
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,349 @@
+module img_compression
+(
+	input clk,
+	input rst_n,
+	input [7:0] data_input,
+	output data_in_ready
+);
+
+reg[7:0] step;
+reg[7:0] step_next;
+reg [11:0] fill_counter;
+reg [4:0] save_counter;
+
+wire [7:0] taps0x;
+wire [7:0] taps1x;
+wire [7:0] taps2x;
+wire [7:0] taps3x;
+wire [7:0] taps4x;
+wire [7:0] taps5x;
+wire [7:0] taps6x;
+wire [7:0] taps7x;
+wire [7:0] taps8x;
+wire [7:0] taps9x;
+wire [7:0] taps10x;
+wire [7:0] taps11x;
+wire [7:0] taps12x;
+wire [7:0] taps13x;
+wire [7:0] taps14x;
+wire [7:0] taps15x;
+
+
+wire [15:0] line0=16'd0|taps15x;
+wire [15:0] line1=16'd0|taps14x;
+wire [15:0] line2=16'd0|taps13x;
+wire [15:0] line3=16'd0|taps12x;
+wire [15:0] line4=16'd0|taps11x;
+wire [15:0] line5=16'd0|taps10x;
+wire [15:0] line6=16'd0|taps9x;
+wire [15:0] line7=16'd0|taps8x;
+wire [15:0] line8=16'd0|taps7x;
+wire [15:0] line9=16'd0|taps6x;
+wire [15:0] line10=16'd0|taps5x;
+wire [15:0] line11=16'd0|taps4x;
+wire [15:0] line12=16'd0|taps3x;
+wire [15:0] line13=16'd0|taps2x;
+wire [15:0] line14=16'd0|taps1x;
+wire [15:0] line15=16'd0|taps0x;
+
+assign data_in_ready=clken;
+wire data_loading;
+wire clken=(step==8'd1)?1'b1:(data_loading==1'b1)?1'b1:1'b0;
+wire data_valid=(step==8'd2)?1'b1:1'b0;
+wire ram_wren=(step==8'd2)?1'b1:1'b0;
+
+always@(posedge clk or negedge rst_n)
+	if(!rst_n)
+		step<=8'd0;
+	else
+		step<=step_next;
+
+always@*
+	case(step)
+		8'd0:step_next<=8'd1;
+		8'd1:
+			if(fill_counter>=12'd1024)
+				step_next<=8'd2;
+			else
+				step_next<=8'd1;
+	endcase
+
+always@(posedge clk or negedge rst_n)
+	if(!rst_n)begin
+		fill_counter<=12'd0;
+	end
+	else
+		case(step_next)
+			8'd1:begin
+				fill_counter<=fill_counter+1'b1;
+			end
+			8'd2:begin
+				save_counter<=save_counter+1'b1;
+			end
+		endcase
+	
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst0
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line0),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(data_loading),
+	.output_valid(),
+	.line_address(8'd0),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst1
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line1),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd1),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst2
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line2),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd2),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst3
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line3),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd3),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst4
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line4),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd4),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst5
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line5),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd5),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst6
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line6),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd6),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst7
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line7),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd7),
+	.odd_address(),
+	.even_address()
+);
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst8
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line8),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd8),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst9
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line9),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd9),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst10
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line10),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd10),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst11
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line11),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd11),
+	.odd_address(),
+	.even_address()
+);
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst12
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line12),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd12),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst13
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line13),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd13),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst14
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line14),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd14),
+	.odd_address(),
+	.even_address()
+);
+
+lifted_wavelet_decomposition lifted_wavelet_decomposition_inst15
+(
+	.clk(clk),
+	.rst_n(rst_n),
+	.data_valid(data_valid),
+	.data_in(line15),
+	.data_out_odd(),
+	.data_out_even(),
+	.data_loading(),
+	.output_valid(),
+	.line_address(8'd15),
+	.odd_address(),
+	.even_address()
+);
+	
+	
+shift_ram shift_ram_inst1
+(
+	.clock(clk),
+	.shiftin(data_input),
+	.clken(clken),
+	.shiftout(),
+	.taps0x(taps0x),
+	.taps1x(taps1x),
+	.taps2x(taps2x),
+	.taps3x(taps3x),
+	.taps4x(taps4x),
+	.taps5x(taps5x),
+	.taps6x(taps6x),
+	.taps7x(taps7x),
+	.taps8x(taps8x),
+	.taps9x(taps9x),
+	.taps10x(taps10x),
+	.taps11x(taps11x),
+	.taps12x(taps12x),
+	.taps13x(taps13x),
+	.taps14x(taps14x),
+	.taps15x(taps15x)
+);
+
+endmodule 

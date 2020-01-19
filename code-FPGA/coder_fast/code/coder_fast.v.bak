@@ -1,0 +1,14 @@
+module number_test
+(
+	input [7:0] data_in,
+	output [2:0] pos
+)
+
+wire [3:0] sel1;
+wire [1:0] sel2;
+
+assign {sel1,pos[2]} = (data_in[7:4] == 0) ? {data_in[3:0],1'b0}:{data_in[7:4],1'b1};
+assign {sel2,pos[1]} = (sel1[3:2] == 0) ? {sel1[1:0],1'b0} :{sel1[3:2],1'b1};
+assign pos[0] = (sel2[1] == 0) ? 1'b0 :1'b1;
+
+endmodule

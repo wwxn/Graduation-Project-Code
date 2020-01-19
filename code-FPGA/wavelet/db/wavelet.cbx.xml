@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="wavelet">
+		<CBX_INST_ENTRY INSTANCE_NAME="|wavelet_transform|ram:b2v_ram_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_j5l2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wavelet_transform|ram:b2v_ram_inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_j5l2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wavelet_transform|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_even|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_ij31.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|wavelet_transform|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_odd|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_ij31.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

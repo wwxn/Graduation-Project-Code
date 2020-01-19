@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at coder.v(128): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at lifted_wavelet_decomposition.v(78): always construct contains both blocking and non-blocking assignments

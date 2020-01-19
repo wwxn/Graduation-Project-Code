@@ -1,0 +1,31 @@
+module waveletqueue_tb();
+
+
+
+input wire	clk;
+input wire	rst_n;
+input wire	wrreq;
+input wire	[15:0] data_in_even;
+input wire	[15:0] data_in_odd;
+input wire	[7:0] line_address;
+output wire	output_valid;
+output wire	[15:0] data_out_even;
+output wire	[15:0] data_out_odd;
+output wire	[11:0] even_address;
+output wire	[11:0] odd_address;
+
+
+wavelet_queue
+(
+	clk,
+	rst_n,
+	wrreq,
+	data_in_even,
+	data_in_odd,
+	line_address,
+	output_valid,
+	data_out_even,
+	data_out_odd,
+	even_address,
+	odd_address
+);

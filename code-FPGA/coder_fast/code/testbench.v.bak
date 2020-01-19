@@ -1,0 +1,16 @@
+`timescale 1ns/1ns
+module testbench();
+
+
+reg [7:0] data_in=8'd35;
+wire [2:0] pos;
+
+
+
+number_test m1
+(
+	data_in,
+	pos
+)
+
+endmodule 

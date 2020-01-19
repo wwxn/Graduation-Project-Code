@@ -1,0 +1,1707 @@
+Analysis & Synthesis report for coder_fast
+Sat Jan 18 21:37:36 2020
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |mq_coder|step
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: Top-level Entity: |mq_coder
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jan 18 21:37:36 2020       ;
+; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; coder_fast                                  ;
+; Top-level Entity Name              ; mq_coder                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 1,020                                       ;
+;     Total combinational functions  ; 964                                         ;
+;     Dedicated logic registers      ; 130                                         ;
+; Total registers                    ; 130                                         ;
+; Total pins                         ; 18                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE15F17C8       ;                    ;
+; Top-level entity name                                                      ; mq_coder           ; coder_fast         ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Optimization Technique                                                     ; Speed              ; Balanced           ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                            ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+; code/tables.v                    ; yes             ; User Verilog HDL File  ; C:/Users/wxn/Desktop/coder_fast/code/tables.v           ;         ;
+; code/find_highest_bit.v          ; yes             ; User Verilog HDL File  ; C:/Users/wxn/Desktop/coder_fast/code/find_highest_bit.v ;         ;
+; code/mq_coder.v                  ; yes             ; User Verilog HDL File  ; C:/Users/wxn/Desktop/coder_fast/code/mq_coder.v         ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 1,020     ;
+;                                             ;           ;
+; Total combinational functions               ; 964       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 688       ;
+;     -- 3 input functions                    ; 197       ;
+;     -- <=2 input functions                  ; 79        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 890       ;
+;     -- arithmetic mode                      ; 74        ;
+;                                             ;           ;
+; Total registers                             ; 130       ;
+;     -- Dedicated logic registers            ; 130       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 18        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 130       ;
+; Total fan-out                               ; 4142      ;
+; Average fan-out                             ; 3.67      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+; |mq_coder                                    ; 964 (884)         ; 130 (130)    ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |mq_coder                                         ; work         ;
+;    |find_highest_bit:find_highest_bit_inst1| ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mq_coder|find_highest_bit:find_highest_bit_inst1 ; work         ;
+;    |tables:tables_inst1|                     ; 57 (57)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mq_coder|tables:tables_inst1                     ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------+
+; State Machine - |mq_coder|step ;
++-------------+------------------+
+; Name        ; step.UPDATE      ;
++-------------+------------------+
+; step.IDLE   ; 0                ;
+; step.UPDATE ; 1                ;
++-------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; step_next.IDLE_2799                                ; step.UPDATE         ; yes                    ;
+; step_next.UPDATE_2793                              ; step.UPDATE         ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                ;
++------------------------------------------+----------------------------------------+
+; Register name                            ; Reason for Removal                     ;
++------------------------------------------+----------------------------------------+
+; tables:tables_inst1|nlps[46][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[46][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[46][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[46][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[46][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[46][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[45][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[45][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[45][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[45][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[45][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[45][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[44][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[44][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[44][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[44][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[44][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[44][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[43][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[43][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[43][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[43][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[43][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[43][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[42][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[42][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[42][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[42][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[42][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[42][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[41][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[41][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[41][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[41][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[41][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[41][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[40][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[40][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[40][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[40][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[40][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[40][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[39][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[39][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[39][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[39][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[39][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[39][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[38][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[38][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[38][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[38][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[38][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[38][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[37][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[37][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[37][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[37][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[37][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[37][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[36][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[36][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[36][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[36][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[36][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[36][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[35][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[35][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[35][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[35][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[35][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[35][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[34][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[34][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[34][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[34][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[34][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[34][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[33][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[33][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[33][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[33][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[33][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[33][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[32][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[32][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[32][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[32][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[32][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[32][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[31][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[31][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[31][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[31][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[31][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[31][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[30][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[30][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[30][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[30][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[30][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[30][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[29][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[29][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[29][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[29][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[29][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[29][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[28][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[28][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[28][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[28][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[28][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[28][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[27][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[27][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[27][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[27][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[27][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[27][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[26][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[26][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[26][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[26][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[26][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[26][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[25][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[25][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[25][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[25][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[25][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[25][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[24][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[24][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[24][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[24][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[24][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[24][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[23][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[23][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[23][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[23][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[23][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[23][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[22][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[22][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[22][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[22][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[22][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[22][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[21][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[21][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[21][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[21][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[21][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[21][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[20][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[20][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[20][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[20][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[20][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[20][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[19][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[19][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[19][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[19][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[19][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[19][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[18][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[18][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[18][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[18][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[18][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[18][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[17][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[17][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[17][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[17][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[17][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[17][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[16][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[16][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[16][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[16][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[16][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[16][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[15][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[15][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[15][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[15][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[15][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[15][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[14][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[14][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[14][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[14][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[14][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[14][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[13][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[13][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[13][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[13][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[13][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[13][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[12][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[12][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[12][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[12][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[12][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[12][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[11][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[11][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[11][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[11][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[11][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[11][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[10][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[10][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[10][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[10][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[10][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[10][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[9][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[9][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[9][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[9][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[9][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[9][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[8][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[8][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[8][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[8][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[8][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[8][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[7][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[7][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[7][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[7][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[7][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[7][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[6][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[6][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[6][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[6][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[6][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[6][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[5][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[5][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[5][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[5][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[5][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[5][5]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[4][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[4][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[4][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[4][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[4][4]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[4][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[3][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[3][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[3][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[3][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[3][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[3][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[2][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[2][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[2][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[2][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[2][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[2][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[1][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[1][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[1][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[1][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[1][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[1][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[0][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nlps[0][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[0][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[0][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[0][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nlps[0][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[46][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[46][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[46][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[46][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[46][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[46][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[45][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[45][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[45][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[45][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[45][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[45][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[44][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[44][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[44][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[44][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[44][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[44][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[43][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[43][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[43][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[43][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[43][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[43][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[42][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[42][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[42][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[42][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[42][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[42][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[41][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[41][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[41][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[41][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[41][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[41][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[40][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[40][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[40][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[40][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[40][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[40][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[39][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[39][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[39][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[39][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[39][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[39][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[38][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[38][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[38][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[38][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[38][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[38][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[37][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[37][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[37][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[37][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[37][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[37][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[36][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[36][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[36][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[36][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[36][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[36][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[35][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[35][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[35][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[35][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[35][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[35][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[34][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[34][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[34][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[34][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[34][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[34][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[33][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[33][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[33][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[33][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[33][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[33][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[32][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[32][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[32][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[32][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[32][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[32][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[31][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[31][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[31][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[31][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[31][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[31][5]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[30][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[30][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[30][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[30][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[30][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[30][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[29][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[29][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[29][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[29][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[29][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[29][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[28][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[28][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[28][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[28][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[28][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[28][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[27][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[27][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[27][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[27][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[27][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[27][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[26][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[26][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[26][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[26][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[26][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[26][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[25][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[25][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[25][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[25][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[25][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[25][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[24][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[24][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[24][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[24][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[24][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[24][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[23][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[23][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[23][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[23][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[23][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[23][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[22][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[22][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[22][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[22][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[22][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[22][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[21][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[21][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[21][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[21][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[21][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[21][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[20][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[20][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[20][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[20][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[20][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[20][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[19][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[19][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[19][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[19][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[19][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[19][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[18][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[18][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[18][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[18][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[18][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[18][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[17][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[17][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[17][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[17][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[17][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[17][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[16][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[16][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[16][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[16][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[16][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[16][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[15][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[15][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[15][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[15][3]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[15][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[15][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[14][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[14][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[14][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[14][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[14][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[14][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[13][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[13][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[13][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[13][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[13][4]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[13][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[12][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[12][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[12][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[12][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[12][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[12][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[11][0]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[11][1]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[11][2]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[11][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[11][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[11][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[10][0]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[10][1]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[10][2]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[10][3]          ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[10][4]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[10][5]          ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[9][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[9][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[9][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[9][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[9][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[9][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[8][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[8][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[8][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[8][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[8][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[8][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[7][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[7][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[7][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[7][3]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[7][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[7][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[6][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[6][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[6][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[6][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[6][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[6][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[5][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[5][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[5][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[5][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[5][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[5][5]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[4][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[4][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[4][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[4][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[4][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[4][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[3][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[3][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[3][2]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[3][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[3][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[3][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[2][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[2][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[2][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[2][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[2][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[2][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[1][0]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[1][1]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[1][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[1][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[1][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[1][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[0][0]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|nmps[0][1]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[0][2]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[0][3]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[0][4]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|nmps[0][5]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|switch[15..46]       ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|switch[14]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|switch[7..13]        ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|switch[6]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|switch[1..5]         ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|switch[0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[46][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[46][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[46][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[46][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[46][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[46][14]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[46][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[45][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[45][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[44][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][2]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[44][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[44][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[43][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][3]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[43][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[43][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[42][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][2]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[42][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][4]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[42][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[42][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[41][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][2]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[41][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][5]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[41][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[41][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[40][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][3]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[40][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][6]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[40][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[40][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[39][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][2]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[39][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][7]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[39][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[39][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[38][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][4]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[38][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][8]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[38][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[38][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[37][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][6]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[37][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][8]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[37][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[37][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[36][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][5]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[36][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[36][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[36][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[35][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][5]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[35][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][7]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[35][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[35][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[35][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[34][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][6]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[34][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[34][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[34][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[33][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][5]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[33][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][8]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[33][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[33][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[33][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[32][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][5]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[32][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][7]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[32][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[32][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[32][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[31][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][6]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[31][7]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[31][8]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[31][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[31][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[31][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[30][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][6]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[30][7]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[30][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[30][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[30][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[30][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[29][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][8]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[29][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[29][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[29][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[28][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[28][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[28][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[28][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[27][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[27][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[27][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[27][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[26][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[26][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[26][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[26][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[26][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[25][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[25][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[25][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[25][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[24][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[24][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[24][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[24][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[24][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[23][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[23][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][13]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[23][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[23][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[22][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[22][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][13]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[22][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[22][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[21][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[21][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][13]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[21][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[21][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[20][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[20][13]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[20][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[20][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[19][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[19][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[19][13]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[19][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[19][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[18][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[18][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[18][13]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[18][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[18][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[17][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[17][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[17][14]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[17][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[16][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][8]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[16][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[16][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[16][14]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[16][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[15][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[15][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[15][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[15][14]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[15][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[14][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[14][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[14][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[14][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[14][14]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[14][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[13][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][9]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[13][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[13][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[13][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[13][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[12][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[12][11]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[12][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[12][13]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[12][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[11][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][10]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[11][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][12]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][13]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[11][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[11][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][0]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[10][1]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][2]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][3]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][4]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][5]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][6]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][7]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][8]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][9]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][10]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][11]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][12]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[10][13]           ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[10][14]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[10][15]           ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[9][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][5]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][9]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][10]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][11]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[9][12]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[9][13]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[9][14]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[9][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[8][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][5]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][9]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][10]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][11]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[8][12]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][13]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[8][14]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[8][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[7][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][5]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][9]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][10]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[7][11]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][12]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[7][13]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[7][14]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[7][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[6][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][5]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][9]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[6][10]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[6][11]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][12]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[6][13]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[6][14]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[6][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[5][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][5]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[5][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][9]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[5][10]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][11]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][12]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][13]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][14]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[5][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[4][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][5]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[4][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][8]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[4][9]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][10]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[4][11]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][12]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][13]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][14]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[4][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[3][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][5]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][6]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[3][7]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[3][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][9]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[3][10]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][11]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[3][12]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][13]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][14]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[3][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[2][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][5]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][9]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][10]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][11]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[2][12]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[2][13]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][14]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[2][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[1][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][5]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][9]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][10]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[1][11]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][12]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[1][13]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[1][14]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[1][15]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][0]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[0][1]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][2]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][3]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][4]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][5]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][6]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][7]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][8]             ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][9]             ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[0][10]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[0][11]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][12]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[0][13]            ; Stuck at GND due to stuck port data_in ;
+; tables:tables_inst1|qe[0][14]            ; Stuck at VCC due to stuck port data_in ;
+; tables:tables_inst1|qe[0][15]            ; Stuck at GND due to stuck port data_in ;
+; step~5                                   ; Lost fanout                            ;
+; Total Number of Removed Registers = 1364 ;                                        ;
++------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 130   ;
+; Number of registers using Synchronous Clear  ; 6     ;
+; Number of registers using Synchronous Load   ; 53    ;
+; Number of registers using Asynchronous Clear ; 121   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 128   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; CT[3]                                  ; 51      ;
+; CT[2]                                  ; 50      ;
+; A[15]                                  ; 1       ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |mq_coder|A[1]                                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |mq_coder|byte_out[0]~reg0                                ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mq_coder|A[10]                                           ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |mq_coder|A[12]                                           ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |mq_coder|B[6]                                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mq_coder|CT[0]                                           ;
+; 9:1                ; 7 bits    ; 42 LEs        ; 14 LEs               ; 28 LEs                 ; Yes        ; |mq_coder|C[1]                                            ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |mq_coder|C[8]                                            ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; Yes        ; |mq_coder|C[13]                                           ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |mq_coder|C[18]                                           ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 14 LEs               ; 6 LEs                  ; Yes        ; |mq_coder|C[21]                                           ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 16 LEs               ; 6 LEs                  ; Yes        ; |mq_coder|C[24]                                           ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mq_coder|CT[2]                                           ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |mq_coder|find_highest_bit:find_highest_bit_inst1|sel1[2] ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |mq_coder|c_temp[8]                                       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mq_coder|c_temp[15]                                      ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |mq_coder|c_temp[18]                                      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mq_coder|ShiftLeft0                                      ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |mq_coder|ShiftLeft0                                      ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |mq_coder|Mux1                                            ;
+; 96:1               ; 6 bits    ; 384 LEs       ; 360 LEs              ; 24 LEs                 ; No         ; |mq_coder|index_table                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |mq_coder ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; IDLE           ; 00    ; Unsigned Binary                                 ;
+; UPDATE         ; 01    ; Unsigned Binary                                 ;
+; RENORME1       ; 11    ; Unsigned Binary                                 ;
+; RENORME2       ; 10    ; Unsigned Binary                                 ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:06     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Sat Jan 18 21:37:27 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off coder_fast -c coder_fast
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file code/tables.v
+    Info (12023): Found entity 1: tables
+Info (12021): Found 1 design units, including 1 entities, in source file code/find_highest_bit.v
+    Info (12023): Found entity 1: find_highest_bit
+Info (12021): Found 1 design units, including 1 entities, in source file code/testbench.v
+    Info (12023): Found entity 1: testbench
+Warning (10463): Verilog HDL Declaration warning at mq_coder.v(6): "bit" is SystemVerilog-2005 keyword
+Info (12021): Found 1 design units, including 1 entities, in source file code/mq_coder.v
+    Info (12023): Found entity 1: mq_coder
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/bit_fifo.v
+    Info (12023): Found entity 1: bit_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file ipcore/cx_fifo.v
+    Info (12023): Found entity 1: cx_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file code/code_queue_tb.v
+    Info (12023): Found entity 1: code_queue_tb
+Info (12021): Found 1 design units, including 1 entities, in source file code/code_queue.v
+    Info (12023): Found entity 1: code_queue
+Info (12127): Elaborating entity "mq_coder" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at mq_coder.v(71): inferring latch(es) for variable "step_next", which holds its previous value in one or more paths through the always construct
+Warning (10230): Verilog HDL assignment warning at mq_coder.v(126): truncated value with size 28 to match size of target (8)
+Info (10041): Inferred latch for "step_next.UPDATE" at mq_coder.v(71)
+Info (10041): Inferred latch for "step_next.IDLE" at mq_coder.v(71)
+Info (12128): Elaborating entity "find_highest_bit" for hierarchy "find_highest_bit:find_highest_bit_inst1"
+Info (12128): Elaborating entity "tables" for hierarchy "tables:tables_inst1"
+Info (286030): Timing-Driven Synthesis is running
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1052 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 1034 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 394 megabytes
+    Info: Processing ended: Sat Jan 18 21:37:36 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
+
+

@@ -1,0 +1,145 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\wxn\Desktop\coder_fast\simulation\modelsim
+T_opt
+VCTQNPOEj>`Eoa=mQI9U8`3
+04 13 4 work code_queue_tb fast 0
+=1-e4a7a009e840-5e2290fa-1a-508
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.1c;51
+vbit_fifo
+Il5<Jo132VS=4J;OlB<fJi3
+Vk5^8=R<HNhGN3Q8gCz@R91
+Z1 dC:\Users\wxn\Desktop\coder_fast\simulation\modelsim
+w1579087592
+8C:/Users/wxn/Desktop/coder_fast/ipcore/bit_fifo.v
+FC:/Users/wxn/Desktop/coder_fast/ipcore/bit_fifo.v
+L0 39
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/ipcore -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 f4S`9dZ<KQX2X_DOehiEb0
+!s85 0
+!s108 1579323641.390000
+!s107 C:/Users/wxn/Desktop/coder_fast/ipcore/bit_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/coder_fast/ipcore|C:/Users/wxn/Desktop/coder_fast/ipcore/bit_fifo.v|
+vcode_queue
+IN2PgFHkW7d<c`nOW<Uc^:1
+V`JZN:YaK7J4`LJ?P1NSEi0
+R1
+w1579323345
+8C:/Users/wxn/Desktop/coder_fast/code/code_queue.v
+FC:/Users/wxn/Desktop/coder_fast/code/code_queue.v
+L0 19
+R2
+r1
+31
+R3
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 8T5<nba85nDP=ljAHVhB30
+!s85 0
+!s108 1579323641.572000
+!s107 C:/Users/wxn/Desktop/coder_fast/code/code_queue.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/coder_fast/code|C:/Users/wxn/Desktop/coder_fast/code/code_queue.v|
+vcode_queue_tb
+IECnglh^hMnTWc_[8:hR3?3
+V_VJBT5B]l@Vfj_nFYi;e_2
+R1
+w1579320939
+8C:/Users/wxn/Desktop/coder_fast/code/code_queue_tb.v
+FC:/Users/wxn/Desktop/coder_fast/code/code_queue_tb.v
+L0 2
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 f2C@^=m[@;eINk>i_dQPL3
+!s85 0
+!s108 1579323641.662000
+!s107 C:/Users/wxn/Desktop/coder_fast/code/code_queue_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/coder_fast/code|C:/Users/wxn/Desktop/coder_fast/code/code_queue_tb.v|
+vcx_fifo
+IgQ`PMN0I[IRd2m;UV@cQm1
+V_9@h2>nol16PWX1[L6SjS2
+R1
+w1579087787
+8C:/Users/wxn/Desktop/coder_fast/ipcore/cx_fifo.v
+FC:/Users/wxn/Desktop/coder_fast/ipcore/cx_fifo.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 a`b5CbGW@5om:=^zZmbKB1
+!s85 0
+!s108 1579323641.481000
+!s107 C:/Users/wxn/Desktop/coder_fast/ipcore/cx_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/coder_fast/ipcore|C:/Users/wxn/Desktop/coder_fast/ipcore/cx_fifo.v|
+vfind_highest_bit
+I=:P^^iJ9>I=:INWhiQ@KV0
+VN:j1`Tmfh;lFk1Tco^2dI1
+R1
+w1578642701
+8C:/Users/wxn/Desktop/coder_fast/code/find_highest_bit.v
+FC:/Users/wxn/Desktop/coder_fast/code/find_highest_bit.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 ;RT>KJfOOT?Aj[Rf9ElnD2
+!s85 0
+!s108 1579323641.208000
+!s107 C:/Users/wxn/Desktop/coder_fast/code/find_highest_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/coder_fast/code|C:/Users/wxn/Desktop/coder_fast/code/find_highest_bit.v|
+vmq_coder
+Ib3XzIX1T[17ZC3F];_]_O0
+VZo:<f9^jS^bmZ0oJU5mI51
+R1
+w1579323578
+8C:/Users/wxn/Desktop/coder_fast/code/mq_coder.v
+FC:/Users/wxn/Desktop/coder_fast/code/mq_coder.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 YZ;7:nL6^@j564DoJlckK2
+!s85 0
+!s108 1579323641.301000
+!s107 C:/Users/wxn/Desktop/coder_fast/code/mq_coder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/coder_fast/code|C:/Users/wxn/Desktop/coder_fast/code/mq_coder.v|
+vtables
+Iac5<87>Lc323MJoEE4LVH3
+VQ@c9a;RHhK6IM[Ik>m;Ji0
+R1
+w1578630430
+8C:/Users/wxn/Desktop/coder_fast/code/tables.v
+FC:/Users/wxn/Desktop/coder_fast/code/tables.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 @Zl]Mkl8kSJh`J6?de9kQ0
+!s85 0
+!s108 1579323641.120000
+!s107 C:/Users/wxn/Desktop/coder_fast/code/tables.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/wxn/Desktop/coder_fast/code|C:/Users/wxn/Desktop/coder_fast/code/tables.v|

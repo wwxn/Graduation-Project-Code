@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Jan 18 15:54:29 2020
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : coder
+Top-level Entity Name : img_coding
+Family : Cyclone IV E
+Device : EP4CE10F17I7
+Timing Models : Final
+Total logic elements : 142 / 10,320 ( 1 % )
+    Total combinational functions : 139 / 10,320 ( 1 % )
+    Dedicated logic registers : 71 / 10,320 ( < 1 % )
+Total registers : 71
+Total pins : 19 / 180 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

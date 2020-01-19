@@ -1,0 +1,34 @@
+
+State Machine - |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step
+Name step.RESET step.STOP step.CAL step.CAL0 step.LOAD step.IDLE 
+step.IDLE 0 0 0 0 0 0 
+step.LOAD 0 0 0 0 1 1 
+step.CAL0 0 0 0 1 0 1 
+step.CAL 0 0 1 0 0 1 
+step.STOP 0 1 0 0 0 1 
+step.RESET 1 0 0 0 0 1 
+
+State Machine - |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step
+Name step.END step.BUFFER3 step.WAVELET4 step.RESTART3 step.BUFFER2 step.WAVELET3 step.RESTART2 step.BUFFER1 step.WAVELET2 step.RESTART1 step.WAVELET1 step.IDLE 
+step.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 
+step.WAVELET1 0 0 0 0 0 0 0 0 0 0 1 1 
+step.RESTART1 0 0 0 0 0 0 0 0 0 1 0 1 
+step.WAVELET2 0 0 0 0 0 0 0 0 1 0 0 1 
+step.BUFFER1 0 0 0 0 0 0 0 1 0 0 0 1 
+step.RESTART2 0 0 0 0 0 0 1 0 0 0 0 1 
+step.WAVELET3 0 0 0 0 0 1 0 0 0 0 0 1 
+step.BUFFER2 0 0 0 0 1 0 0 0 0 0 0 1 
+step.RESTART3 0 0 0 1 0 0 0 0 0 0 0 1 
+step.WAVELET4 0 0 1 0 0 0 0 0 0 0 0 1 
+step.BUFFER3 0 1 0 0 0 0 0 0 0 0 0 1 
+step.END 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coder|ram_conversion:b2v_inst|bit_plane_coder:b2v_inst1|step
+Name step.UPDATE 
+step.IDLE 0 
+step.UPDATE 1 
+
+State Machine - |img_coder|code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step
+Name step.UPDATE 
+step.IDLE 0 
+step.UPDATE 1 

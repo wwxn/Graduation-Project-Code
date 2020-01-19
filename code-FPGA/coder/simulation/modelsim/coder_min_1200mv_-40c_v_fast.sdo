@@ -1,0 +1,3325 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EP4CE10F17I7 Package FBGA256
+// 
+
+//
+// This file contains Fast Corner delays for the design using part EP4CE10F17I7,
+// with speed grade M, core voltage 1.2V, and temperature -40 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim (Verilog) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "img_coding")
+  (DATE "01/18/2020 15:54:43")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 32-bit")
+  (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version")
+  (DIVIDER .)
+  (TIMESCALE 1 ns)
+
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE data_in_ready\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (0.81:0.81:0.81) (0.89:0.89:0.89))
+        (IOPATH i o (1.482:1.482:1.482) (1.507:1.507:1.507))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE clk\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (0.31:0.31:0.31) (0.681:0.681:0.681))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_clkctrl")
+    (INSTANCE clk\~inputclkctrl)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (0.098:0.098:0.098) (0.083:0.083:0.083))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE rst_n\~input)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (0.32:0.32:0.32) (0.691:0.691:0.691))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_clkctrl")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step\.00000110\~clkctrl)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (0.834:0.834:0.834) (0.935:0.935:0.935))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[0\]\~12)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.126:0.126:0.126) (0.176:0.176:0.176))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.171:0.171:0.171))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_time\[0\]\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.305:0.305:0.305) (0.354:0.354:0.354))
+        (IOPATH dataa combout (0.185:0.185:0.185) (0.19:0.19:0.19))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_time\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.925:0.925:0.925) (0.97:0.97:0.97))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_time\[1\]\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.308:0.308:0.308) (0.358:0.358:0.358))
+        (PORT datad (0.116:0.116:0.116) (0.156:0.156:0.156))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_time\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.925:0.925:0.925) (0.97:0.97:0.97))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_time\[2\]\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.308:0.308:0.308) (0.357:0.357:0.357))
+        (PORT datab (0.128:0.128:0.128) (0.178:0.178:0.178))
+        (PORT datad (0.111:0.111:0.111) (0.148:0.148:0.148))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.162:0.162:0.162))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.166:0.166:0.166))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_time\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector34\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.126:0.126:0.126) (0.176:0.176:0.176))
+        (PORT datad (0.189:0.189:0.189) (0.231:0.231:0.231))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step\.00000100)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.917:0.917:0.917) (0.963:0.963:0.963))
+        (PORT asdata (0.343:0.343:0.343) (0.366:0.366:0.366))
+        (PORT clrn (0.566:0.566:0.566) (0.606:0.606:0.606))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|LessThan3\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.13:0.13:0.13) (0.183:0.183:0.183))
+        (PORT datab (0.129:0.129:0.129) (0.179:0.179:0.179))
+        (PORT datac (0.115:0.115:0.115) (0.159:0.159:0.159))
+        (PORT datad (0.117:0.117:0.117) (0.155:0.155:0.155))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|LessThan3\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.201:0.201:0.201) (0.255:0.255:0.255))
+        (PORT datab (0.309:0.309:0.309) (0.372:0.372:0.372))
+        (PORT datac (0.199:0.199:0.199) (0.245:0.245:0.245))
+        (PORT datad (0.162:0.162:0.162) (0.19:0.19:0.19))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|LessThan3\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.414:0.414:0.414) (0.48:0.48:0.48))
+        (PORT datab (0.214:0.214:0.214) (0.266:0.266:0.266))
+        (PORT datac (0.311:0.311:0.311) (0.372:0.372:0.372))
+        (PORT datad (0.086:0.086:0.086) (0.104:0.104:0.104))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector34\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.269:0.269:0.269) (0.313:0.313:0.313))
+        (PORT datab (0.105:0.105:0.105) (0.139:0.139:0.139))
+        (PORT datac (0.274:0.274:0.274) (0.335:0.335:0.335))
+        (PORT datad (0.089:0.089:0.089) (0.109:0.109:0.109))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step_next\.00000100_1500)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.11:0.11:0.11) (0.141:0.141:0.141))
+        (PORT datac (0.629:0.629:0.629) (0.676:0.676:0.676))
+        (PORT datad (0.157:0.157:0.157) (0.178:0.178:0.178))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|WideNor1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (0.103:0.103:0.103) (0.129:0.129:0.129))
+        (PORT datad (0.172:0.172:0.172) (0.198:0.198:0.198))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|WideOr7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.29:0.29:0.29) (0.334:0.334:0.334))
+        (PORT datab (0.199:0.199:0.199) (0.236:0.236:0.236))
+        (PORT datac (0.207:0.207:0.207) (0.242:0.242:0.242))
+        (PORT datad (0.096:0.096:0.096) (0.113:0.113:0.113))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[1\]\~14)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.128:0.128:0.128) (0.18:0.18:0.18))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[2\]\~16)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.126:0.126:0.126) (0.176:0.176:0.176))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.167:0.167:0.167))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[3\]\~18)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.127:0.127:0.127) (0.178:0.178:0.178))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[4\]\~20)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.135:0.135:0.135) (0.186:0.186:0.186))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.165:0.165:0.165))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[5\]\~22)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.134:0.134:0.134) (0.183:0.183:0.183))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[6\]\~24)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.134:0.134:0.134) (0.183:0.183:0.183))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.167:0.167:0.167))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[7\]\~26)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.134:0.134:0.134) (0.182:0.182:0.182))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[7\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[8\]\~28)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.134:0.134:0.134) (0.182:0.182:0.182))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.167:0.167:0.167))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[8\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[9\]\~30)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.135:0.135:0.135) (0.185:0.185:0.185))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[9\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[10\]\~32)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.134:0.134:0.134) (0.182:0.182:0.182))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.167:0.167:0.167))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[10\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[11\]\~34)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (0.184:0.184:0.184) (0.231:0.231:0.231))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|fill_counter\[11\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.744:0.744:0.744))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.564:0.564:0.564) (0.605:0.605:0.605))
+        (PORT sclr (0.428:0.428:0.428) (0.494:0.494:0.494))
+        (PORT ena (0.425:0.425:0.425) (0.422:0.422:0.422))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector40\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (0.193:0.193:0.193) (0.245:0.245:0.245))
+        (PORT datad (0.202:0.202:0.202) (0.249:0.249:0.249))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[0\]\~11)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.202:0.202:0.202) (0.256:0.256:0.256))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.169:0.169:0.169))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step\.00000011)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.918:0.918:0.918) (0.965:0.965:0.965))
+        (PORT asdata (0.465:0.465:0.465) (0.505:0.505:0.505))
+        (PORT clrn (0.571:0.571:0.571) (0.611:0.611:0.611))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|data_valid)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (0.12:0.12:0.12) (0.161:0.161:0.161))
+        (PORT datad (0.124:0.124:0.124) (0.164:0.164:0.164))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step\.0000100)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.914:0.914:0.914) (0.96:0.96:0.96))
+        (PORT asdata (0.262:0.262:0.262) (0.283:0.283:0.283))
+        (PORT clrn (0.698:0.698:0.698) (0.632:0.632:0.632))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000100\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.195:0.195:0.195) (0.257:0.257:0.257))
+        (PORT datab (0.361:0.361:0.361) (0.422:0.422:0.422))
+        (PORT datac (0.187:0.187:0.187) (0.238:0.238:0.238))
+        (PORT datad (0.169:0.169:0.169) (0.199:0.199:0.199))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|WideOr4\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.171:0.171:0.171) (0.212:0.212:0.212))
+        (PORT datab (0.115:0.115:0.115) (0.147:0.147:0.147))
+        (PORT datac (0.089:0.089:0.089) (0.114:0.114:0.114))
+        (PORT datad (0.104:0.104:0.104) (0.124:0.124:0.124))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Selector5\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.181:0.181:0.181) (0.223:0.223:0.223))
+        (PORT datad (0.089:0.089:0.089) (0.107:0.107:0.107))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|wait_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.914:0.914:0.914) (0.96:0.96:0.96))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.698:0.698:0.698) (0.632:0.632:0.632))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Selector4\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.133:0.133:0.133) (0.187:0.187:0.187))
+        (PORT datab (0.18:0.18:0.18) (0.222:0.222:0.222))
+        (PORT datad (0.089:0.089:0.089) (0.108:0.108:0.108))
+        (IOPATH dataa combout (0.18:0.18:0.18) (0.172:0.172:0.172))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|wait_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.914:0.914:0.914) (0.96:0.96:0.96))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.698:0.698:0.698) (0.632:0.632:0.632))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step\.0000000)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.914:0.914:0.914) (0.96:0.96:0.96))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.698:0.698:0.698) (0.632:0.632:0.632))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000000\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.132:0.132:0.132) (0.187:0.187:0.187))
+        (PORT datab (0.193:0.193:0.193) (0.25:0.25:0.25))
+        (PORT datad (0.344:0.344:0.344) (0.396:0.396:0.396))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|WideOr6)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.18:0.18:0.18) (0.223:0.223:0.223))
+        (PORT datac (0.103:0.103:0.103) (0.128:0.128:0.128))
+        (PORT datad (0.104:0.104:0.104) (0.125:0.125:0.125))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[1\]\~13)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.203:0.203:0.203) (0.253:0.253:0.253))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[2\]\~15)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.201:0.201:0.201) (0.256:0.256:0.256))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.167:0.167:0.167))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[3\]\~17)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.203:0.203:0.203) (0.256:0.256:0.256))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[4\]\~19)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.127:0.127:0.127) (0.177:0.177:0.177))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.167:0.167:0.167))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[5\]\~21)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.127:0.127:0.127) (0.176:0.176:0.176))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[6\]\~23)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.127:0.127:0.127) (0.175:0.175:0.175))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.167:0.167:0.167))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[7\]\~25)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.202:0.202:0.202) (0.254:0.254:0.254))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[7\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[8\]\~27)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.203:0.203:0.203) (0.258:0.258:0.258))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.165:0.165:0.165))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[8\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[9\]\~29)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.201:0.201:0.201) (0.255:0.255:0.255))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[9\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[10\]\~31)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (0.188:0.188:0.188) (0.23:0.23:0.23))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_counter\[10\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.655:0.655:0.655) (0.597:0.597:0.597))
+        (PORT sclr (0.477:0.477:0.477) (0.547:0.547:0.547))
+        (PORT ena (0.466:0.466:0.466) (0.498:0.498:0.498))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD sclr (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|LessThan0\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.136:0.136:0.136) (0.187:0.187:0.187))
+        (PORT datab (0.127:0.127:0.127) (0.176:0.176:0.176))
+        (PORT datac (0.122:0.122:0.122) (0.163:0.163:0.163))
+        (PORT datad (0.114:0.114:0.114) (0.153:0.153:0.153))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|LessThan0\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.136:0.136:0.136) (0.188:0.188:0.188))
+        (PORT datab (0.136:0.136:0.136) (0.184:0.184:0.184))
+        (PORT datac (0.123:0.123:0.123) (0.165:0.165:0.165))
+        (PORT datad (0.116:0.116:0.116) (0.155:0.155:0.155))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|LessThan1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.138:0.138:0.138) (0.19:0.19:0.19))
+        (PORT datab (0.141:0.141:0.141) (0.193:0.193:0.193))
+        (PORT datac (0.093:0.093:0.093) (0.119:0.119:0.119))
+        (PORT datad (0.088:0.088:0.088) (0.107:0.107:0.107))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Add17\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.124:0.124:0.124) (0.174:0.174:0.174))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.169:0.169:0.169))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|LessThan0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (0.12:0.12:0.12) (0.161:0.161:0.161))
+        (PORT datad (0.127:0.127:0.127) (0.165:0.165:0.165))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|LessThan0\~3)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.105:0.105:0.105) (0.141:0.141:0.141))
+        (PORT datab (0.14:0.14:0.14) (0.192:0.192:0.192))
+        (PORT datac (0.084:0.084:0.084) (0.106:0.106:0.106))
+        (PORT datad (0.088:0.088:0.088) (0.108:0.108:0.108))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step\.0000001)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.914:0.914:0.914) (0.96:0.96:0.96))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.698:0.698:0.698) (0.632:0.632:0.632))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000001\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.125:0.125:0.125) (0.176:0.176:0.176))
+        (PORT datab (0.197:0.197:0.197) (0.254:0.254:0.254))
+        (PORT datac (0.12:0.12:0.12) (0.166:0.166:0.166))
+        (PORT datad (0.347:0.347:0.347) (0.4:0.4:0.4))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000001\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.435:0.435:0.435) (0.499:0.499:0.499))
+        (PORT datab (0.172:0.172:0.172) (0.208:0.208:0.208))
+        (PORT datad (0.163:0.163:0.163) (0.187:0.187:0.187))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|WideOr7)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.182:0.182:0.182) (0.219:0.219:0.219))
+        (PORT datab (0.103:0.103:0.103) (0.135:0.135:0.135))
+        (PORT datac (0.159:0.159:0.159) (0.187:0.187:0.187))
+        (PORT datad (0.166:0.166:0.166) (0.198:0.198:0.198))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.15:0.15:0.15))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.149:0.149:0.149))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Selector54\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.451:0.451:0.451) (0.521:0.521:0.521))
+        (PORT datab (0.099:0.099:0.099) (0.128:0.128:0.128))
+        (PORT datad (0.407:0.407:0.407) (0.474:0.474:0.474))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|save_wait_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.725:0.725:0.725) (0.745:0.745:0.745))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.506:0.506:0.506) (0.466:0.466:0.466))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Add17\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.129:0.129:0.129) (0.179:0.179:0.179))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Selector53\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.449:0.449:0.449) (0.518:0.518:0.518))
+        (PORT datab (0.101:0.101:0.101) (0.131:0.131:0.131))
+        (PORT datad (0.412:0.412:0.412) (0.48:0.48:0.48))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|save_wait_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.725:0.725:0.725) (0.745:0.745:0.745))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.506:0.506:0.506) (0.466:0.466:0.466))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Add17\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.13:0.13:0.13) (0.185:0.185:0.185))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.165:0.165:0.165))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Selector52\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.449:0.449:0.449) (0.518:0.518:0.518))
+        (PORT datab (0.101:0.101:0.101) (0.131:0.131:0.131))
+        (PORT datad (0.413:0.413:0.413) (0.48:0.48:0.48))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|save_wait_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.725:0.725:0.725) (0.745:0.745:0.745))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.506:0.506:0.506) (0.466:0.466:0.466))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Add17\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.129:0.129:0.129) (0.179:0.179:0.179))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Selector51\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.449:0.449:0.449) (0.519:0.519:0.519))
+        (PORT datab (0.17:0.17:0.17) (0.204:0.204:0.204))
+        (PORT datad (0.411:0.411:0.411) (0.479:0.479:0.479))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|save_wait_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.725:0.725:0.725) (0.745:0.745:0.745))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.506:0.506:0.506) (0.466:0.466:0.466))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Add17\~8)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.13:0.13:0.13) (0.183:0.183:0.183))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.165:0.165:0.165))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Selector50\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.45:0.45:0.45) (0.519:0.519:0.519))
+        (PORT datab (0.099:0.099:0.099) (0.128:0.128:0.128))
+        (PORT datad (0.41:0.41:0.41) (0.478:0.478:0.478))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|save_wait_counter\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.725:0.725:0.725) (0.745:0.745:0.745))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.506:0.506:0.506) (0.466:0.466:0.466))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Add17\~10)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.196:0.196:0.196) (0.254:0.254:0.254))
+        (IOPATH dataa combout (0.185:0.185:0.185) (0.19:0.19:0.19))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|Selector49\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.45:0.45:0.45) (0.519:0.519:0.519))
+        (PORT datab (0.169:0.169:0.169) (0.202:0.202:0.202))
+        (PORT datad (0.41:0.41:0.41) (0.477:0.477:0.477))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|save_wait_counter\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.725:0.725:0.725) (0.745:0.745:0.745))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.506:0.506:0.506) (0.466:0.466:0.466))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|LessThan2\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.127:0.127:0.127) (0.179:0.179:0.179))
+        (PORT datab (0.125:0.125:0.125) (0.175:0.175:0.175))
+        (PORT datac (0.113:0.113:0.113) (0.156:0.156:0.156))
+        (PORT datad (0.113:0.113:0.113) (0.152:0.152:0.152))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000101\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.215:0.215:0.215) (0.273:0.273:0.273))
+        (PORT datab (0.361:0.361:0.361) (0.423:0.423:0.423))
+        (PORT datac (0.428:0.428:0.428) (0.506:0.506:0.506))
+        (PORT datad (0.414:0.414:0.414) (0.47:0.47:0.47))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000101\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.185:0.185:0.185) (0.223:0.223:0.223))
+        (PORT datab (0.363:0.363:0.363) (0.425:0.425:0.425))
+        (PORT datac (0.189:0.189:0.189) (0.241:0.241:0.241))
+        (PORT datad (0.086:0.086:0.086) (0.103:0.103:0.103))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step\.0000101)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.914:0.914:0.914) (0.96:0.96:0.96))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.698:0.698:0.698) (0.632:0.632:0.632))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000010\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.214:0.214:0.214) (0.272:0.272:0.272))
+        (PORT datab (0.427:0.427:0.427) (0.494:0.494:0.494))
+        (PORT datac (0.428:0.428:0.428) (0.506:0.506:0.506))
+        (PORT datad (0.348:0.348:0.348) (0.4:0.4:0.4))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000010\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.099:0.099:0.099) (0.131:0.131:0.131))
+        (PORT datab (0.129:0.129:0.129) (0.18:0.18:0.18))
+        (PORT datac (0.161:0.161:0.161) (0.191:0.191:0.191))
+        (PORT datad (0.346:0.346:0.346) (0.398:0.398:0.398))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.149:0.149:0.149))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step\.0000010)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.914:0.914:0.914) (0.96:0.96:0.96))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.698:0.698:0.698) (0.632:0.632:0.632))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step_next\.0000011\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.123:0.123:0.123) (0.171:0.171:0.171))
+        (PORT datac (0.5:0.5:0.5) (0.572:0.572:0.572))
+        (PORT datad (0.496:0.496:0.496) (0.58:0.58:0.58))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|step\.0000011)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.914:0.914:0.914) (0.96:0.96:0.96))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.698:0.698:0.698) (0.632:0.632:0.632))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_loading\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.2:0.2:0.2) (0.261:0.261:0.261))
+        (PORT datab (0.126:0.126:0.126) (0.176:0.176:0.176))
+        (PORT datac (0.159:0.159:0.159) (0.189:0.189:0.189))
+        (PORT datad (0.168:0.168:0.168) (0.197:0.197:0.197))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|lifted_wavelet_decomposition_inst0\|data_loading\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.195:0.195:0.195) (0.257:0.257:0.257))
+        (PORT datab (0.36:0.36:0.36) (0.42:0.42:0.42))
+        (PORT datac (0.097:0.097:0.097) (0.12:0.12:0.12))
+        (PORT datad (0.086:0.086:0.086) (0.103:0.103:0.103))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add2\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.18:0.18:0.18) (0.215:0.215:0.215))
+        (PORT datab (0.356:0.356:0.356) (0.436:0.436:0.436))
+        (IOPATH dataa combout (0.15:0.15:0.15) (0.163:0.163:0.163))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datab combout (0.159:0.159:0.159) (0.156:0.156:0.156))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector12\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.31:0.31:0.31) (0.368:0.368:0.368))
+        (PORT datab (0.353:0.353:0.353) (0.406:0.406:0.406))
+        (PORT datad (0.302:0.302:0.302) (0.341:0.341:0.341))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.925:0.925:0.925) (0.97:0.97:0.97))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add2\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.433:0.433:0.433) (0.518:0.518:0.518))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector11\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.309:0.309:0.309) (0.36:0.36:0.36))
+        (PORT datab (0.351:0.351:0.351) (0.404:0.404:0.404))
+        (PORT datad (0.298:0.298:0.298) (0.336:0.336:0.336))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add2\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.351:0.351:0.351) (0.428:0.428:0.428))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.165:0.165:0.165))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector10\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.21:0.21:0.21) (0.244:0.244:0.244))
+        (PORT datab (0.306:0.306:0.306) (0.354:0.354:0.354))
+        (PORT datad (0.301:0.301:0.301) (0.34:0.34:0.34))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add2\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.366:0.366:0.366) (0.442:0.442:0.442))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector9\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.139:0.139:0.139) (0.177:0.177:0.177))
+        (PORT datab (0.304:0.304:0.304) (0.348:0.348:0.348))
+        (PORT datad (0.303:0.303:0.303) (0.348:0.348:0.348))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.723:0.723:0.723) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.566:0.566:0.566) (0.606:0.606:0.606))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add2\~8)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.359:0.359:0.359) (0.43:0.43:0.43))
+        (IOPATH datab combout (0.182:0.182:0.182) (0.167:0.167:0.167))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector8\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.137:0.137:0.137) (0.174:0.174:0.174))
+        (PORT datab (0.299:0.299:0.299) (0.342:0.342:0.342))
+        (PORT datad (0.301:0.301:0.301) (0.348:0.348:0.348))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_counter\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.723:0.723:0.723) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.566:0.566:0.566) (0.606:0.606:0.606))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add2\~10)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.352:0.352:0.352) (0.425:0.425:0.425))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector7\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.209:0.209:0.209) (0.242:0.242:0.242))
+        (PORT datab (0.295:0.295:0.295) (0.334:0.334:0.334))
+        (PORT datad (0.29:0.29:0.29) (0.328:0.328:0.328))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_counter\[5\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add2\~12)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.346:0.346:0.346) (0.429:0.429:0.429))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.165:0.165:0.165))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector6\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.138:0.138:0.138) (0.176:0.176:0.176))
+        (PORT datab (0.302:0.302:0.302) (0.346:0.346:0.346))
+        (PORT datad (0.307:0.307:0.307) (0.355:0.355:0.355))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_counter\[6\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.723:0.723:0.723) (0.743:0.743:0.743))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.566:0.566:0.566) (0.606:0.606:0.606))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add2\~14)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (0.124:0.124:0.124) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector5\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.36:0.36:0.36) (0.42:0.42:0.42))
+        (PORT datab (0.099:0.099:0.099) (0.128:0.128:0.128))
+        (PORT datad (0.321:0.321:0.321) (0.363:0.363:0.363))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wavelet_counter\[7\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.721:0.721:0.721) (0.741:0.741:0.741))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.558:0.558:0.558) (0.6:0.6:0.6))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|LessThan1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.133:0.133:0.133) (0.184:0.184:0.184))
+        (PORT datab (0.136:0.136:0.136) (0.185:0.185:0.185))
+        (PORT datac (0.196:0.196:0.196) (0.248:0.248:0.248))
+        (PORT datad (0.194:0.194:0.194) (0.244:0.244:0.244))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|LessThan1\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.194:0.194:0.194) (0.254:0.254:0.254))
+        (PORT datab (0.201:0.201:0.201) (0.253:0.253:0.253))
+        (PORT datac (0.199:0.199:0.199) (0.252:0.252:0.252))
+        (PORT datad (0.085:0.085:0.085) (0.102:0.102:0.102))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector38\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.306:0.306:0.306) (0.372:0.372:0.372))
+        (PORT datab (0.106:0.106:0.106) (0.139:0.139:0.139))
+        (PORT datac (0.196:0.196:0.196) (0.247:0.247:0.247))
+        (PORT datad (0.088:0.088:0.088) (0.108:0.108:0.108))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector38\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.101:0.101:0.101) (0.134:0.134:0.134))
+        (PORT datab (0.107:0.107:0.107) (0.14:0.14:0.14))
+        (PORT datad (0.091:0.091:0.091) (0.11:0.11:0.11))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step_next\.00000010_1516)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.137:0.137:0.137) (0.175:0.175:0.175))
+        (PORT datac (0.628:0.628:0.628) (0.675:0.675:0.675))
+        (PORT datad (0.086:0.086:0.086) (0.104:0.104:0.104))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step\.00000010)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.745:0.745:0.745))
+        (PORT asdata (0.458:0.458:0.458) (0.49:0.49:0.49))
+        (PORT clrn (0.571:0.571:0.571) (0.611:0.611:0.611))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add3\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.14:0.14:0.14) (0.195:0.195:0.195))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.169:0.169:0.169))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|WideOr6)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.116:0.116:0.116) (0.15:0.15:0.15))
+        (PORT datab (0.307:0.307:0.307) (0.355:0.355:0.355))
+        (PORT datac (0.286:0.286:0.286) (0.322:0.322:0.322))
+        (PORT datad (0.169:0.169:0.169) (0.195:0.195:0.195))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector4\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.1:0.1:0.1) (0.132:0.132:0.132))
+        (PORT datab (0.307:0.307:0.307) (0.355:0.355:0.355))
+        (PORT datad (0.262:0.262:0.262) (0.299:0.299:0.299))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wait_wavelet_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.918:0.918:0.918) (0.965:0.965:0.965))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.571:0.571:0.571) (0.611:0.611:0.611))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector36\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.14:0.14:0.14) (0.191:0.191:0.191))
+        (PORT datac (0.124:0.124:0.124) (0.167:0.167:0.167))
+        (PORT datad (0.088:0.088:0.088) (0.107:0.107:0.107))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector36\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.302:0.302:0.302) (0.368:0.368:0.368))
+        (PORT datab (0.103:0.103:0.103) (0.133:0.133:0.133))
+        (PORT datad (0.257:0.257:0.257) (0.294:0.294:0.294))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step_next\.00000011_1508)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.11:0.11:0.11) (0.14:0.14:0.14))
+        (PORT datac (0.63:0.63:0.63) (0.677:0.677:0.677))
+        (PORT datad (0.155:0.155:0.155) (0.179:0.179:0.179))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add3\~2)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.127:0.127:0.127) (0.18:0.18:0.18))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector3\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.31:0.31:0.31) (0.367:0.367:0.367))
+        (PORT datab (0.18:0.18:0.18) (0.22:0.22:0.22))
+        (PORT datad (0.157:0.157:0.157) (0.179:0.179:0.179))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wait_wavelet_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.918:0.918:0.918) (0.965:0.965:0.965))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.571:0.571:0.571) (0.611:0.611:0.611))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add3\~4)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.129:0.129:0.129) (0.183:0.183:0.183))
+        (IOPATH dataa combout (0.176:0.176:0.176) (0.165:0.165:0.165))
+        (IOPATH dataa cout (0.211:0.211:0.211) (0.161:0.161:0.161))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector2\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.31:0.31:0.31) (0.367:0.367:0.367))
+        (PORT datab (0.099:0.099:0.099) (0.127:0.127:0.127))
+        (PORT datad (0.263:0.263:0.263) (0.3:0.3:0.3))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wait_wavelet_counter\[2\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.918:0.918:0.918) (0.965:0.965:0.965))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.571:0.571:0.571) (0.611:0.611:0.611))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add3\~6)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.13:0.13:0.13) (0.181:0.181:0.181))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.166:0.166:0.166))
+        (IOPATH datab cout (0.213:0.213:0.213) (0.164:0.164:0.164))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+        (IOPATH cin cout (0.032:0.032:0.032) (0.032:0.032:0.032))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.31:0.31:0.31) (0.367:0.367:0.367))
+        (PORT datab (0.179:0.179:0.179) (0.219:0.219:0.219))
+        (PORT datad (0.088:0.088:0.088) (0.105:0.105:0.105))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wait_wavelet_counter\[3\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.745:0.745:0.745))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.571:0.571:0.571) (0.611:0.611:0.611))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Add3\~8)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (0.117:0.117:0.117) (0.157:0.157:0.157))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+        (IOPATH cin combout (0.178:0.178:0.178) (0.194:0.194:0.194))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.31:0.31:0.31) (0.367:0.367:0.367))
+        (PORT datab (0.18:0.18:0.18) (0.219:0.219:0.219))
+        (PORT datad (0.087:0.087:0.087) (0.105:0.105:0.105))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|wait_wavelet_counter\[4\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.724:0.724:0.724) (0.745:0.745:0.745))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.571:0.571:0.571) (0.611:0.611:0.611))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|LessThan2\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.129:0.129:0.129) (0.182:0.182:0.182))
+        (PORT datab (0.129:0.129:0.129) (0.18:0.18:0.18))
+        (PORT datac (0.113:0.113:0.113) (0.157:0.157:0.157))
+        (PORT datad (0.116:0.116:0.116) (0.155:0.155:0.155))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector32\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.103:0.103:0.103) (0.134:0.134:0.134))
+        (PORT datad (0.191:0.191:0.191) (0.234:0.234:0.234))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step_next\.00000101_1492)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.272:0.272:0.272) (0.313:0.313:0.313))
+        (PORT datac (0.101:0.101:0.101) (0.124:0.124:0.124))
+        (PORT datad (0.612:0.612:0.612) (0.65:0.65:0.65))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step\.00000101)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.925:0.925:0.925) (0.97:0.97:0.97))
+        (PORT asdata (0.463:0.463:0.463) (0.499:0.499:0.499))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector30\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.138:0.138:0.138) (0.19:0.19:0.19))
+        (PORT datab (0.127:0.127:0.127) (0.176:0.176:0.176))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step_next\.00000110_1484)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.308:0.308:0.308) (0.359:0.359:0.359))
+        (PORT datac (0.088:0.088:0.088) (0.112:0.112:0.112))
+        (PORT datad (0.611:0.611:0.611) (0.648:0.648:0.648))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step\.00000110)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.721:0.721:0.721) (0.742:0.742:0.742))
+        (PORT asdata (0.262:0.262:0.262) (0.283:0.283:0.283))
+        (PORT clrn (0.436:0.436:0.436) (0.452:0.452:0.452))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000101\~feeder)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (0.503:0.503:0.503) (0.572:0.572:0.572))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_clkctrl")
+    (INSTANCE rst_n\~inputclkctrl)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (0.098:0.098:0.098) (0.083:0.083:0.083))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000101)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.733:0.733:0.733) (0.705:0.705:0.705))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|LessThan0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (0.128:0.128:0.128) (0.173:0.173:0.173))
+        (PORT datad (0.124:0.124:0.124) (0.162:0.162:0.162))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector34\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.12:0.12:0.12) (0.156:0.156:0.156))
+        (PORT datab (0.637:0.637:0.637) (0.745:0.745:0.745))
+        (PORT datac (0.192:0.192:0.192) (0.238:0.238:0.238))
+        (PORT datad (0.188:0.188:0.188) (0.236:0.236:0.236))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step_next\.00000100_895)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (0.167:0.167:0.167) (0.203:0.203:0.203))
+        (PORT datac (0.638:0.638:0.638) (0.69:0.69:0.69))
+        (PORT datad (0.097:0.097:0.097) (0.114:0.114:0.114))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000100)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT asdata (0.345:0.345:0.345) (0.372:0.372:0.372))
+        (PORT clrn (0.733:0.733:0.733) (0.705:0.705:0.705))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector32\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.767:0.767:0.767) (0.879:0.879:0.879))
+        (PORT datab (0.138:0.138:0.138) (0.189:0.189:0.189))
+        (PORT datac (0.27:0.27:0.27) (0.323:0.323:0.323))
+        (PORT datad (0.172:0.172:0.172) (0.199:0.199:0.199))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step_next\.00000101_887)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.278:0.278:0.278) (0.323:0.323:0.323))
+        (PORT datac (0.638:0.638:0.638) (0.69:0.69:0.69))
+        (PORT datad (0.16:0.16:0.16) (0.185:0.185:0.185))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector1\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.124:0.124:0.124) (0.16:0.16:0.16))
+        (PORT datab (0.118:0.118:0.118) (0.151:0.151:0.151))
+        (PORT datad (0.102:0.102:0.102) (0.122:0.122:0.122))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000110)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.721:0.721:0.721) (0.742:0.742:0.742))
+        (PORT asdata (0.432:0.432:0.432) (0.461:0.461:0.461))
+        (PORT clrn (0.733:0.733:0.733) (0.704:0.704:0.704))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector30\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.121:0.121:0.121) (0.157:0.157:0.157))
+        (PORT datab (0.2:0.2:0.2) (0.253:0.253:0.253))
+        (PORT datad (0.747:0.747:0.747) (0.868:0.868:0.868))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.156:0.156:0.156) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step_next\.00000110_879)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.168:0.168:0.168) (0.209:0.209:0.209))
+        (PORT datac (0.639:0.639:0.639) (0.691:0.691:0.691))
+        (PORT datad (0.101:0.101:0.101) (0.12:0.12:0.12))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector0\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.123:0.123:0.123) (0.159:0.159:0.159))
+        (PORT datab (0.117:0.117:0.117) (0.15:0.15:0.15))
+        (PORT datad (0.102:0.102:0.102) (0.121:0.121:0.121))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000010\~feeder)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (0.102:0.102:0.102) (0.126:0.126:0.126))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000010)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.714:0.714:0.714) (0.735:0.735:0.735))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.726:0.726:0.726) (0.697:0.697:0.697))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000000)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.714:0.714:0.714) (0.735:0.735:0.735))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.726:0.726:0.726) (0.697:0.697:0.697))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector40\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.789:0.789:0.789) (0.922:0.922:0.922))
+        (PORT datab (0.125:0.125:0.125) (0.173:0.173:0.173))
+        (PORT datad (0.362:0.362:0.362) (0.427:0.427:0.427))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step_next\.00000001_919)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.11:0.11:0.11) (0.142:0.142:0.142))
+        (PORT datac (0.167:0.167:0.167) (0.199:0.199:0.199))
+        (PORT datad (0.618:0.618:0.618) (0.656:0.656:0.656))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000001)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT asdata (0.493:0.493:0.493) (0.536:0.536:0.536))
+        (PORT clrn (0.733:0.733:0.733) (0.705:0.705:0.705))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector38\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.317:0.317:0.317) (0.375:0.375:0.375))
+        (PORT datab (0.803:0.803:0.803) (0.92:0.92:0.92))
+        (PORT datac (0.347:0.347:0.347) (0.405:0.405:0.405))
+        (PORT datad (0.31:0.31:0.31) (0.348:0.348:0.348))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step_next\.00000010_911)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.113:0.113:0.113) (0.147:0.147:0.147))
+        (PORT datac (0.617:0.617:0.617) (0.659:0.659:0.659))
+        (PORT datad (0.086:0.086:0.086) (0.102:0.102:0.102))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|WideNor1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.186:0.186:0.186) (0.222:0.222:0.222))
+        (PORT datab (0.116:0.116:0.116) (0.146:0.146:0.146))
+        (PORT datac (0.099:0.099:0.099) (0.122:0.122:0.122))
+        (PORT datad (0.319:0.319:0.319) (0.363:0.363:0.363))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|reset_counter\[0\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.721:0.721:0.721) (0.742:0.742:0.742))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.733:0.733:0.733) (0.704:0.704:0.704))
+        (PORT ena (0.403:0.403:0.403) (0.435:0.435:0.435))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector0\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.137:0.137:0.137) (0.191:0.191:0.191))
+        (PORT datad (0.169:0.169:0.169) (0.195:0.195:0.195))
+        (IOPATH dataa combout (0.156:0.156:0.156) (0.162:0.162:0.162))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|reset_counter\[1\])
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.721:0.721:0.721) (0.742:0.742:0.742))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.733:0.733:0.733) (0.704:0.704:0.704))
+        (PORT ena (0.403:0.403:0.403) (0.435:0.435:0.435))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+      (HOLD ena (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector28\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (0.188:0.188:0.188) (0.229:0.229:0.229))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector28\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.309:0.309:0.309) (0.37:0.37:0.37))
+        (PORT datab (0.31:0.31:0.31) (0.373:0.373:0.373))
+        (PORT datac (0.085:0.085:0.085) (0.108:0.108:0.108))
+        (PORT datad (0.291:0.291:0.291) (0.341:0.341:0.341))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step_next\.00000111_871)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.31:0.31:0.31) (0.364:0.364:0.364))
+        (PORT datab (0.652:0.652:0.652) (0.708:0.708:0.708))
+        (PORT datac (0.085:0.085:0.085) (0.107:0.107:0.107))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.179:0.179:0.179) (0.177:0.177:0.177))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000111)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT asdata (0.36:0.36:0.36) (0.39:0.39:0.39))
+        (PORT clrn (0.733:0.733:0.733) (0.705:0.705:0.705))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector26\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.141:0.141:0.141) (0.195:0.195:0.195))
+        (PORT datad (0.62:0.62:0.62) (0.728:0.728:0.728))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step_next\.00001000_863)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.102:0.102:0.102) (0.135:0.135:0.135))
+        (PORT datab (0.323:0.323:0.323) (0.376:0.376:0.376))
+        (PORT datad (0.611:0.611:0.611) (0.649:0.649:0.649))
+        (IOPATH dataa combout (0.158:0.158:0.158) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00001000\~feeder)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (0.092:0.092:0.092) (0.112:0.112:0.112))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00001000)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.72:0.72:0.72) (0.741:0.741:0.741))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.732:0.732:0.732) (0.703:0.703:0.703))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_clkctrl")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00001000\~clkctrl)
+    (DELAY
+      (ABSOLUTE
+        (PORT inclk[0] (0.817:0.817:0.817) (0.929:0.929:0.929))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|Selector36\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.759:0.759:0.759) (0.869:0.869:0.869))
+        (PORT datab (0.204:0.204:0.204) (0.257:0.257:0.257))
+        (PORT datac (0.334:0.334:0.334) (0.394:0.394:0.394))
+        (PORT datad (0.107:0.107:0.107) (0.129:0.129:0.129))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.158:0.158:0.158) (0.156:0.156:0.156))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|step_next\.00000011_903)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.12:0.12:0.12) (0.154:0.154:0.154))
+        (PORT datac (0.637:0.637:0.637) (0.689:0.689:0.689))
+        (PORT datad (0.153:0.153:0.153) (0.178:0.178:0.178))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.118:0.118:0.118))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|step\.00000011)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.722:0.722:0.722) (0.742:0.742:0.742))
+        (PORT asdata (0.666:0.666:0.666) (0.729:0.729:0.729))
+        (PORT clrn (0.733:0.733:0.733) (0.705:0.705:0.705))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet1D_reset_flag\~1)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.136:0.136:0.136) (0.188:0.188:0.188))
+        (PORT datab (0.14:0.14:0.14) (0.192:0.192:0.192))
+        (PORT datac (0.126:0.126:0.126) (0.168:0.168:0.168))
+        (PORT datad (0.122:0.122:0.122) (0.159:0.159:0.159))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet1D_reset)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.718:0.718:0.718) (0.633:0.633:0.633))
+        (PORT datad (0.086:0.086:0.086) (0.103:0.103:0.103))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step\.00000000)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.925:0.925:0.925) (0.97:0.97:0.97))
+        (PORT d (0.036:0.036:0.036) (0.048:0.048:0.048))
+        (PORT clrn (0.543:0.543:0.543) (0.568:0.568:0.568))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD d (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|Selector40\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.292:0.292:0.292) (0.355:0.355:0.355))
+        (PORT datab (0.221:0.221:0.221) (0.275:0.275:0.275))
+        (PORT datad (0.314:0.314:0.314) (0.378:0.378:0.378))
+        (IOPATH dataa combout (0.149:0.149:0.149) (0.148:0.148:0.148))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step_next\.00000001_1524)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.284:0.284:0.284) (0.331:0.331:0.331))
+        (PORT datac (0.098:0.098:0.098) (0.122:0.122:0.122))
+        (PORT datad (0.613:0.613:0.613) (0.65:0.65:0.65))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datac combout (0.114:0.114:0.114) (0.117:0.117:0.117))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "dffeas")
+    (INSTANCE wavelet_transform_2D_inst1\|wavelet_transform_1D_inst\|step\.00000001)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (0.917:0.917:0.917) (0.963:0.963:0.963))
+        (PORT asdata (0.668:0.668:0.668) (0.719:0.719:0.719))
+        (PORT clrn (0.566:0.566:0.566) (0.606:0.606:0.606))
+        (IOPATH (posedge clk) q (0.103:0.103:0.103) (0.103:0.103:0.103))
+        (IOPATH (negedge clrn) q (0.106:0.106:0.106) (0.106:0.106:0.106))
+      )
+    )
+    (TIMINGCHECK
+      (HOLD asdata (posedge clk) (0.082:0.082:0.082))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE wavelet_transform_2D_inst1\|data_in_ready\~0)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (0.611:0.611:0.611) (0.716:0.716:0.716))
+        (PORT datab (0.422:0.422:0.422) (0.484:0.484:0.484))
+        (PORT datad (0.188:0.188:0.188) (0.236:0.236:0.236))
+        (IOPATH dataa combout (0.159:0.159:0.159) (0.152:0.152:0.152))
+        (IOPATH datab combout (0.15:0.15:0.15) (0.147:0.147:0.147))
+        (IOPATH datac combout (0.181:0.181:0.181) (0.184:0.184:0.184))
+        (IOPATH datad combout (0.065:0.065:0.065) (0.06:0.06:0.06))
+      )
+    )
+  )
+)

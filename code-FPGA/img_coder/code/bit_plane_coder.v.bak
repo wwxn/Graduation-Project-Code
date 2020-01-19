@@ -1,0 +1,17 @@
+module bit_plane_coder
+(
+	input clk,
+	input rst_n,
+	input [15:0] data0,
+	input [15:0] data1,
+	input [15:0] data2,
+	input [15:0] data3,
+	input [15:0] data4,
+	input [15:0] data5,
+	input [15:0] data6,
+	input [15:0] data7,
+	input [15:0] data8,
+	input input_valid,
+	
+	output wrreq,
+);

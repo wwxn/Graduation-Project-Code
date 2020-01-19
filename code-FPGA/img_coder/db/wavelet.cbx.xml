@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="wavelet">
+		<CBX_INST_ENTRY INSTANCE_NAME="|img_coder|wavelet_transform:b2v_wavlet_transform_inst1|ram:b2v_ram_inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_j5l2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|img_coder|wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_even|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_ij31.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|img_coder|code_queue:b2v_code_queue_inst1|bit_fifo:b2v_bit_fifo_inst1|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_8d31.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|img_coder|code_queue:b2v_code_queue_inst1|cx_fifo:b2v_cx_fifo_inst1|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_bd31.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|img_coder|wavelet_transform:b2v_wavlet_transform_inst1|ram:b2v_ram_inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_j5l2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|img_coder|wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_odd|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_ij31.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

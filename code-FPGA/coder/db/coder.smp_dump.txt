@@ -1,0 +1,768 @@
+
+State Machine - |img_coding|step
+Name step.ENCODE step.FILL step.WAVLET step.IDLE step.ENCODEFILL 
+step.IDLE 0 0 0 0 0 
+step.WAVLET 0 0 1 1 0 
+step.FILL 0 1 0 1 0 
+step.ENCODE 1 0 0 1 0 
+step.ENCODEFILL 0 0 0 1 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|step
+Name step.00000111 step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 step.00001000 
+step.00000000 0 0 0 0 0 0 0 0 0 
+step.00000001 0 0 0 0 0 0 1 1 0 
+step.00000010 0 0 0 0 0 1 0 1 0 
+step.00000011 0 0 0 0 1 0 0 1 0 
+step.00000100 0 0 0 1 0 0 0 1 0 
+step.00000101 0 0 1 0 0 0 0 1 0 
+step.00000110 0 1 0 0 0 0 0 1 0 
+step.00000111 1 0 0 0 0 0 0 1 0 
+step.00001000 0 0 0 0 0 0 0 1 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|step
+Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
+step.00000000 0 0 0 0 0 0 0 
+step.00000001 0 0 0 0 0 1 1 
+step.00000010 0 0 0 0 1 0 1 
+step.00000011 0 0 0 1 0 0 1 
+step.00000100 0 0 1 0 0 0 1 
+step.00000101 0 1 0 0 0 0 1 
+step.00000110 1 0 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst15|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst14|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst13|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst12|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst11|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst10|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst9|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst8|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst7|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst6|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst5|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst4|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst3|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst2|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst1|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|wavelet_transform_2D:wavelet_transform_2D_inst1|wavelet_transform_1D:wavelet_transform_1D_inst|lifted_wavelet_decomposition:lifted_wavelet_decomposition_inst0|step
+Name step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 
+step.0000001 0 0 0 0 1 1 
+step.0000010 0 0 0 1 0 1 
+step.0000011 0 0 1 0 0 1 
+step.0000100 0 1 0 0 0 1 
+step.0000101 1 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|step
+Name step.WAITEMPTY step.READ1 step.DISTRIBUTION step.CALCULATE step.READ0 step.00000000 
+step.00000000 0 0 0 0 0 0 
+step.READ0 0 0 0 0 1 1 
+step.CALCULATE 0 0 0 1 0 1 
+step.DISTRIBUTION 0 0 1 0 0 1 
+step.READ1 0 1 0 0 0 1 
+step.WAITEMPTY 1 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context8_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context7_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context6_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context5_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context4_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context3_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context2_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context1_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst1|coding_queue:context0_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|step
+Name step.WAITEMPTY step.READ1 step.DISTRIBUTION step.CALCULATE step.READ0 step.00000000 
+step.00000000 0 0 0 0 0 0 
+step.READ0 0 0 0 0 1 1 
+step.CALCULATE 0 0 0 1 0 1 
+step.DISTRIBUTION 0 0 1 0 0 1 
+step.READ1 0 1 0 0 0 1 
+step.WAITEMPTY 1 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context8_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context7_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context6_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context5_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context4_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context3_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context2_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context1_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst2|coding_queue:context0_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|step
+Name step.WAITEMPTY step.READ1 step.DISTRIBUTION step.CALCULATE step.READ0 step.00000000 
+step.00000000 0 0 0 0 0 0 
+step.READ0 0 0 0 0 1 1 
+step.CALCULATE 0 0 0 1 0 1 
+step.DISTRIBUTION 0 0 1 0 0 1 
+step.READ1 0 1 0 0 0 1 
+step.WAITEMPTY 1 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context8_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context7_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context6_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context5_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context4_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context3_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context2_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context1_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |img_coding|context_encoder:context_encoder_inst3|coding_queue:context0_inst1|coder:coder_inst1|step
+Name step.0010001 step.0010000 step.0001111 step.0001110 step.0001101 step.0001100 step.0001011 step.0001010 step.0001001 step.0001000 step.0000111 step.0000110 step.0000101 step.0000100 step.0000011 step.0000010 step.0000001 step.0000000 
+step.0000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+step.0000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+step.0000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+step.0000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+step.0000100 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+step.0000101 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+step.0000110 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+step.0000111 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+step.0001000 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+step.0001001 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+step.0001010 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+step.0001011 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+step.0001100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001101 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001110 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+step.0010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

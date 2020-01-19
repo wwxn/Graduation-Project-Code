@@ -1,0 +1,6 @@
+module controller
+(
+	input clk,
+	input rst_n,
+	
+);

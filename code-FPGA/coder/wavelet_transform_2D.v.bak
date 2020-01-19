@@ -1,0 +1,77 @@
+module wavelet_transform_2D
+(
+	input clk,
+	input rst_n,
+	input [15:0] data_input,
+	output data_in_ready
+);
+
+reg [7:0] step;
+reg [7:0] step_next;
+
+wire ram_wren;
+wire [11:0] ram_address_in;
+wire wavelet1D_endflag;
+wire [15:0] wavlet_1D_input;
+wire wavelet1D_reset_flag;
+wire [11:0] ram_inst1_address;
+wire wavelet_1D_data_in_ready;
+wire data_in_ready_flag=(step==8'd1)?1'b1:1'b0;
+wire wavelet1D_reset=rst_n&wavelet1D_reset_flag;
+assign data_in_ready=data_in_ready_flag&wavelet_1D_data_in_ready;
+assign wavelet1D_reset_flag=(step==8'd1)?1'b1:1'b0;
+assign wavlet_1D_input=(step==8'd1)?data_input:16'd0;
+assign ram_inst1_address=(step==8'd1)?ram_address_in:16'd0;
+assign ram_inst1_data_in=(step==8'd1)?ram_data_in:16'd0;
+assign ram_inst1_wren=(step==8'd1)?ram_wren:1'b0;
+
+
+always@(posedge clk or negedge rst_n)
+	if(!rst_n)
+		step<=8'd0;
+	else
+		step<=step_next;
+		
+always@*
+	case(step)
+	8'd0:step_next<=8'd1;
+	8'd1:
+		if(wavelet1D_endflag)
+			step_next<=8'd2;
+		else
+			step_next<=8'd1;
+	endcase
+	
+
+wavelet_transform_1D wavelet_transform_1D_inst
+(
+	.clk(clk),
+	.rst_n(wavelet1D_reset),
+	.data_input(wavlet_1D_input),
+	.data_in_ready(wavelet_1D_data_in_ready),
+	.ram_address_in(ram_address_in),
+	.ram_data_in(ram_data_in),
+	.ram_wren(ram_wren),
+	.end_flag(wavelet1D_endflag)
+);
+
+
+ram ram_inst1
+(
+	.address(ram_inst1_address),
+	.clock(clk),
+	.data(ram_inst1_data_in),
+	.wren(ram_inst1_wren),
+	.q()
+);
+
+ram ram_inst2
+(
+	.address(ram_inst2_address),
+	.clock(clk),
+	.data(ram_inst2_data_in),
+	.wren(ram_inst2_wren),
+	.q()
+);
+
+endmodule 

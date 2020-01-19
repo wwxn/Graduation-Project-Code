@@ -1,0 +1,33 @@
+`timescale 1ns/1ns
+module testbench();
+
+reg clk;
+reg [8:0] address;
+reg rst_n;
+wire q;
+
+
+initial begin
+	clk<=1'b0;
+	rst_n<=1'b1;
+	#20 rst_n<=1'b0;
+	#20 rst_n<=1'b1;
+end
+
+always #5 clk=~clk
+
+always@(posedge clk or negedge rst_n)
+if(!rst_n)
+	address<=9'd0;
+else
+	address<=address+1'd1;
+	
+	
+rom r1
+(
+	.address(address)
+	.clock(clk)
+	.q(q)
+)
+
+

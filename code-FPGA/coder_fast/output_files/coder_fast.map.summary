@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jan 18 21:37:36 2020
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : coder_fast
+Top-level Entity Name : mq_coder
+Family : Cyclone IV E
+Total logic elements : 1,020
+    Total combinational functions : 964
+    Dedicated logic registers : 130
+Total registers : 130
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

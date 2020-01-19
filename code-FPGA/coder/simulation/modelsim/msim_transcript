@@ -1,0 +1,851 @@
+# Reading D:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do coder_run_msim_rtl_verilog.do 
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+# vlib verilog_libs/altera_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
+# 
+# vmap altera_ver ./verilog_libs/altera_ver
+# Copying D:\modeltech64_10.1c\win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\modeltech64_10.1c\win64/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# vlog -vlog01compat -work altera_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_primitives.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module global
+# -- Compiling module carry
+# -- Compiling module cascade
+# -- Compiling module carry_sum
+# -- Compiling module exp
+# -- Compiling module soft
+# -- Compiling module opndrn
+# -- Compiling module row_global
+# -- Compiling module TRI
+# -- Compiling module lut_input
+# -- Compiling module lut_output
+# -- Compiling module latch
+# -- Compiling module dlatch
+# -- Compiling module prim_gdff
+# -- Compiling module dff
+# -- Compiling module dffe
+# -- Compiling module dffea
+# -- Compiling module dffeas
+# -- Compiling module prim_gtff
+# -- Compiling module tff
+# -- Compiling module tffe
+# -- Compiling module prim_gjkff
+# -- Compiling module jkff
+# -- Compiling module jkffe
+# -- Compiling module prim_gsrff
+# -- Compiling module srff
+# -- Compiling module srffe
+# -- Compiling module clklock
+# -- Compiling module alt_inbuf
+# -- Compiling module alt_outbuf
+# -- Compiling module alt_outbuf_tri
+# -- Compiling module alt_iobuf
+# -- Compiling module alt_inbuf_diff
+# -- Compiling module alt_outbuf_diff
+# -- Compiling module alt_outbuf_tri_diff
+# -- Compiling module alt_iobuf_diff
+# -- Compiling module alt_bidir_diff
+# -- Compiling module alt_bidir_buf
+# -- Compiling UDP PRIM_GDFF_LOW
+# -- Compiling UDP PRIM_GDFF_HIGH
+# 
+# Top level modules:
+# 	global
+# 	carry
+# 	cascade
+# 	carry_sum
+# 	exp
+# 	soft
+# 	opndrn
+# 	row_global
+# 	TRI
+# 	lut_input
+# 	lut_output
+# 	latch
+# 	dlatch
+# 	dff
+# 	dffe
+# 	dffea
+# 	dffeas
+# 	tff
+# 	tffe
+# 	jkff
+# 	jkffe
+# 	srff
+# 	srffe
+# 	clklock
+# 	alt_inbuf
+# 	alt_outbuf
+# 	alt_outbuf_tri
+# 	alt_iobuf
+# 	alt_inbuf_diff
+# 	alt_outbuf_diff
+# 	alt_outbuf_tri_diff
+# 	alt_iobuf_diff
+# 	alt_bidir_diff
+# 	alt_bidir_buf
+# 
+# vlib verilog_libs/lpm_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
+# 
+# vmap lpm_ver ./verilog_libs/lpm_ver
+# Modifying modelsim.ini
+# vlog -vlog01compat -work lpm_ver {d:/altera/13.1/quartus/eda/sim_lib/220model.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module LPM_MEMORY_INITIALIZATION
+# -- Compiling module LPM_HINT_EVALUATION
+# -- Compiling module LPM_DEVICE_FAMILIES
+# -- Compiling module lpm_constant
+# -- Compiling module lpm_inv
+# -- Compiling module lpm_and
+# -- Compiling module lpm_or
+# -- Compiling module lpm_xor
+# -- Compiling module lpm_bustri
+# -- Compiling module lpm_mux
+# -- Compiling module lpm_decode
+# -- Compiling module lpm_clshift
+# -- Compiling module lpm_add_sub
+# -- Compiling module lpm_compare
+# -- Compiling module lpm_mult
+# -- Compiling module lpm_divide
+# -- Compiling module lpm_abs
+# -- Compiling module lpm_counter
+# -- Compiling module lpm_latch
+# -- Compiling module lpm_ff
+# -- Compiling module lpm_shiftreg
+# -- Compiling module lpm_ram_dq
+# -- Compiling module lpm_ram_dp
+# -- Compiling module lpm_ram_io
+# -- Compiling module lpm_rom
+# -- Compiling module lpm_fifo
+# -- Compiling module lpm_fifo_dc_dffpipe
+# -- Compiling module lpm_fifo_dc_fefifo
+# -- Compiling module lpm_fifo_dc_async
+# -- Compiling module lpm_fifo_dc
+# -- Compiling module lpm_inpad
+# -- Compiling module lpm_outpad
+# -- Compiling module lpm_bipad
+# 
+# Top level modules:
+# 	lpm_constant
+# 	lpm_inv
+# 	lpm_and
+# 	lpm_or
+# 	lpm_xor
+# 	lpm_bustri
+# 	lpm_mux
+# 	lpm_decode
+# 	lpm_clshift
+# 	lpm_add_sub
+# 	lpm_compare
+# 	lpm_mult
+# 	lpm_divide
+# 	lpm_abs
+# 	lpm_counter
+# 	lpm_latch
+# 	lpm_ff
+# 	lpm_shiftreg
+# 	lpm_ram_dq
+# 	lpm_ram_dp
+# 	lpm_ram_io
+# 	lpm_rom
+# 	lpm_fifo
+# 	lpm_fifo_dc
+# 	lpm_inpad
+# 	lpm_outpad
+# 	lpm_bipad
+# 
+# vlib verilog_libs/sgate_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
+# 
+# vmap sgate_ver ./verilog_libs/sgate_ver
+# Modifying modelsim.ini
+# vlog -vlog01compat -work sgate_ver {d:/altera/13.1/quartus/eda/sim_lib/sgate.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module oper_add
+# -- Compiling module oper_addsub
+# -- Compiling module mux21
+# -- Compiling module io_buf_tri
+# -- Compiling module io_buf_opdrn
+# -- Compiling module oper_mult
+# -- Compiling module tri_bus
+# -- Compiling module oper_div
+# -- Compiling module oper_mod
+# -- Compiling module oper_left_shift
+# -- Compiling module oper_right_shift
+# -- Compiling module oper_rotate_left
+# -- Compiling module oper_rotate_right
+# -- Compiling module oper_less_than
+# -- Compiling module oper_mux
+# -- Compiling module oper_selector
+# -- Compiling module oper_decoder
+# -- Compiling module oper_bus_mux
+# -- Compiling module oper_latch
+# 
+# Top level modules:
+# 	oper_add
+# 	oper_addsub
+# 	mux21
+# 	io_buf_tri
+# 	io_buf_opdrn
+# 	oper_mult
+# 	tri_bus
+# 	oper_div
+# 	oper_mod
+# 	oper_left_shift
+# 	oper_right_shift
+# 	oper_rotate_left
+# 	oper_rotate_right
+# 	oper_less_than
+# 	oper_mux
+# 	oper_selector
+# 	oper_decoder
+# 	oper_bus_mux
+# 	oper_latch
+# 
+# vlib verilog_libs/altera_mf_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
+# 
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_mf_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_mf.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module MF_cycloneiiigl_m_cntr
+# -- Compiling module MF_cycloneiiigl_n_cntr
+# -- Compiling module MF_cycloneiiigl_scale_cntr
+# -- Compiling module cycloneiiigl_post_divider
+# -- Compiling module MF_cycloneiiigl_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratixv_local_clk_divider
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module alt3pram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module alt_cal_mm
+# -- Compiling module alt_cal_c3gxb
+# -- Compiling module alt_cal_sv
+# -- Compiling module alt_cal_av
+# -- Compiling module alt_aeq_s4
+# -- Compiling module alt_eyemon
+# -- Compiling module alt_dfe
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module sld_virtual_jtag_basic
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altclklock
+# 	altddio_bidir
+# 	altdpram
+# 	alt3pram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	alt_cal_mm
+# 	alt_cal_c3gxb
+# 	alt_cal_sv
+# 	alt_cal_av
+# 	alt_aeq_s4
+# 	alt_eyemon
+# 	alt_dfe
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	sld_virtual_jtag_basic
+# 	altsource_probe
+# 
+# vlib verilog_libs/altera_lnsim_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
+# 
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
+# Modifying modelsim.ini
+# vlog -sv -work altera_lnsim_ver {d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling package altera_lnsim_functions
+# -- Compiling package altera_generic_pll_functions
+# -- Compiling module generic_pll
+# -- Importing package altera_lnsim_functions
+# -- Importing package altera_generic_pll_functions
+# -- Compiling module generic_cdr
+# -- Compiling module common_28nm_ram_pulse_generator
+# -- Compiling module common_28nm_ram_register
+# -- Compiling module common_28nm_ram_block
+# -- Compiling module generic_m20k
+# -- Compiling module generic_m10k
+# -- Compiling module common_28nm_mlab_cell_pulse_generator
+# -- Compiling module common_28nm_mlab_latch
+# -- Compiling module common_28nm_mlab_cell_core
+# -- Compiling module common_porta_latches
+# -- Compiling module generic_28nm_hp_mlab_cell_impl
+# -- Compiling module common_porta_registers
+# -- Compiling module generic_28nm_lc_mlab_cell_impl
+# -- Compiling module generic_mux
+# -- Compiling module generic_device_pll
+# -- Compiling module altera_mult_add
+# -- Compiling module altera_mult_add_rtl
+# -- Compiling module ama_signed_extension_function
+# -- Compiling module ama_dynamic_signed_function
+# -- Compiling module ama_register_function
+# -- Compiling module ama_register_with_ext_function
+# -- Compiling module ama_data_split_reg_ext_function
+# -- Compiling module ama_coef_reg_ext_function
+# -- Compiling module ama_adder_function
+# -- Compiling module ama_multiplier_function
+# -- Compiling module ama_preadder_function
+# -- Compiling module ama_accumulator_function
+# -- Compiling module ama_systolic_adder_function
+# -- Compiling module ama_scanchain
+# -- Compiling module ama_latency_function
+# -- Compiling module altera_pll_reconfig_tasks
+# -- Compiling module altera_syncram
+# -- Compiling module ALTERA_LNSIM_MEMORY_INITIALIZATION
+# -- Compiling module altera_stratixv_pll
+# -- Compiling module altera_arriav_pll
+# -- Compiling module altera_arriavgz_pll
+# -- Compiling module altera_cyclonev_pll
+# -- Compiling module altera_pll
+# -- Compiling module dps_extra_kick
+# -- Compiling module dprio_init
+# -- Compiling module pll_dps_lcell_comb
+# -- Compiling module twentynm_iopll_ip
+# 
+# Top level modules:
+# 	generic_cdr
+# 	generic_m20k
+# 	generic_m10k
+# 	common_porta_latches
+# 	generic_28nm_hp_mlab_cell_impl
+# 	generic_28nm_lc_mlab_cell_impl
+# 	generic_mux
+# 	generic_device_pll
+# 	altera_mult_add
+# 	altera_pll_reconfig_tasks
+# 	altera_syncram
+# 	altera_pll
+# 
+# vlib verilog_libs/cycloneive_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/cycloneive_ver".
+# 
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver
+# Modifying modelsim.ini
+# vlog -vlog01compat -work cycloneive_ver {d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFE
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS_HIGH
+# -- Compiling module cycloneive_dffe
+# -- Compiling module cycloneive_mux21
+# -- Compiling module cycloneive_mux41
+# -- Compiling module cycloneive_and1
+# -- Compiling module cycloneive_and16
+# -- Compiling module cycloneive_bmux21
+# -- Compiling module cycloneive_b17mux21
+# -- Compiling module cycloneive_nmux21
+# -- Compiling module cycloneive_b5mux21
+# -- Compiling module cycloneive_latch
+# -- Compiling module cycloneive_routing_wire
+# -- Compiling module cycloneive_m_cntr
+# -- Compiling module cycloneive_n_cntr
+# -- Compiling module cycloneive_scale_cntr
+# -- Compiling module cycloneive_pll_reg
+# -- Compiling module cycloneive_pll
+# -- Compiling module cycloneive_lcell_comb
+# -- Compiling module cycloneive_ff
+# -- Compiling module cycloneive_ram_pulse_generator
+# -- Compiling module cycloneive_ram_register
+# -- Compiling module cycloneive_ram_block
+# -- Compiling module cycloneive_mac_data_reg
+# -- Compiling module cycloneive_mac_sign_reg
+# -- Compiling module cycloneive_mac_mult_internal
+# -- Compiling module cycloneive_mac_mult
+# -- Compiling module cycloneive_mac_out
+# -- Compiling module cycloneive_io_ibuf
+# -- Compiling module cycloneive_io_obuf
+# -- Compiling module cycloneive_ddio_out
+# -- Compiling module cycloneive_ddio_oe
+# -- Compiling module cycloneive_pseudo_diff_out
+# -- Compiling module cycloneive_io_pad
+# -- Compiling module cycloneive_ena_reg
+# -- Compiling module cycloneive_clkctrl
+# -- Compiling module cycloneive_rublock
+# -- Compiling module cycloneive_apfcontroller
+# -- Compiling module cycloneive_termination_ctrl
+# -- Compiling module cycloneive_termination_rupdn
+# -- Compiling module cycloneive_termination
+# -- Compiling module cycloneive_jtag
+# -- Compiling module cycloneive_crcblock
+# -- Compiling module cycloneive_oscillator
+# 
+# Top level modules:
+# 	cycloneive_dffe
+# 	cycloneive_and1
+# 	cycloneive_and16
+# 	cycloneive_bmux21
+# 	cycloneive_b17mux21
+# 	cycloneive_nmux21
+# 	cycloneive_b5mux21
+# 	cycloneive_pll_reg
+# 	cycloneive_pll
+# 	cycloneive_lcell_comb
+# 	cycloneive_ff
+# 	cycloneive_ram_block
+# 	cycloneive_mac_mult
+# 	cycloneive_mac_out
+# 	cycloneive_io_ibuf
+# 	cycloneive_io_obuf
+# 	cycloneive_ddio_out
+# 	cycloneive_ddio_oe
+# 	cycloneive_pseudo_diff_out
+# 	cycloneive_io_pad
+# 	cycloneive_clkctrl
+# 	cycloneive_rublock
+# 	cycloneive_apfcontroller
+# 	cycloneive_termination
+# 	cycloneive_jtag
+# 	cycloneive_crcblock
+# 	cycloneive_oscillator
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/coder.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module coder
+# 
+# Top level modules:
+# 	coder
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/rom.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/shift_ram.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module shift_ram
+# 
+# Top level modules:
+# 	shift_ram
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/ram.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_2D.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module wavelet_transform_2D
+# 
+# Top level modules:
+# 	wavelet_transform_2D
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/lifted_wavelet_decomposition.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module lifted_wavelet_decomposition
+# 
+# Top level modules:
+# 	lifted_wavelet_decomposition
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module wavelet_transform_1D
+# 
+# Top level modules:
+# 	wavelet_transform_1D
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/img_coding.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module img_coding
+# 
+# Top level modules:
+# 	img_coding
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/encoder_shift_register.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module encoder_shift_register
+# 
+# Top level modules:
+# 	encoder_shift_register
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/coding_queue.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module coding_queue
+# 
+# Top level modules:
+# 	coding_queue
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/fifo.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module context_encoder
+# 
+# Top level modules:
+# 	context_encoder
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/fpga_project/coder {C:/Users/wxn/Desktop/fpga_project/coder/testbench.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast__1)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast__2)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast__3)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast__4)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast__5)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast__6)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast__7)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "coder(fast__8)".
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(476): (vopt-2685) [TFMPC] - Too few port connections for 'context0_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(476): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(491): (vopt-2685) [TFMPC] - Too few port connections for 'context1_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(491): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(506): (vopt-2685) [TFMPC] - Too few port connections for 'context2_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(506): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(521): (vopt-2685) [TFMPC] - Too few port connections for 'context3_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(521): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(536): (vopt-2685) [TFMPC] - Too few port connections for 'context4_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(536): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(551): (vopt-2685) [TFMPC] - Too few port connections for 'context5_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(551): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(566): (vopt-2685) [TFMPC] - Too few port connections for 'context6_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(566): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(581): (vopt-2685) [TFMPC] - Too few port connections for 'context7_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(581): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(596): (vopt-2685) [TFMPC] - Too few port connections for 'context8_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/context_encoder.v(596): (vopt-2718) [TFMPC] - Missing connection for port 'space_used'.
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "context_encoder(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "lifted_wavelet_decomposition(fast)".
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(408): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst1'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(408): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(423): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst2'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(423): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(438): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst3'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(438): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(453): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst4'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(453): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(468): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst5'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(468): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(483): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst6'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(483): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(498): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst7'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(498): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(512): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst8'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(512): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(527): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst9'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(527): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(542): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst10'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(542): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(557): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst11'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(557): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(571): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst12'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(571): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(586): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst13'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(586): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(601): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst14'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(601): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(616): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst15'.  Expected 12, found 11.
+# 
+# ** Warning: C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(616): (vopt-2718) [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "wavelet_transform_1D(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "wavelet_transform_2D(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "img_coding(fast)".
+# 
+# Loading work.testbench(fast)
+# Loading work.img_coding(fast)
+# Loading work.context_encoder(fast)
+# Loading work.coding_queue(fast)
+# Loading work.fifo(fast)
+# Loading altera_mf_ver.scfifo(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading work.coder(fast)
+# Loading work.rom(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.coding_queue(fast__1)
+# Loading work.coder(fast__1)
+# Loading work.coding_queue(fast__2)
+# Loading work.coder(fast__2)
+# Loading work.coding_queue(fast__3)
+# Loading work.coder(fast__3)
+# Loading work.coding_queue(fast__4)
+# Loading work.coder(fast__4)
+# Loading work.coding_queue(fast__5)
+# Loading work.coder(fast__5)
+# Loading work.coding_queue(fast__6)
+# Loading work.coder(fast__6)
+# Loading work.coding_queue(fast__7)
+# Loading work.coder(fast__7)
+# Loading work.coding_queue(fast__8)
+# Loading work.coder(fast__8)
+# Loading work.encoder_shift_register(fast)
+# Loading altera_mf_ver.altshift_taps(fast)
+# Loading work.wavelet_transform_2D(fast)
+# Loading work.wavelet_transform_1D(fast)
+# Loading work.lifted_wavelet_decomposition(fast)
+# Loading work.shift_ram(fast)
+# Loading altera_mf_ver.altshift_taps(fast__1)
+# Loading work.ram(fast)
+# Loading altera_mf_ver.altsyncram(fast__1)
+# ** Warning: (vsim-3016) C:/Users/wxn/Desktop/fpga_project/coder/encoder_shift_register.v(83): Port type is incompatible with connection (port 'aclr').
+# 
+#         Region: /testbench/img_coding_inst1/encoder_shift_register_inst1/ALTSHIFT_TAPS_component
+# ** Warning: (vsim-3016) C:/Users/wxn/Desktop/fpga_project/coder/encoder_shift_register.v(83): Port type is incompatible with connection (port 'aclr').
+# 
+#         Region: /testbench/img_coding_inst1/encoder_shift_register_inst2/ALTSHIFT_TAPS_component
+# ** Warning: (vsim-3016) C:/Users/wxn/Desktop/fpga_project/coder/encoder_shift_register.v(83): Port type is incompatible with connection (port 'aclr').
+# 
+#         Region: /testbench/img_coding_inst1/encoder_shift_register_inst3/ALTSHIFT_TAPS_component
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(408): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst1
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(408): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(423): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst2
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(423): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(438): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst3
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(438): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(453): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst4
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(453): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(468): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst5
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(468): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(483): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst6
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(483): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(498): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst7
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(498): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(512): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst8
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(512): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(527): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst9
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(527): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(542): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst10
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(542): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(557): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst11
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(557): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(571): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst12
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(571): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(586): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst13
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(586): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(601): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst14
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(601): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(616): [TFMPC] - Too few port connections. Expected 12, found 11.
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/lifted_wavelet_decomposition_inst15
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/fpga_project/coder/wavelet_transform_1D.v(616): [TFMPC] - Missing connection for port 'update_flag'.
+# 
+# ** Warning: (vsim-3016) C:/Users/wxn/Desktop/fpga_project/coder/shift_ram.v(148): Port type is incompatible with connection (port 'aclr').
+# 
+#         Region: /testbench/img_coding_inst1/wavelet_transform_2D_inst1/wavelet_transform_1D_inst/shift_ram_inst1/ALTSHIFT_TAPS_component
+# 
+# add wave *
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 ps
+add wave -r /*
+run
