@@ -507,28 +507,183 @@
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/bit_plane_coder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/tables.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module tables
+# 
+# Top level modules:
+# 	tables
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/mq_coder.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mq_coder
+# 
+# Top level modules:
+# 	mq_coder
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/find_highest_bit.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module find_highest_bit
+# 
+# Top level modules:
+# 	find_highest_bit
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/code_queue.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module code_queue
+# 
+# Top level modules:
+# 	code_queue
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_fast.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module wavelet_fast
+# 
+# Top level modules:
+# 	wavelet_fast
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/ram.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/controller.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/fifo.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_transform.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module wavelet_transform
+# 
+# Top level modules:
+# 	wavelet_transform
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_queue.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module wavelet_queue
+# 
+# Top level modules:
+# 	wavelet_queue
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/bit_fifo.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module bit_fifo
+# 
+# Top level modules:
+# 	bit_fifo
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/cx_fifo.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module cx_fifo
+# 
+# Top level modules:
+# 	cx_fifo
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/bit_plane_coder.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module bit_plane_coder
 # 
 # Top level modules:
 # 	bit_plane_coder
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/bit_plane_coder_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/ram_reader.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-# -- Compiling module bit_plane_coder_tb
+# -- Compiling module ram_reader
 # 
 # Top level modules:
-# 	bit_plane_coder_tb
+# 	ram_reader
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/img_coder.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module img_coder
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  bit_plane_coder_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps bit_plane_coder_tb 
+# Top level modules:
+# 	img_coder
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/ram_conversion.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module ram_conversion
+# 
+# Top level modules:
+# 	ram_conversion
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_transform_tb.v}
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module wavelet_transform_tb
+# 
+# Top level modules:
+# 	wavelet_transform_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  wavelet_transform_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps wavelet_transform_tb 
 # ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "mq_coder(fast)".
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/code_queue.v(62): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_bit_fifo_inst1'.  Expected 8, found 6.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/code_queue.v(62): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/code_queue.v(62): (vopt-2718) [TFMPC] - Missing connection for port 'empty'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/code_queue.v(73): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_cx_fifo_inst1'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/code_queue.v(73): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
 # 
 # ** Note: (vopt-143) Recognized 1 FSM in module "bit_plane_coder(fast)".
 # 
-# Loading work.bit_plane_coder_tb(fast)
+# ** Note: (vopt-143) Recognized 1 FSM in module "ram_reader(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "wavelet_fast(fast)".
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_queue.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_fifo_even'.  Expected 8, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_queue.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_queue.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_fifo_odd'.  Expected 8, found 6.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_queue.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_queue.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'empty'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_transform.v(154): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_wavelet_queue_inst1'.  Expected 13, found 12.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_transform.v(154): (vopt-2718) [TFMPC] - Missing connection for port 'output_valid'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/img_coder.v(77): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_wavlet_transform_inst1'.  Expected 9, found 7.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/img_coder.v(77): (vopt-2718) [TFMPC] - Missing connection for port 'ram_out_b'.
+# 
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/img_coder.v(77): (vopt-2718) [TFMPC] - Missing connection for port 'address_b_input'.
+# 
+# Loading work.wavelet_transform_tb(fast)
+# Loading work.img_coder(fast)
+# Loading work.code_queue(fast)
+# Loading work.bit_fifo(fast)
+# Loading altera_mf_ver.scfifo(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading work.cx_fifo(fast)
+# Loading altera_mf_ver.scfifo(fast__1)
+# Loading work.mq_coder(fast)
+# Loading work.find_highest_bit(fast)
+# Loading work.tables(fast)
+# Loading work.ram_conversion(fast)
 # Loading work.bit_plane_coder(fast)
+# Loading work.ram_reader(fast)
+# Loading work.wavelet_transform(fast)
+# Loading work.controller(fast)
+# Loading work.ram(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.wavelet_queue(fast)
+# Loading work.fifo(fast)
+# Loading altera_mf_ver.scfifo(fast__2)
+# Loading work.wavelet_fast(fast)
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/img_coder.v(77): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /wavelet_transform_tb/img_coder_inst1/b2v_wavlet_transform_inst1
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/img_coder.v(77): [TFMPC] - Missing connection for port 'ram_out_b'.
+# 
 # 
 # add wave *
 # 
@@ -537,6 +692,9 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1 ps
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: wavelet_transform_tb.img_coder_inst1.b2v_wavlet_transform_inst1.b2v_ram_inst1.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: wavelet_transform_tb.img_coder_inst1.b2v_wavlet_transform_inst1.b2v_ram_inst2.altsyncram_component
 add wave -r /*
-run
 run

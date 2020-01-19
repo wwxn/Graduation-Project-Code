@@ -150,7 +150,7 @@ applicable agreement for further details.
 (symbol
 	(rect 544 200 832 440)
 	(text "ram_reader" (rect 5 0 81 15)(font "Arial" ))
-	(text "inst" (rect 8 224 31 239)(font "Arial" ))
+	(text "ram_reader_inst1" (rect 8 224 124 239)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -277,7 +277,7 @@ applicable agreement for further details.
 (symbol
 	(rect 1112 184 1312 456)
 	(text "bit_plane_coder" (rect 5 0 110 15)(font "Arial" ))
-	(text "inst1" (rect 8 256 39 271)(font "Arial" ))
+	(text "bit_plane_coder_inst1" (rect 8 256 153 271)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)

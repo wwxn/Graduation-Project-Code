@@ -11,7 +11,7 @@ I7OTd6R5HC=bAWmla3=>>f0
 V923_da3?^fb3ej<NP[F:Z0
 Z1 !s105 altera_lnsim_sv_unit
 S1
-Z2 dC:\Users\wxn\Desktop\desktop-tutorial\code-FPGA\img_coder\simulation\modelsim
+Z2 dC:\Users\wxn\Desktop\Graduation-Project-Code\code-FPGA\img_coder\simulation\modelsim
 Z3 w1382637182
 Z4 8d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv
 Z5 Fd:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv
@@ -20,7 +20,7 @@ Z6 OL;L;10.1c;51
 r1
 !s85 0
 31
-Z7 !s108 1579415212.415000
+Z7 !s108 1579435812.132000
 Z8 !s107 d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv|
 Z9 !s90 -reportprogress|300|-sv|-work|altera_lnsim_ver|d:/altera/13.1/quartus/eda/sim_lib/altera_lnsim.sv|
 Z10 o-sv -work altera_lnsim_ver -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF

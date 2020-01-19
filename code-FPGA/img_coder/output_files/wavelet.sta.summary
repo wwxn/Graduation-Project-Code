@@ -3,75 +3,171 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -23.797
-TNS   : -2205.956
+Slack : -24.115
+TNS   : -5507.849
+
+Type  : Slow 1200mV 85C Model Setup 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : -5.588
+TNS   : -46.159
+
+Type  : Slow 1200mV 85C Model Setup 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : -4.369
+TNS   : -19.680
 
 Type  : Slow 1200mV 85C Model Setup 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : -1.405
-TNS   : -2.661
+Slack : -1.696
+TNS   : -2.906
+
+Type  : Slow 1200mV 85C Model Hold 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : -0.262
+TNS   : -0.504
+
+Type  : Slow 1200mV 85C Model Hold 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : 0.328
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.435
+Slack : 0.434
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : 0.734
+Slack : 0.697
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -4.252
+TNS   : -623.882
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 0.725
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.201
-TNS   : -277.618
+TNS   : -1318.275
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : 0.398
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : 0.464
+Slack : 0.459
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -22.346
-TNS   : -2055.279
+Slack : -22.630
+TNS   : -5099.899
+
+Type  : Slow 1200mV 0C Model Setup 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : -5.140
+TNS   : -42.924
+
+Type  : Slow 1200mV 0C Model Setup 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : -4.107
+TNS   : -18.031
 
 Type  : Slow 1200mV 0C Model Setup 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : -1.245
-TNS   : -2.325
+Slack : -1.494
+TNS   : -2.527
+
+Type  : Slow 1200mV 0C Model Hold 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : -0.164
+TNS   : -0.315
+
+Type  : Slow 1200mV 0C Model Hold 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : 0.226
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.384
+Slack : 0.383
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : 0.693
+Slack : 0.654
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -3.747
+TNS   : -547.840
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 0.651
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.201
-TNS   : -277.618
+TNS   : -1318.275
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : 0.285
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : 0.396
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : 0.486
+Slack : 0.487
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -9.755
-TNS   : -868.415
+Slack : -9.967
+TNS   : -2009.024
+
+Type  : Fast 1200mV 0C Model Setup 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : -1.855
+TNS   : -13.619
+
+Type  : Fast 1200mV 0C Model Setup 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : -1.355
+TNS   : -5.190
 
 Type  : Fast 1200mV 0C Model Setup 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : -0.090
-TNS   : -0.111
+Slack : -0.216
+TNS   : -0.216
+
+Type  : Fast 1200mV 0C Model Hold 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : 0.032
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.179
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : 0.174
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : 0.324
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -1.421
+TNS   : -199.141
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.261
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -189.171
+TNS   : -698.567
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'wavelet_transform:b2v_wavlet_transform_inst1|controller:b2v_controller_inst1|step.END'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|wavelet_fast:b2v_inst|step.STOP'
+Slack : 0.386
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'code_queue:b2v_code_queue_inst1|mq_coder:b2v_mqcoder_inst1|step.UPDATE'
-Slack : 0.424
+Slack : 0.420
 TNS   : 0.000
 
 ------------------------------------------------------------

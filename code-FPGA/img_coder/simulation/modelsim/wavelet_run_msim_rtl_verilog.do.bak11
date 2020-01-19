@@ -33,11 +33,26 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/bit_plane_coder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/tables.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/mq_coder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/find_highest_bit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/code_queue.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_fast.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/ram.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/controller.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/fifo.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_transform.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_queue.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/bit_fifo.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/cx_fifo.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/bit_plane_coder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/ram_reader.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/img_coder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/ram_conversion.v}
 
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/bit_plane_coder_tb.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_transform_tb.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  bit_plane_coder_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  wavelet_transform_tb
 
 add wave *
 view structure

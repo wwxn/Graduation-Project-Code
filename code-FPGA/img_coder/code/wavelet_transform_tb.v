@@ -40,13 +40,15 @@ always@(posedge clk)
 		row_address<=row_address+2'd2;
 	end
 
-
-wavelet_transform wavelet_transform_1
+img_coder img_coder_inst1
 (
 	.clk(clk),
 	.rst_n(rst_n),
 	.data_in_even(16'd0+shiftin_even),
-	.data_in_odd(16'd0+shiftin_odd)
+	.data_in_odd(16'd0+shiftin_odd),
+	.output_valid(),
+	.byte_out()
 );
+
 
 endmodule 

@@ -23,7 +23,13 @@ step.WAVELET4 0 0 1 0 0 0 0 0 0 0 0 1
 step.BUFFER3 0 1 0 0 0 0 0 0 0 0 0 1 
 step.END 1 0 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |img_coder|ram_conversion:b2v_inst|bit_plane_coder:b2v_inst1|step
+State Machine - |img_coder|ram_conversion:b2v_inst|ram_reader:b2v_ram_reader_inst1|step
+Name step.LOAD step.WAIT step.IDLE 
+step.IDLE 0 0 0 
+step.LOAD 1 0 1 
+step.WAIT 0 1 1 
+
+State Machine - |img_coder|ram_conversion:b2v_inst|bit_plane_coder:b2v_bit_plane_coder_inst1|step
 Name step.UPDATE 
 step.IDLE 0 
 step.UPDATE 1 

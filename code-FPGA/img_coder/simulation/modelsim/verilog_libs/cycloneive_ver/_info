@@ -8,7 +8,7 @@ vcycloneive_and1
 !s100 Rhg_6PcoCJO6`HUj2k^`m1
 I5zK;AfX8^SWff`V8OVL2G3
 VNH_j4U3R9jd^MlQIV[Y:M3
-Z0 dC:\Users\wxn\Desktop\desktop-tutorial\code-FPGA\img_coder\simulation\modelsim
+Z0 dC:\Users\wxn\Desktop\Graduation-Project-Code\code-FPGA\img_coder\simulation\modelsim
 Z1 w1382639398
 Z2 8d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v
 Z3 Fd:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v
@@ -17,7 +17,7 @@ Z4 OL;L;10.1c;51
 r1
 !s85 0
 31
-Z5 !s108 1579415214.043000
+Z5 !s108 1579435813.541000
 Z6 !s107 d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v|
 Z7 !s90 -reportprogress|300|-vlog01compat|-work|cycloneive_ver|d:/altera/13.1/quartus/eda/sim_lib/cycloneive_atoms.v|
 Z8 o-vlog01compat -work cycloneive_ver -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
@@ -26,7 +26,7 @@ vcycloneive_and16
 !s100 ZTWIIL4jfVO3oJJYANlF42
 I[K[nWNH9kTdNIh4AhM0OJ3
 V:PkM?bY>0iSQN<?^XDd_B0
-Z9 dC:\Users\wxn\Desktop\desktop-tutorial\code-FPGA\img_coder\simulation\modelsim
+Z9 dC:\Users\wxn\Desktop\Graduation-Project-Code\code-FPGA\img_coder\simulation\modelsim
 R1
 R2
 R3
