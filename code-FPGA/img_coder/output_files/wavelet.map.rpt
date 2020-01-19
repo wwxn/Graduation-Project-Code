@@ -1,5 +1,5 @@
 Analysis & Synthesis report for wavelet
-Sun Jan 19 15:40:08 2020
+Sun Jan 19 16:47:47 2020
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jan 19 15:40:08 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan 19 16:47:47 2020       ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; wavelet                                     ;
 ; Top-level Entity Name              ; img_coder                                   ;
@@ -196,62 +196,62 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                       ; Library ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------+---------+
-; code/tables.v                    ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/tables.v            ;         ;
-; code/mq_coder.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/mq_coder.v          ;         ;
-; code/find_highest_bit.v          ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/find_highest_bit.v  ;         ;
-; code/code_queue.v                ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/code_queue.v        ;         ;
-; code/wavelet_fast.v              ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/wavelet_fast.v      ;         ;
-; ipcore/ram.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/ram.v             ;         ;
-; code/controller.v                ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/controller.v        ;         ;
-; ipcore/fifo.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/fifo.v            ;         ;
-; code/wavelet_transform.v         ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/wavelet_transform.v ;         ;
-; code/wavelet_queue.v             ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/wavelet_queue.v     ;         ;
-; ipcore/bit_fifo.v                ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/bit_fifo.v        ;         ;
-; ipcore/cx_fifo.v                 ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/cx_fifo.v         ;         ;
-; code/bit_plane_coder.v           ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/bit_plane_coder.v   ;         ;
-; code/ram_reader.v                ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/ram_reader.v        ;         ;
-; code/img_coder.v                 ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/img_coder.v         ;         ;
-; code/ram_conversion.v            ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/code/ram_conversion.v    ;         ;
-; scfifo.tdf                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/scfifo.tdf                          ;         ;
-; a_regfifo.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_regfifo.inc                       ;         ;
-; a_dpfifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_dpfifo.inc                        ;         ;
-; a_i2fifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_i2fifo.inc                        ;         ;
-; a_fffifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_fffifo.inc                        ;         ;
-; a_f2fifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_f2fifo.inc                        ;         ;
-; aglobal131.inc                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                      ;         ;
-; db/scfifo_8d31.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/scfifo_8d31.tdf       ;         ;
-; db/a_dpfifo_fj31.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/a_dpfifo_fj31.tdf     ;         ;
-; db/altsyncram_brd1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/altsyncram_brd1.tdf   ;         ;
-; db/cmpr_hs8.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/cmpr_hs8.tdf          ;         ;
-; db/cntr_unb.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/cntr_unb.tdf          ;         ;
-; db/cntr_bo7.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/cntr_bo7.tdf          ;         ;
-; db/cntr_vnb.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/cntr_vnb.tdf          ;         ;
-; db/scfifo_bd31.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/scfifo_bd31.tdf       ;         ;
-; db/a_dpfifo_ij31.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/a_dpfifo_ij31.tdf     ;         ;
-; db/altsyncram_hrd1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/altsyncram_hrd1.tdf   ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                      ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc               ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                         ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                      ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                       ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                          ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc                          ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                        ;         ;
-; db/altsyncram_j5l2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/altsyncram_j5l2.tdf   ;         ;
-; pic_ram.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/pic_ram.mif              ;         ;
-; db/scfifo_ij31.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/scfifo_ij31.tdf       ;         ;
-; db/a_dpfifo_pp31.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/a_dpfifo_pp31.tdf     ;         ;
-; db/a_fefifo_t7e.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/a_fefifo_t7e.tdf      ;         ;
-; db/cntr_go7.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/cntr_go7.tdf          ;         ;
-; db/dpram_k811.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/dpram_k811.tdf        ;         ;
-; db/altsyncram_s3k1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/altsyncram_s3k1.tdf   ;         ;
-; db/cntr_4ob.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/db/cntr_4ob.tdf          ;         ;
-+----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                              ; Library ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------+---------+
+; code/tables.v                    ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/tables.v            ;         ;
+; code/mq_coder.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/mq_coder.v          ;         ;
+; code/find_highest_bit.v          ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/find_highest_bit.v  ;         ;
+; code/code_queue.v                ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/code_queue.v        ;         ;
+; code/wavelet_fast.v              ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_fast.v      ;         ;
+; ipcore/ram.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/ram.v             ;         ;
+; code/controller.v                ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/controller.v        ;         ;
+; ipcore/fifo.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/fifo.v            ;         ;
+; code/wavelet_transform.v         ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_transform.v ;         ;
+; code/wavelet_queue.v             ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/wavelet_queue.v     ;         ;
+; ipcore/bit_fifo.v                ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/bit_fifo.v        ;         ;
+; ipcore/cx_fifo.v                 ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/cx_fifo.v         ;         ;
+; code/bit_plane_coder.v           ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/bit_plane_coder.v   ;         ;
+; code/ram_reader.v                ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/ram_reader.v        ;         ;
+; code/img_coder.v                 ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/img_coder.v         ;         ;
+; code/ram_conversion.v            ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/code/ram_conversion.v    ;         ;
+; scfifo.tdf                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/scfifo.tdf                                 ;         ;
+; a_regfifo.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_regfifo.inc                              ;         ;
+; a_dpfifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_dpfifo.inc                               ;         ;
+; a_i2fifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_i2fifo.inc                               ;         ;
+; a_fffifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_fffifo.inc                               ;         ;
+; a_f2fifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_f2fifo.inc                               ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                             ;         ;
+; db/scfifo_8d31.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/scfifo_8d31.tdf       ;         ;
+; db/a_dpfifo_fj31.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/a_dpfifo_fj31.tdf     ;         ;
+; db/altsyncram_brd1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/altsyncram_brd1.tdf   ;         ;
+; db/cmpr_hs8.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/cmpr_hs8.tdf          ;         ;
+; db/cntr_unb.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/cntr_unb.tdf          ;         ;
+; db/cntr_bo7.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/cntr_bo7.tdf          ;         ;
+; db/cntr_vnb.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/cntr_vnb.tdf          ;         ;
+; db/scfifo_bd31.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/scfifo_bd31.tdf       ;         ;
+; db/a_dpfifo_ij31.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/a_dpfifo_ij31.tdf     ;         ;
+; db/altsyncram_hrd1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/altsyncram_hrd1.tdf   ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                             ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                      ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                                ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                             ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                              ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                                 ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc                                 ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                               ;         ;
+; db/altsyncram_j5l2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/altsyncram_j5l2.tdf   ;         ;
+; pic_ram.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/pic_ram.mif              ;         ;
+; db/scfifo_ij31.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/scfifo_ij31.tdf       ;         ;
+; db/a_dpfifo_pp31.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/a_dpfifo_pp31.tdf     ;         ;
+; db/a_fefifo_t7e.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/a_fefifo_t7e.tdf      ;         ;
+; db/cntr_go7.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/cntr_go7.tdf          ;         ;
+; db/dpram_k811.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/dpram_k811.tdf        ;         ;
+; db/altsyncram_s3k1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/altsyncram_s3k1.tdf   ;         ;
+; db/cntr_4ob.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/db/cntr_4ob.tdf          ;         ;
++----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -323,18 +323,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                          ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                                                  ; IP Include File                                                             ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |img_coder|code_queue:b2v_code_queue_inst1|bit_fifo:b2v_bit_fifo_inst1                                           ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/bit_fifo.v ;
-; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |img_coder|code_queue:b2v_code_queue_inst1|cx_fifo:b2v_cx_fifo_inst1                                             ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/cx_fifo.v  ;
-; Altera ; RAM: 2-PORT  ; 13.1    ; N/A          ; N/A          ; |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|ram:b2v_ram_inst1                                        ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/ram.v      ;
-; Altera ; RAM: 2-PORT  ; 13.1    ; N/A          ; N/A          ; |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|ram:b2v_ram_inst2                                        ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/ram.v      ;
-; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_even ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/fifo.v     ;
-; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_odd  ; C:/Users/wxn/Desktop/desktop-tutorial/code-FPGA/img_coder/ipcore/fifo.v     ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                 ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                                                  ; IP Include File                                                                    ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |img_coder|code_queue:b2v_code_queue_inst1|bit_fifo:b2v_bit_fifo_inst1                                           ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/bit_fifo.v ;
+; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |img_coder|code_queue:b2v_code_queue_inst1|cx_fifo:b2v_cx_fifo_inst1                                             ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/cx_fifo.v  ;
+; Altera ; RAM: 2-PORT  ; 13.1    ; N/A          ; N/A          ; |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|ram:b2v_ram_inst1                                        ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/ram.v      ;
+; Altera ; RAM: 2-PORT  ; 13.1    ; N/A          ; N/A          ; |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|ram:b2v_ram_inst2                                        ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/ram.v      ;
+; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_even ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/fifo.v     ;
+; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |img_coder|wavelet_transform:b2v_wavlet_transform_inst1|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_odd  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/img_coder/ipcore/fifo.v     ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -2373,7 +2373,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun Jan 19 15:39:56 2020
+    Info: Processing started: Sun Jan 19 16:47:35 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off wavelet -c wavelet
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file code/tables.v
@@ -2720,9 +2720,9 @@ Info (21057): Implemented 1042 device resources after synthesis - the final reso
     Info (21061): Implemented 994 logic cells
     Info (21064): Implemented 5 RAM segments
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 127 warnings
-    Info: Peak virtual memory: 406 megabytes
-    Info: Processing ended: Sun Jan 19 15:40:08 2020
+    Info: Peak virtual memory: 404 megabytes
+    Info: Processing ended: Sun Jan 19 16:47:47 2020
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Total CPU time (on all processors): 00:00:11
 
 

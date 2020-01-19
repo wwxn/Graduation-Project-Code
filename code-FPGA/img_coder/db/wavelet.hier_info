@@ -33,15 +33,15 @@ data_in_odd[12] => data_in_odd[12].IN1
 data_in_odd[13] => data_in_odd[13].IN1
 data_in_odd[14] => data_in_odd[14].IN1
 data_in_odd[15] => data_in_odd[15].IN1
-output_valid <= code_queue:b2v_code_queue_inst1.output_valid
-byte_out[0] <= code_queue:b2v_code_queue_inst1.byte_out
-byte_out[1] <= code_queue:b2v_code_queue_inst1.byte_out
-byte_out[2] <= code_queue:b2v_code_queue_inst1.byte_out
-byte_out[3] <= code_queue:b2v_code_queue_inst1.byte_out
-byte_out[4] <= code_queue:b2v_code_queue_inst1.byte_out
-byte_out[5] <= code_queue:b2v_code_queue_inst1.byte_out
-byte_out[6] <= code_queue:b2v_code_queue_inst1.byte_out
-byte_out[7] <= code_queue:b2v_code_queue_inst1.byte_out
+output_valid << code_queue:b2v_code_queue_inst1.output_valid
+byte_out[0] << code_queue:b2v_code_queue_inst1.byte_out
+byte_out[1] << code_queue:b2v_code_queue_inst1.byte_out
+byte_out[2] << code_queue:b2v_code_queue_inst1.byte_out
+byte_out[3] << code_queue:b2v_code_queue_inst1.byte_out
+byte_out[4] << code_queue:b2v_code_queue_inst1.byte_out
+byte_out[5] << code_queue:b2v_code_queue_inst1.byte_out
+byte_out[6] << code_queue:b2v_code_queue_inst1.byte_out
+byte_out[7] << code_queue:b2v_code_queue_inst1.byte_out
 
 
 |img_coder|code_queue:b2v_code_queue_inst1
