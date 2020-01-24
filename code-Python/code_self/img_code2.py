@@ -76,7 +76,7 @@ if __name__ == "__main__":
             for j in range(0, 512):
                 subband = judge_subband((i, j))
                 if subband == 'LL':
-                    img_wavelet[i][j] = int(img_wavelet[i][j] / 8)
+                    img_wavelet[i][j] = int(img_wavelet[i][j] )
                 elif subband == 'LH1' or subband == 'HL1':
                     img_wavelet[i][j] = int(img_wavelet[i][j] / 8)
                 elif subband == 'HH1':
@@ -89,7 +89,7 @@ if __name__ == "__main__":
             bit_plane.append((img_wavelet >> i) & 1)
         for subband in subbands:
             if subband == 'LL':
-                for x in range(0, 6):
+                for x in range(0, 9):
                     code_bit_plane(subband, bit_plane=bit_plane[x], D_list=D_list, CX_list=CX_list)
             elif subband == 'LH1' or subband == 'HL1':
                 for x in range(0, 6):
@@ -110,7 +110,7 @@ if __name__ == "__main__":
             for j in range(0, 512):
                 subband = judge_subband((i, j))
                 if subband == 'LL':
-                    wavelet_reconstruction[i][j] = int(img_wavelet[i][j] * 8)
+                    wavelet_reconstruction[i][j] = int(img_wavelet[i][j] )
                 elif subband == 'LH1' or subband == 'HL1':
                     wavelet_reconstruction[i][j] = int(img_wavelet[i][j] * 8)
                 elif subband == 'HH1':
@@ -133,4 +133,4 @@ if __name__ == "__main__":
     for i in range(0, 100):
         f.write("{:d}\n".format(img_code.sum_list[i]))
     f.close()
-    # cv2.waitKey()
+    cv2.waitKey()
