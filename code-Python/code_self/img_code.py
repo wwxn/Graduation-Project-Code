@@ -100,6 +100,7 @@ def j2k_judge_context(point: tuple, pic: np.ndarray) -> int:
             return 0
 
 sum_list=[0]*100
+num_1_list=[0]*100
 def judge_context(point: tuple, pic: np.ndarray) -> int:
     sumup = 0
     x = point[0]
@@ -125,6 +126,8 @@ def judge_context(point: tuple, pic: np.ndarray) -> int:
         elif (x > 256) and (x < 511) and (y > 256) and (y < 511):
             sumup = sum_weighted(point, pic, weight_HH2)
     sum_list[sumup]+=1
+    if pic[x][y]==1:
+        num_1_list[sumup]+=1
     if sumup <= 4:
         return 0
     elif sumup <= 14:
