@@ -698,4 +698,3 @@
 # Time: 0  Instance: wavelet_transform_tb.img_coder_inst1.b2v_wavlet_transform_inst1.b2v_ram_inst2.altsyncram_component
 add wave -r /*
 run
-run

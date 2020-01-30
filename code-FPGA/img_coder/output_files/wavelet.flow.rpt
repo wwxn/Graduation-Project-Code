@@ -1,5 +1,5 @@
 Flow report for wavelet
-Sun Jan 19 20:09:52 2020
+Thu Jan 30 16:37:55 2020
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Jan 19 20:09:52 2020       ;
+; Flow Status                        ; Successful - Thu Jan 30 16:37:55 2020       ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; wavelet                                     ;
 ; Top-level Entity Name              ; img_coder                                   ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/19/2020 20:09:38 ;
+; Start date & time ; 01/30/2020 16:37:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; wavelet             ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id           ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID                ; 1097959291526.157943577811980         ; --            ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID                ; 1097959291526.158037346200400         ; --            ; --          ; --                   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; testbench            ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; ram_testbench        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; waveletqueue_tb      ;
@@ -135,8 +135,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 408 MB              ; 00:00:14                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 404 MB              ; 00:00:13                           ;
+; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
