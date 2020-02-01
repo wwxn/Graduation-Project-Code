@@ -507,73 +507,39 @@
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/tables.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code/tables.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module tables
 # 
 # Top level modules:
 # 	tables
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/find_highest_bit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code/find_highest_bit.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module find_highest_bit
 # 
 # Top level modules:
 # 	find_highest_bit
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/mq_coder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code/mq_coder.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module mq_coder
 # 
 # Top level modules:
 # 	mq_coder
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/ipcore {C:/Users/wxn/Desktop/coder_fast/ipcore/bit_fifo.v}
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code/testbench.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-# -- Compiling module bit_fifo
+# -- Compiling module testbench
 # 
 # Top level modules:
-# 	bit_fifo
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/ipcore {C:/Users/wxn/Desktop/coder_fast/ipcore/cx_fifo.v}
-# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-# -- Compiling module cx_fifo
+# 	testbench
 # 
-# Top level modules:
-# 	cx_fifo
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/code_queue.v}
-# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-# -- Compiling module code_queue
-# 
-# Top level modules:
-# 	code_queue
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/code_queue_tb.v}
-# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-# -- Compiling module code_queue_tb
-# 
-# Top level modules:
-# 	code_queue_tb
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  code_queue_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps code_queue_tb 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
 # ** Note: (vsim-3812) Design is being optimized...
 # 
 # ** Note: (vopt-143) Recognized 1 FSM in module "mq_coder(fast)".
 # 
-# ** Warning: C:/Users/wxn/Desktop/coder_fast/code/code_queue.v(62): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_bit_fifo_inst1'.  Expected 8, found 6.
-# 
-# ** Warning: C:/Users/wxn/Desktop/coder_fast/code/code_queue.v(62): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/coder_fast/code/code_queue.v(62): (vopt-2718) [TFMPC] - Missing connection for port 'empty'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/coder_fast/code/code_queue.v(73): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_cx_fifo_inst1'.  Expected 8, found 7.
-# 
-# ** Warning: C:/Users/wxn/Desktop/coder_fast/code/code_queue.v(73): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
-# 
-# Loading work.code_queue_tb(fast)
-# Loading work.code_queue(fast)
-# Loading work.bit_fifo(fast)
-# Loading altera_mf_ver.scfifo(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading work.cx_fifo(fast)
-# Loading altera_mf_ver.scfifo(fast__1)
+# Loading work.testbench(fast)
 # Loading work.mq_coder(fast)
 # Loading work.find_highest_bit(fast)
 # Loading work.tables(fast)

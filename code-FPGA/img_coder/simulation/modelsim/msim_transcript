@@ -696,5 +696,11 @@
 # Time: 0  Instance: wavelet_transform_tb.img_coder_inst1.b2v_wavlet_transform_inst1.b2v_ram_inst1.altsyncram_component
 # Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
 # Time: 0  Instance: wavelet_transform_tb.img_coder_inst1.b2v_wavlet_transform_inst1.b2v_ram_inst2.altsyncram_component
+run
+run
+run
+run
+run
 add wave -r /*
+run
 run

@@ -93,10 +93,10 @@ set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ps" -section_id bit_pl
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME bit_plane_coder_tb -section_id bit_plane_coder_tb
 set_global_assignment -name VERILOG_FILE code/ram_reader.v
 set_global_assignment -name VERILOG_FILE code/img_coder.v
+set_global_assignment -name VERILOG_FILE code/ram_conversion.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE code/ram_conversion.v
 set_global_assignment -name EDA_TEST_BENCH_FILE code/testbench.v -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE code/ram_testbench.v -section_id ram_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE code/waveletqueue_tb.v -section_id waveletqueue_tb

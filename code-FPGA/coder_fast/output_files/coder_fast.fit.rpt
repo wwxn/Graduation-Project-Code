@@ -1,5 +1,5 @@
 Fitter report for coder_fast
-Sat Jan 18 21:37:53 2020
+Sat Feb 01 10:35:28 2020
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -66,14 +66,14 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jan 18 21:37:53 2020       ;
+; Fitter Status                      ; Successful - Sat Feb 01 10:35:28 2020       ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; coder_fast                                  ;
 ; Top-level Entity Name              ; mq_coder                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE15F17C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 999 / 15,408 ( 6 % )                        ;
+; Total logic elements               ; 992 / 15,408 ( 6 % )                        ;
 ;     Total combinational functions  ; 964 / 15,408 ( 6 % )                        ;
 ;     Dedicated logic registers      ; 130 / 15,408 ( < 1 % )                      ;
 ; Total registers                    ; 130                                         ;
@@ -152,12 +152,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.40        ;
+; Average used               ; 1.44        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  40.0%      ;
+;     Processor 2            ;  44.4%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -226,7 +226,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/coder_fast.pin.
+The pin-out file can be found in C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/output_files/coder_fast.pin.
 
 
 +----------------------------------------------------------------------+
@@ -234,16 +234,16 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 999 / 15,408 ( 6 % )   ;
-;     -- Combinational with no register       ; 869                    ;
-;     -- Register only                        ; 35                     ;
-;     -- Combinational with a register        ; 95                     ;
+; Total logic elements                        ; 992 / 15,408 ( 6 % )   ;
+;     -- Combinational with no register       ; 862                    ;
+;     -- Register only                        ; 28                     ;
+;     -- Combinational with a register        ; 102                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
 ;     -- 4 input functions                    ; 688                    ;
 ;     -- 3 input functions                    ; 197                    ;
 ;     -- <=2 input functions                  ; 79                     ;
-;     -- Register only                        ; 35                     ;
+;     -- Register only                        ; 28                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
 ;     -- normal mode                          ; 890                    ;
@@ -271,11 +271,11 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 3% / 2% / 3%           ;
-; Peak interconnect usage (total/H/V)         ; 27% / 24% / 32%        ;
+; Peak interconnect usage (total/H/V)         ; 20% / 17% / 24%        ;
 ; Maximum fan-out                             ; 130                    ;
 ; Highest non-global fan-out                  ; 80                     ;
-; Total fan-out                               ; 4185                   ;
-; Average fan-out                             ; 3.55                   ;
+; Total fan-out                               ; 4178                   ;
+; Average fan-out                             ; 3.57                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -288,16 +288,16 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 999 / 15408 ( 6 % )   ; 0 / 15408 ( 0 % )              ;
-;     -- Combinational with no register       ; 869                   ; 0                              ;
-;     -- Register only                        ; 35                    ; 0                              ;
-;     -- Combinational with a register        ; 95                    ; 0                              ;
+; Total logic elements                        ; 992 / 15408 ( 6 % )   ; 0 / 15408 ( 0 % )              ;
+;     -- Combinational with no register       ; 862                   ; 0                              ;
+;     -- Register only                        ; 28                    ; 0                              ;
+;     -- Combinational with a register        ; 102                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
 ;     -- 4 input functions                    ; 688                   ; 0                              ;
 ;     -- 3 input functions                    ; 197                   ; 0                              ;
 ;     -- <=2 input functions                  ; 79                    ; 0                              ;
-;     -- Register only                        ; 35                    ; 0                              ;
+;     -- Register only                        ; 28                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
 ;     -- normal mode                          ; 890                   ; 0                              ;
@@ -323,7 +323,7 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 4180                  ; 5                              ;
+;     -- Total Connections                    ; 4173                  ; 5                              ;
 ;     -- Registered Connections               ; 437                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -356,13 +356,13 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
-; bit         ; A15   ; 7        ; 28           ; 29           ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; bit         ; E9    ; 7        ; 21           ; 29           ; 7            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
 ; clk         ; E1    ; 1        ; 0            ; 14           ; 7            ; 130                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
-; cx[0]       ; A10   ; 7        ; 26           ; 29           ; 21           ; 30                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
-; cx[1]       ; C9    ; 7        ; 23           ; 29           ; 0            ; 30                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
-; cx[2]       ; D9    ; 7        ; 23           ; 29           ; 7            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
-; cx[3]       ; E9    ; 7        ; 21           ; 29           ; 7            ; 31                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
-; input_valid ; R10   ; 4        ; 26           ; 0            ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; cx[0]       ; J14   ; 5        ; 41           ; 14           ; 14           ; 30                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; cx[1]       ; D9    ; 7        ; 23           ; 29           ; 7            ; 30                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; cx[2]       ; K9    ; 4        ; 23           ; 0            ; 28           ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; cx[3]       ; C9    ; 7        ; 23           ; 29           ; 0            ; 31                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; input_valid ; P8    ; 3        ; 21           ; 0            ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
 ; rst_n       ; M2    ; 2        ; 0            ; 14           ; 14           ; 123                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
@@ -372,16 +372,16 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; byte_out[0]  ; D8    ; 8        ; 14           ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; byte_out[1]  ; A13   ; 7        ; 28           ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; byte_out[2]  ; F14   ; 6        ; 41           ; 23           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; byte_out[3]  ; F9    ; 7        ; 26           ; 29           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; byte_out[4]  ; B11   ; 7        ; 30           ; 29           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; byte_out[5]  ; B10   ; 7        ; 26           ; 29           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; byte_out[6]  ; A11   ; 7        ; 30           ; 29           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; byte_out[7]  ; C8    ; 8        ; 14           ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; output_valid ; N9    ; 4        ; 23           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; update_flag  ; E10   ; 7        ; 32           ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; byte_out[0]  ; E8    ; 8        ; 14           ; 29           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; byte_out[1]  ; D8    ; 8        ; 14           ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; byte_out[2]  ; J13   ; 5        ; 41           ; 14           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; byte_out[3]  ; B7    ; 8        ; 11           ; 29           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; byte_out[4]  ; P6    ; 3        ; 14           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; byte_out[5]  ; J1    ; 2        ; 0            ; 13           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; byte_out[6]  ; C8    ; 8        ; 14           ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; byte_out[7]  ; M7    ; 3        ; 14           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; output_valid ; L6    ; 2        ; 0            ; 12           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; update_flag  ; M8    ; 3        ; 19           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -403,33 +403,29 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; G12      ; MSEL2                                    ; -                        ; -                       ; Dedicated Programming Pin ;
 ; G12      ; MSEL3                                    ; -                        ; -                       ; Dedicated Programming Pin ;
 ; F16      ; DIFFIO_R16n, nCEO                        ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
-; A11      ; DIFFIO_T25n, PADD1                       ; Use as regular IO        ; byte_out[6]             ; Dual Purpose Pin          ;
-; B11      ; DIFFIO_T25p, PADD2                       ; Use as regular IO        ; byte_out[4]             ; Dual Purpose Pin          ;
-; A15      ; DIFFIO_T23n, PADD3                       ; Use as regular IO        ; bit                     ; Dual Purpose Pin          ;
-; F9       ; DIFFIO_T21p, PADD4, DQS2T/CQ3T,DPCLK8    ; Use as regular IO        ; byte_out[3]             ; Dual Purpose Pin          ;
-; A10      ; DIFFIO_T20n, PADD5                       ; Use as regular IO        ; cx[0]                   ; Dual Purpose Pin          ;
-; B10      ; DIFFIO_T20p, PADD6                       ; Use as regular IO        ; byte_out[5]             ; Dual Purpose Pin          ;
-; C9       ; DIFFIO_T19n, PADD7                       ; Use as regular IO        ; cx[1]                   ; Dual Purpose Pin          ;
-; D9       ; DIFFIO_T19p, PADD8                       ; Use as regular IO        ; cx[2]                   ; Dual Purpose Pin          ;
-; E9       ; DIFFIO_T17p, PADD12, DQS4T/CQ5T,DPCLK9   ; Use as regular IO        ; cx[3]                   ; Dual Purpose Pin          ;
-; C8       ; DIFFIO_T13p, PADD17, DQS5T/CQ5T#,DPCLK10 ; Use as regular IO        ; byte_out[7]             ; Dual Purpose Pin          ;
+; C9       ; DIFFIO_T19n, PADD7                       ; Use as regular IO        ; cx[3]                   ; Dual Purpose Pin          ;
+; D9       ; DIFFIO_T19p, PADD8                       ; Use as regular IO        ; cx[1]                   ; Dual Purpose Pin          ;
+; E9       ; DIFFIO_T17p, PADD12, DQS4T/CQ5T,DPCLK9   ; Use as regular IO        ; bit                     ; Dual Purpose Pin          ;
+; C8       ; DIFFIO_T13p, PADD17, DQS5T/CQ5T#,DPCLK10 ; Use as regular IO        ; byte_out[6]             ; Dual Purpose Pin          ;
+; E8       ; DIFFIO_T12n, DATA2                       ; Use as regular IO        ; byte_out[0]             ; Dual Purpose Pin          ;
+; B7       ; DIFFIO_T11p, DATA4                       ; Use as regular IO        ; byte_out[3]             ; Dual Purpose Pin          ;
 +----------+------------------------------------------+--------------------------+-------------------------+---------------------------+
 
 
-+------------------------------------------------------------+
-; I/O Bank Usage                                             ;
-+----------+------------------+---------------+--------------+
-; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
-+----------+------------------+---------------+--------------+
-; 1        ; 5 / 14 ( 36 % )  ; 2.5V          ; --           ;
-; 2        ; 1 / 18 ( 6 % )   ; 2.5V          ; --           ;
-; 3        ; 0 / 25 ( 0 % )   ; 2.5V          ; --           ;
-; 4        ; 2 / 27 ( 7 % )   ; 2.5V          ; --           ;
-; 5        ; 0 / 20 ( 0 % )   ; 2.5V          ; --           ;
-; 6        ; 2 / 14 ( 14 % )  ; 2.5V          ; --           ;
-; 7        ; 11 / 24 ( 46 % ) ; 2.5V          ; --           ;
-; 8        ; 2 / 24 ( 8 % )   ; 2.5V          ; --           ;
-+----------+------------------+---------------+--------------+
++-----------------------------------------------------------+
+; I/O Bank Usage                                            ;
++----------+-----------------+---------------+--------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
++----------+-----------------+---------------+--------------+
+; 1        ; 5 / 14 ( 36 % ) ; 2.5V          ; --           ;
+; 2        ; 3 / 18 ( 17 % ) ; 2.5V          ; --           ;
+; 3        ; 4 / 25 ( 16 % ) ; 2.5V          ; --           ;
+; 4        ; 1 / 27 ( 4 % )  ; 2.5V          ; --           ;
+; 5        ; 2 / 20 ( 10 % ) ; 2.5V          ; --           ;
+; 6        ; 1 / 14 ( 7 % )  ; 2.5V          ; --           ;
+; 7        ; 3 / 24 ( 13 % ) ; 2.5V          ; --           ;
+; 8        ; 4 / 24 ( 17 % ) ; 2.5V          ; --           ;
++----------+-----------------+---------------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -446,12 +442,12 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; A7       ; 334        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A8       ; 321        ; 8        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A9       ; 319        ; 7        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; A10      ; 307        ; 7        ; cx[0]                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; A11      ; 296        ; 7        ; byte_out[6]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A10      ; 307        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; A11      ; 296        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A12      ; 292        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A13      ; 300        ; 7        ; byte_out[1]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A13      ; 300        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A14      ; 284        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A15      ; 301        ; 7        ; bit                                                       ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A15      ; 301        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A16      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; B1       ; 6          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; B2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -459,11 +455,11 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; B4       ; 355        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B5       ; 351        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B6       ; 340        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B7       ; 335        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B7       ; 335        ; 8        ; byte_out[3]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B8       ; 322        ; 8        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; B9       ; 320        ; 7        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; B10      ; 308        ; 7        ; byte_out[5]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; B11      ; 297        ; 7        ; byte_out[4]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B10      ; 308        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B11      ; 297        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B12      ; 293        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B13      ; 282        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B14      ; 285        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -476,8 +472,8 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; C5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C6       ; 338        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C7       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; C8       ; 329        ; 8        ; byte_out[7]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; C9       ; 309        ; 7        ; cx[1]                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C8       ; 329        ; 8        ; byte_out[6]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C9       ; 309        ; 7        ; cx[3]                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C10      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; C11      ; 281        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -492,8 +488,8 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; D5       ; 357        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D6       ; 352        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D8       ; 330        ; 8        ; byte_out[0]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; D9       ; 310        ; 7        ; cx[2]                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D8       ; 330        ; 8        ; byte_out[1]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D9       ; 310        ; 7        ; cx[1]                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D11      ; 278        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D12      ; 279        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -508,9 +504,9 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; E5       ;            ;          ; GNDA3                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E6       ; 348        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E7       ; 345        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E8       ; 332        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E9       ; 315        ; 7        ; cx[3]                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; E10      ; 290        ; 7        ; update_flag                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; E8       ; 332        ; 8        ; byte_out[0]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; E9       ; 315        ; 7        ; bit                                                       ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; E10      ; 290        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E11      ; 289        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E12      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E13      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -525,12 +521,12 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; F6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; F8       ; 333        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F9       ; 306        ; 7        ; byte_out[3]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; F9       ; 306        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F11      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; F12      ;            ; --       ; VCCA2                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; F13      ; 237        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; F14      ; 257        ; 6        ; byte_out[2]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F14      ; 257        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; F15      ; 240        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F16      ; 239        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G1       ; 27         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -566,7 +562,7 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; H14      ; 227        ; 6        ; ^CONF_DONE                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; H15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H16      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; J1       ; 45         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J1       ; 45         ; 2        ; byte_out[5]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J2       ; 44         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J3       ; 37         ; 1        ; ^nCE                                                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J4       ; 36         ; 1        ; #TDO                                                      ; output ;              ;         ; --         ;                 ; --       ; --           ;
@@ -578,8 +574,8 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; J10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J11      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J12      ; 221        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J13      ; 222        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J14      ; 220        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J13      ; 222        ; 5        ; byte_out[2]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J14      ; 220        ; 5        ; cx[0]                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J15      ; 217        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J16      ; 216        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K1       ; 55         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -590,7 +586,7 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; K6       ; 48         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; K9       ; 138        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; K9       ; 138        ; 4        ; cx[2]                                                     ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; K10      ; 150        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; K11      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; K12      ; 179        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -603,7 +599,7 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; L3       ; 51         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; L4       ; 78         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L5       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; L6       ; 49         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L6       ; 49         ; 2        ; output_valid                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; L7       ; 125        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L8       ; 128        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L9       ; 139        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -620,8 +616,8 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; M4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M5       ;            ;          ; GNDA1                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M6       ; 106        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; M7       ; 120        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; M8       ; 131        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; M7       ; 120        ; 3        ; byte_out[7]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; M8       ; 131        ; 3        ; update_flag                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M9       ; 140        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M10      ; 164        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M11      ; 174        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -638,7 +634,7 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; N6       ; 105        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N8       ; 132        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; N9       ; 141        ; 4        ; output_valid                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N9       ; 141        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N11      ; 165        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N12      ; 155        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -651,9 +647,9 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; P3       ; 93         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P4       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; P6       ; 119        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; P6       ; 119        ; 3        ; byte_out[4]                                               ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; P7       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; P8       ; 133        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; P8       ; 133        ; 3        ; input_valid                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; P9       ; 154        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P10      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P11      ; 168        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -671,7 +667,7 @@ The pin-out file can be found in C:/Users/wxn/Desktop/coder_fast/output_files/co
 ; R7       ; 126        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R8       ; 134        ; 3        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; R9       ; 136        ; 4        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; R10      ; 143        ; 4        ; input_valid                                               ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R10      ; 143        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R11      ; 145        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R12      ; 147        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R13      ; 156        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -703,7 +699,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                               ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------+--------------+
-; |mq_coder                                    ; 999 (919)   ; 130 (130)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 18   ; 0            ; 869 (789)    ; 35 (35)           ; 95 (95)          ; |mq_coder                                         ; work         ;
+; |mq_coder                                    ; 992 (912)   ; 130 (130)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 18   ; 0            ; 862 (782)    ; 28 (28)           ; 102 (102)        ; |mq_coder                                         ; work         ;
 ;    |find_highest_bit:find_highest_bit_inst1| ; 23 (23)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 23 (23)      ; 0 (0)             ; 0 (0)            ; |mq_coder|find_highest_bit:find_highest_bit_inst1 ; work         ;
 ;    |tables:tables_inst1|                     ; 57 (57)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (57)      ; 0 (0)             ; 0 (0)            ; |mq_coder|tables:tables_inst1                     ; work         ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------+--------------+
@@ -727,11 +723,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; output_valid ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; input_valid  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; clk          ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; cx[3]        ; Input    ; (6) 1314 ps   ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; cx[3]        ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; cx[0]        ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; cx[1]        ; Input    ; (6) 1314 ps   ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; cx[2]        ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; bit          ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; cx[1]        ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; cx[2]        ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; bit          ; Input    ; (6) 1314 ps   ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; rst_n        ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -754,23 +750,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Mux6~5                               ; 1                 ; 6       ;
 ;      - Mux3~0                               ; 1                 ; 6       ;
 ;      - Mux3~5                               ; 1                 ; 6       ;
-;      - Mux1~4                               ; 0                 ; 6       ;
-;      - Mux1~5                               ; 0                 ; 6       ;
-;      - Mux2~4                               ; 0                 ; 6       ;
-;      - Mux2~5                               ; 0                 ; 6       ;
+;      - Mux1~4                               ; 1                 ; 6       ;
+;      - Mux1~5                               ; 1                 ; 6       ;
+;      - Mux2~4                               ; 1                 ; 6       ;
+;      - Mux2~5                               ; 1                 ; 6       ;
 ;      - Mux2~6                               ; 1                 ; 6       ;
 ;      - Mux6~6                               ; 1                 ; 6       ;
 ;      - Mux6~7                               ; 1                 ; 6       ;
 ;      - Mux4~6                               ; 1                 ; 6       ;
 ;      - Mux4~7                               ; 1                 ; 6       ;
 ;      - Mux3~6                               ; 1                 ; 6       ;
-;      - Mux3~7                               ; 0                 ; 6       ;
+;      - Mux3~7                               ; 1                 ; 6       ;
 ;      - Mux1~6                               ; 1                 ; 6       ;
 ;      - Mux5~6                               ; 1                 ; 6       ;
 ;      - Mux5~7                               ; 1                 ; 6       ;
-;      - tables:tables_inst1|Mux11~1          ; 0                 ; 6       ;
-;      - tables:tables_inst1|Mux12~1          ; 0                 ; 6       ;
-;      - tables:tables_inst1|Mux13~1          ; 0                 ; 6       ;
+;      - tables:tables_inst1|Mux11~1          ; 1                 ; 6       ;
+;      - tables:tables_inst1|Mux12~1          ; 1                 ; 6       ;
+;      - tables:tables_inst1|Mux13~1          ; 1                 ; 6       ;
 ;      - Mux0~5                               ; 1                 ; 6       ;
 ;      - comb~1                               ; 1                 ; 6       ;
 ;      - Decoder0~1                           ; 1                 ; 6       ;
@@ -809,51 +805,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Decoder0~10                          ; 0                 ; 6       ;
 ;      - Decoder0~11                          ; 0                 ; 6       ;
 ; cx[1]                                       ;                   ;         ;
-;      - Mux5~1                               ; 1                 ; 6       ;
-;      - Mux5~3                               ; 1                 ; 6       ;
-;      - Mux5~4                               ; 1                 ; 6       ;
-;      - Mux4~1                               ; 1                 ; 6       ;
-;      - Mux4~3                               ; 1                 ; 6       ;
+;      - Mux5~1                               ; 0                 ; 6       ;
+;      - Mux5~3                               ; 0                 ; 6       ;
+;      - Mux5~4                               ; 0                 ; 6       ;
+;      - Mux4~1                               ; 0                 ; 6       ;
+;      - Mux4~3                               ; 0                 ; 6       ;
 ;      - Mux4~4                               ; 0                 ; 6       ;
-;      - Mux6~1                               ; 1                 ; 6       ;
-;      - Mux6~3                               ; 1                 ; 6       ;
+;      - Mux6~1                               ; 0                 ; 6       ;
+;      - Mux6~3                               ; 0                 ; 6       ;
 ;      - Mux6~4                               ; 0                 ; 6       ;
-;      - Mux3~1                               ; 1                 ; 6       ;
-;      - Mux3~3                               ; 1                 ; 6       ;
-;      - Mux3~4                               ; 1                 ; 6       ;
-;      - Mux1~0                               ; 1                 ; 6       ;
-;      - Mux1~2                               ; 1                 ; 6       ;
-;      - Mux1~3                               ; 1                 ; 6       ;
-;      - Mux2~0                               ; 1                 ; 6       ;
-;      - Mux2~2                               ; 1                 ; 6       ;
-;      - Mux2~3                               ; 1                 ; 6       ;
-;      - Mux0~0                               ; 1                 ; 6       ;
-;      - Mux0~2                               ; 1                 ; 6       ;
-;      - Mux0~3                               ; 1                 ; 6       ;
-;      - Decoder0~0                           ; 1                 ; 6       ;
-;      - Decoder0~3                           ; 1                 ; 6       ;
-;      - Decoder0~4                           ; 1                 ; 6       ;
-;      - Decoder0~5                           ; 1                 ; 6       ;
-;      - Decoder0~6                           ; 1                 ; 6       ;
-;      - Decoder0~8                           ; 1                 ; 6       ;
-;      - Decoder0~9                           ; 1                 ; 6       ;
-;      - Decoder0~10                          ; 1                 ; 6       ;
-;      - Decoder0~11                          ; 1                 ; 6       ;
+;      - Mux3~1                               ; 0                 ; 6       ;
+;      - Mux3~3                               ; 0                 ; 6       ;
+;      - Mux3~4                               ; 0                 ; 6       ;
+;      - Mux1~0                               ; 0                 ; 6       ;
+;      - Mux1~2                               ; 0                 ; 6       ;
+;      - Mux1~3                               ; 0                 ; 6       ;
+;      - Mux2~0                               ; 0                 ; 6       ;
+;      - Mux2~2                               ; 0                 ; 6       ;
+;      - Mux2~3                               ; 0                 ; 6       ;
+;      - Mux0~0                               ; 0                 ; 6       ;
+;      - Mux0~2                               ; 0                 ; 6       ;
+;      - Mux0~3                               ; 0                 ; 6       ;
+;      - Decoder0~0                           ; 0                 ; 6       ;
+;      - Decoder0~3                           ; 0                 ; 6       ;
+;      - Decoder0~4                           ; 0                 ; 6       ;
+;      - Decoder0~5                           ; 0                 ; 6       ;
+;      - Decoder0~6                           ; 0                 ; 6       ;
+;      - Decoder0~8                           ; 0                 ; 6       ;
+;      - Decoder0~9                           ; 0                 ; 6       ;
+;      - Decoder0~10                          ; 0                 ; 6       ;
+;      - Decoder0~11                          ; 0                 ; 6       ;
 ; cx[2]                                       ;                   ;         ;
-;      - Mux5~5                               ; 1                 ; 6       ;
-;      - Mux4~5                               ; 1                 ; 6       ;
-;      - Mux6~5                               ; 1                 ; 6       ;
-;      - Mux3~5                               ; 1                 ; 6       ;
-;      - Mux1~4                               ; 1                 ; 6       ;
-;      - Mux2~4                               ; 1                 ; 6       ;
-;      - Mux6~6                               ; 1                 ; 6       ;
-;      - Mux4~6                               ; 1                 ; 6       ;
-;      - Mux3~6                               ; 1                 ; 6       ;
-;      - Mux5~6                               ; 1                 ; 6       ;
-;      - Mux0~4                               ; 1                 ; 6       ;
-;      - Decoder0~1                           ; 1                 ; 6       ;
-;      - Decoder0~2                           ; 1                 ; 6       ;
-;      - Decoder0~7                           ; 1                 ; 6       ;
+;      - Mux5~5                               ; 0                 ; 6       ;
+;      - Mux4~5                               ; 0                 ; 6       ;
+;      - Mux6~5                               ; 0                 ; 6       ;
+;      - Mux3~5                               ; 0                 ; 6       ;
+;      - Mux1~4                               ; 0                 ; 6       ;
+;      - Mux2~4                               ; 0                 ; 6       ;
+;      - Mux6~6                               ; 0                 ; 6       ;
+;      - Mux4~6                               ; 0                 ; 6       ;
+;      - Mux3~6                               ; 0                 ; 6       ;
+;      - Mux5~6                               ; 0                 ; 6       ;
+;      - Mux0~4                               ; 0                 ; 6       ;
+;      - Decoder0~1                           ; 0                 ; 6       ;
+;      - Decoder0~2                           ; 0                 ; 6       ;
+;      - Decoder0~7                           ; 0                 ; 6       ;
 ; bit                                         ;                   ;         ;
 ;      - comb~0                               ; 1                 ; 6       ;
 ;      - find_highest_bit_inst1_data_in[14]~1 ; 1                 ; 6       ;
@@ -861,8 +857,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - find_highest_bit_inst1_data_in[8]~3  ; 1                 ; 6       ;
 ;      - find_highest_bit_inst1_data_in[9]~4  ; 1                 ; 6       ;
 ;      - find_highest_bit_inst1_data_in[15]~8 ; 1                 ; 6       ;
-;      - comb~1                               ; 1                 ; 6       ;
-;      - mps_table~0                          ; 1                 ; 6       ;
+;      - comb~1                               ; 0                 ; 6       ;
+;      - mps_table~0                          ; 0                 ; 6       ;
 ; rst_n                                       ;                   ;         ;
 +---------------------------------------------+-------------------+---------+
 
@@ -872,26 +868,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                             ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; B[7]~16                                          ; LCCOMB_X24_Y23_N6  ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; B~17                                             ; LCCOMB_X23_Y23_N28 ; 8       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; Decoder0~1                                       ; LCCOMB_X23_Y24_N0  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Decoder0~10                                      ; LCCOMB_X22_Y28_N12 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Decoder0~11                                      ; LCCOMB_X23_Y24_N22 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Decoder0~3                                       ; LCCOMB_X22_Y25_N26 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Decoder0~4                                       ; LCCOMB_X24_Y25_N12 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Decoder0~5                                       ; LCCOMB_X23_Y25_N30 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Decoder0~6                                       ; LCCOMB_X23_Y25_N8  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Decoder0~8                                       ; LCCOMB_X22_Y24_N24 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Decoder0~9                                       ; LCCOMB_X22_Y28_N26 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; LessThan8~8                                      ; LCCOMB_X28_Y23_N14 ; 57      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; byte_out[0]~12                                   ; LCCOMB_X24_Y23_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; byte_out[0]~28                                   ; LCCOMB_X23_Y24_N28 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; B[7]~16                                          ; LCCOMB_X22_Y15_N26 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; B~17                                             ; LCCOMB_X21_Y12_N14 ; 8       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; Decoder0~1                                       ; LCCOMB_X22_Y15_N30 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Decoder0~10                                      ; LCCOMB_X23_Y15_N10 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Decoder0~11                                      ; LCCOMB_X23_Y15_N16 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Decoder0~3                                       ; LCCOMB_X23_Y15_N24 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Decoder0~4                                       ; LCCOMB_X23_Y18_N4  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Decoder0~5                                       ; LCCOMB_X22_Y15_N8  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Decoder0~6                                       ; LCCOMB_X23_Y18_N10 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Decoder0~8                                       ; LCCOMB_X22_Y15_N22 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Decoder0~9                                       ; LCCOMB_X22_Y15_N16 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; LessThan8~8                                      ; LCCOMB_X16_Y15_N8  ; 56      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; byte_out[0]~12                                   ; LCCOMB_X14_Y15_N2  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; byte_out[0]~28                                   ; LCCOMB_X21_Y12_N0  ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; clk                                              ; PIN_E1             ; 130     ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; find_highest_bit:find_highest_bit_inst1|Equal0~7 ; LCCOMB_X27_Y23_N2  ; 51      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; find_highest_bit_inst1_data_in[15]~8             ; LCCOMB_X26_Y25_N28 ; 46      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; find_highest_bit:find_highest_bit_inst1|Equal0~7 ; LCCOMB_X20_Y15_N26 ; 51      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; find_highest_bit_inst1_data_in[15]~8             ; LCCOMB_X21_Y15_N16 ; 46      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
 ; rst_n                                            ; PIN_M2             ; 121     ; Async. clear ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; step.UPDATE                                      ; FF_X21_Y28_N3      ; 2       ; Latch enable ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-; step_next.UPDATE_2793                            ; LCCOMB_X23_Y24_N20 ; 59      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; step.UPDATE                                      ; FF_X20_Y4_N15      ; 2       ; Latch enable ; yes    ; Global Clock         ; GCLK16           ; --                        ;
+; step_next.UPDATE_2793                            ; LCCOMB_X22_Y15_N14 ; 59      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -900,9 +896,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name        ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk         ; PIN_E1        ; 130     ; 71                                   ; Global Clock         ; GCLK2            ; --                        ;
+; clk         ; PIN_E1        ; 130     ; 68                                   ; Global Clock         ; GCLK2            ; --                        ;
 ; rst_n       ; PIN_M2        ; 121     ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; step.UPDATE ; FF_X21_Y28_N3 ; 2       ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
+; step.UPDATE ; FF_X20_Y4_N15 ; 2       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
 +-------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -914,7 +910,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; find_highest_bit:find_highest_bit_inst1|sel1[3]~1 ; 80      ;
 ; comb~0                                            ; 62      ;
 ; step_next.UPDATE_2793                             ; 59      ;
-; LessThan8~8                                       ; 57      ;
+; LessThan8~8                                       ; 56      ;
 ; CT[0]                                             ; 56      ;
 ; CT[1]                                             ; 52      ;
 ; find_highest_bit:find_highest_bit_inst1|Equal0~7  ; 51      ;
@@ -927,12 +923,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CTtemp[4]~0                                       ; 44      ;
 ; Add3~0                                            ; 43      ;
 ; find_highest_bit:find_highest_bit_inst1|Equal1~1  ; 42      ;
-; Add3~6                                            ; 38      ;
+; Add3~6                                            ; 39      ;
 ; Mux5~7                                            ; 36      ;
 ; Mux3~7                                            ; 36      ;
 ; Mux6~7                                            ; 36      ;
 ; Mux4~7                                            ; 35      ;
-; Add3~8                                            ; 32      ;
+; Add3~8                                            ; 33      ;
 ; cx[3]~input                                       ; 31      ;
 ; find_highest_bit:find_highest_bit_inst1|sel2[1]~4 ; 31      ;
 ; Mux1~5                                            ; 31      ;
@@ -943,8 +939,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Equal1~0                                          ; 27      ;
 ; comb~4                                            ; 24      ;
 ; comb~1                                            ; 19      ;
-; C~49                                              ; 17      ;
-; C~46                                              ; 17      ;
+; C~51                                              ; 17      ;
+; C~48                                              ; 17      ;
 ; find_highest_bit:find_highest_bit_inst1|Equal0~6  ; 17      ;
 ; Add0~30                                           ; 17      ;
 ; CT[4]                                             ; 17      ;
@@ -956,7 +952,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Equal0~1                                          ; 15      ;
 ; cx[2]~input                                       ; 14      ;
 ; Add1~70                                           ; 14      ;
-; C~61                                              ; 11      ;
+; C~63                                              ; 11      ;
 ; LessThan8~7                                       ; 11      ;
 ; Mux2~4                                            ; 11      ;
 ; Mux1~4                                            ; 11      ;
@@ -977,7 +973,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Add1~72                                           ; 9       ;
 ; bit~input                                         ; 8       ;
 ; B~19                                              ; 8       ;
-; C~52                                              ; 8       ;
+; C~54                                              ; 8       ;
 ; comb~3                                            ; 8       ;
 ; B~17                                              ; 8       ;
 ; byte_out[0]~12                                    ; 8       ;
@@ -1001,7 +997,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Add1~74                                           ; 7       ;
 ; Mux5~5                                            ; 7       ;
 ; Mux5~0                                            ; 7       ;
-; ShiftLeft4~59                                     ; 6       ;
 ; ShiftLeft4~32                                     ; 6       ;
 ; ShiftLeft2~0                                      ; 6       ;
 ; c_temp[10]~41                                     ; 6       ;
@@ -1035,9 +1030,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Mux1~6                                            ; 6       ;
 ; index_table[8][5]                                 ; 6       ;
 ; tables:tables_inst1|Mux9~0                        ; 6       ;
-; C~127                                             ; 5       ;
+; C~129                                             ; 5       ;
 ; ShiftLeft2~64                                     ; 5       ;
-; C~102                                             ; 5       ;
+; C~104                                             ; 5       ;
+; ShiftLeft4~59                                     ; 5       ;
 ; ShiftLeft2~31                                     ; 5       ;
 ; ShiftLeft4~34                                     ; 5       ;
 ; ShiftLeft2~21                                     ; 5       ;
@@ -1067,8 +1063,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; tables:tables_inst1|Mux2~2                        ; 5       ;
 ; A[2]~11                                           ; 5       ;
 ; A[3]~12                                           ; 5       ;
-; C~171                                             ; 4       ;
-; C~123                                             ; 4       ;
+; C~172                                             ; 4       ;
+; C~125                                             ; 4       ;
 ; Decoder0~7                                        ; 4       ;
 ; Decoder0~2                                        ; 4       ;
 ; ShiftLeft2~56                                     ; 4       ;
@@ -1223,7 +1219,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rst_n~input                                       ; 2       ;
 ; input_valid~input                                 ; 2       ;
 ; step_next.IDLE_2799                               ; 2       ;
-; C~172                                             ; 2       ;
+; C~173                                             ; 2       ;
 ; ShiftLeft1~40                                     ; 2       ;
 ; ShiftLeft1~38                                     ; 2       ;
 ; ShiftLeft1~36                                     ; 2       ;
@@ -1259,7 +1255,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ShiftLeft4~90                                     ; 2       ;
 ; ShiftLeft2~81                                     ; 2       ;
 ; ShiftLeft4~86                                     ; 2       ;
-; C~116                                             ; 2       ;
+; C~118                                             ; 2       ;
 ; ShiftLeft2~73                                     ; 2       ;
 ; ShiftLeft4~84                                     ; 2       ;
 ; ShiftLeft2~63                                     ; 2       ;
@@ -1281,14 +1277,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ShiftLeft3~3                                      ; 2       ;
 ; ShiftLeft4~63                                     ; 2       ;
 ; ShiftLeft4~61                                     ; 2       ;
-; C~90                                              ; 2       ;
+; C~92                                              ; 2       ;
 ; ShiftLeft4~60                                     ; 2       ;
 ; ShiftLeft2~43                                     ; 2       ;
-; C~85                                              ; 2       ;
+; C~87                                              ; 2       ;
 ; ShiftLeft2~37                                     ; 2       ;
 ; ShiftLeft2~36                                     ; 2       ;
 ; ShiftLeft2~34                                     ; 2       ;
-; C~78                                              ; 2       ;
+; C~80                                              ; 2       ;
 ; ShiftLeft4~49                                     ; 2       ;
 ; ShiftLeft2~32                                     ; 2       ;
 ; ShiftLeft2~30                                     ; 2       ;
@@ -1314,8 +1310,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ShiftLeft2~17                                     ; 2       ;
 ; ShiftLeft2~16                                     ; 2       ;
 ; ShiftLeft2~15                                     ; 2       ;
-; C~66                                              ; 2       ;
-; C~65                                              ; 2       ;
+; C~68                                              ; 2       ;
+; C~67                                              ; 2       ;
 ; ShiftLeft4~30                                     ; 2       ;
 ; ShiftLeft4~28                                     ; 2       ;
 ; ShiftLeft4~27                                     ; 2       ;
@@ -1325,7 +1321,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ShiftLeft2~10                                     ; 2       ;
 ; ShiftLeft2~5                                      ; 2       ;
 ; ShiftLeft2~3                                      ; 2       ;
-; C~53                                              ; 2       ;
+; C~55                                              ; 2       ;
 ; c_temp[18]~45                                     ; 2       ;
 ; ShiftLeft4~18                                     ; 2       ;
 ; ShiftLeft4~17                                     ; 2       ;
@@ -1451,48 +1447,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; B[5]                                              ; 2       ;
 ; B[6]                                              ; 2       ;
 ; ~GND                                              ; 1       ;
+; C[25]~174                                         ; 1       ;
+; C~171                                             ; 1       ;
 ; C~170                                             ; 1       ;
 ; C~169                                             ; 1       ;
 ; C~168                                             ; 1       ;
 ; C~167                                             ; 1       ;
 ; C~166                                             ; 1       ;
 ; C~165                                             ; 1       ;
-; C~164                                             ; 1       ;
 ; CT~25                                             ; 1       ;
 ; CT~24                                             ; 1       ;
 ; ShiftLeft2~113                                    ; 1       ;
 ; ShiftLeft2~112                                    ; 1       ;
 ; ShiftLeft2~111                                    ; 1       ;
 ; ShiftLeft2~110                                    ; 1       ;
+; C~164                                             ; 1       ;
 ; C~163                                             ; 1       ;
 ; C~162                                             ; 1       ;
 ; C~161                                             ; 1       ;
 ; C~160                                             ; 1       ;
-; C~159                                             ; 1       ;
 ; ShiftLeft2~109                                    ; 1       ;
 ; ShiftLeft2~108                                    ; 1       ;
 ; ShiftLeft2~107                                    ; 1       ;
 ; ShiftLeft2~106                                    ; 1       ;
+; C~159                                             ; 1       ;
 ; C~158                                             ; 1       ;
 ; C~157                                             ; 1       ;
 ; C~156                                             ; 1       ;
 ; C~155                                             ; 1       ;
-; C~154                                             ; 1       ;
 ; CT~23                                             ; 1       ;
+; C[25]~154                                         ; 1       ;
 ; C[25]~153                                         ; 1       ;
-; C[25]~152                                         ; 1       ;
-; C~151                                             ; 1       ;
+; C~152                                             ; 1       ;
+; C[25]~151                                         ; 1       ;
 ; C[25]~150                                         ; 1       ;
-; C[25]~149                                         ; 1       ;
-; C[25]~148                                         ; 1       ;
-; C~147                                             ; 1       ;
+; C~149                                             ; 1       ;
+; C~148                                             ; 1       ;
 ; ShiftLeft2~105                                    ; 1       ;
 ; ShiftLeft2~104                                    ; 1       ;
 ; ShiftLeft2~103                                    ; 1       ;
 ; ShiftLeft2~102                                    ; 1       ;
 ; ShiftLeft2~101                                    ; 1       ;
 ; ShiftLeft2~100                                    ; 1       ;
-; C~146                                             ; 1       ;
 ; tables:tables_inst1|Mux28~0                       ; 1       ;
 ; tables:tables_inst1|Mux6~7                        ; 1       ;
 ; A~17                                              ; 1       ;
@@ -1517,62 +1513,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ShiftLeft1~7                                      ; 1       ;
 ; ShiftLeft1~6                                      ; 1       ;
 ; ShiftLeft1~5                                      ; 1       ;
-; C~145                                             ; 1       ;
+; C~147                                             ; 1       ;
 ; ShiftLeft2~99                                     ; 1       ;
-; C~144                                             ; 1       ;
+; C~146                                             ; 1       ;
 ; ShiftLeft2~98                                     ; 1       ;
-; C~143                                             ; 1       ;
+; C~145                                             ; 1       ;
 ; ShiftLeft2~97                                     ; 1       ;
-; C~142                                             ; 1       ;
+; C~144                                             ; 1       ;
 ; ShiftLeft2~96                                     ; 1       ;
-; C~141                                             ; 1       ;
+; C~143                                             ; 1       ;
 ; ShiftLeft2~94                                     ; 1       ;
-; C~140                                             ; 1       ;
+; C~142                                             ; 1       ;
 ; ShiftLeft2~93                                     ; 1       ;
 ; ShiftLeft2~92                                     ; 1       ;
-; C~139                                             ; 1       ;
+; C~141                                             ; 1       ;
 ; ShiftLeft2~91                                     ; 1       ;
-; C~138                                             ; 1       ;
-; C~137                                             ; 1       ;
+; C~140                                             ; 1       ;
+; C~139                                             ; 1       ;
 ; ShiftLeft2~90                                     ; 1       ;
 ; ShiftLeft2~89                                     ; 1       ;
 ; ShiftLeft2~87                                     ; 1       ;
+; C~138                                             ; 1       ;
+; C~137                                             ; 1       ;
 ; C~136                                             ; 1       ;
-; C~135                                             ; 1       ;
-; C~134                                             ; 1       ;
 ; ShiftLeft2~85                                     ; 1       ;
 ; ShiftLeft2~84                                     ; 1       ;
+; C~135                                             ; 1       ;
+; C~134                                             ; 1       ;
 ; C~133                                             ; 1       ;
+; ShiftLeft2~82                                     ; 1       ;
 ; C~132                                             ; 1       ;
 ; C~131                                             ; 1       ;
-; ShiftLeft2~82                                     ; 1       ;
 ; C~130                                             ; 1       ;
-; C~129                                             ; 1       ;
-; C~128                                             ; 1       ;
 ; ShiftLeft4~89                                     ; 1       ;
 ; ShiftLeft2~80                                     ; 1       ;
 ; ShiftLeft2~79                                     ; 1       ;
-; C~126                                             ; 1       ;
-; C~125                                             ; 1       ;
+; C~128                                             ; 1       ;
+; C~127                                             ; 1       ;
 ; ShiftLeft4~88                                     ; 1       ;
+; C~126                                             ; 1       ;
 ; C~124                                             ; 1       ;
-; C~122                                             ; 1       ;
 ; ShiftLeft2~78                                     ; 1       ;
 ; ShiftLeft2~77                                     ; 1       ;
+; C~123                                             ; 1       ;
+; C~122                                             ; 1       ;
 ; C~121                                             ; 1       ;
-; C~120                                             ; 1       ;
-; C~119                                             ; 1       ;
 ; ShiftLeft4~85                                     ; 1       ;
 ; ShiftLeft2~76                                     ; 1       ;
 ; ShiftLeft2~75                                     ; 1       ;
-; C~118                                             ; 1       ;
+; C~120                                             ; 1       ;
+; C~119                                             ; 1       ;
 ; C~117                                             ; 1       ;
-; C~115                                             ; 1       ;
 ; ShiftLeft2~74                                     ; 1       ;
 ; ShiftLeft2~71                                     ; 1       ;
+; C~116                                             ; 1       ;
+; C~115                                             ; 1       ;
 ; C~114                                             ; 1       ;
-; C~113                                             ; 1       ;
-; C~112                                             ; 1       ;
 ; index_table~51                                    ; 1       ;
 ; index_table~50                                    ; 1       ;
 ; index_table~49                                    ; 1       ;
@@ -1621,91 +1617,91 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ShiftLeft2~69                                     ; 1       ;
 ; ShiftLeft2~68                                     ; 1       ;
 ; ShiftLeft2~67                                     ; 1       ;
-; C~111                                             ; 1       ;
-; C~110                                             ; 1       ;
+; C~113                                             ; 1       ;
+; C~112                                             ; 1       ;
 ; ShiftLeft4~82                                     ; 1       ;
-; C~109                                             ; 1       ;
+; C~111                                             ; 1       ;
 ; ShiftLeft2~62                                     ; 1       ;
+; C~110                                             ; 1       ;
+; C~109                                             ; 1       ;
 ; C~108                                             ; 1       ;
-; C~107                                             ; 1       ;
-; C~106                                             ; 1       ;
 ; ShiftLeft4~79                                     ; 1       ;
 ; ShiftLeft4~78                                     ; 1       ;
 ; ShiftLeft4~77                                     ; 1       ;
-; C~105                                             ; 1       ;
+; C~107                                             ; 1       ;
 ; ShiftLeft2~58                                     ; 1       ;
-; C~104                                             ; 1       ;
+; C~106                                             ; 1       ;
+; C~105                                             ; 1       ;
 ; C~103                                             ; 1       ;
-; C~101                                             ; 1       ;
 ; ShiftLeft4~75                                     ; 1       ;
 ; ShiftLeft4~73                                     ; 1       ;
 ; ShiftLeft4~70                                     ; 1       ;
-; C~100                                             ; 1       ;
+; C~102                                             ; 1       ;
 ; ShiftLeft2~54                                     ; 1       ;
-; C~99                                              ; 1       ;
-; C~98                                              ; 1       ;
+; C~101                                             ; 1       ;
+; C~100                                             ; 1       ;
 ; ShiftLeft4~68                                     ; 1       ;
 ; ShiftLeft4~66                                     ; 1       ;
 ; ShiftLeft4~65                                     ; 1       ;
 ; ShiftLeft4~64                                     ; 1       ;
-; C~97                                              ; 1       ;
+; C~99                                              ; 1       ;
 ; ShiftLeft2~50                                     ; 1       ;
 ; ShiftLeft2~49                                     ; 1       ;
 ; ShiftLeft2~47                                     ; 1       ;
+; C~98                                              ; 1       ;
+; C~97                                              ; 1       ;
 ; C~96                                              ; 1       ;
+; ShiftLeft4~62                                     ; 1       ;
 ; C~95                                              ; 1       ;
 ; C~94                                              ; 1       ;
-; ShiftLeft4~62                                     ; 1       ;
 ; C~93                                              ; 1       ;
-; C~92                                              ; 1       ;
 ; C~91                                              ; 1       ;
-; C~89                                              ; 1       ;
 ; ShiftLeft2~46                                     ; 1       ;
 ; ShiftLeft2~45                                     ; 1       ;
 ; ShiftLeft2~44                                     ; 1       ;
+; C~90                                              ; 1       ;
+; C~89                                              ; 1       ;
 ; C~88                                              ; 1       ;
-; C~87                                              ; 1       ;
 ; C~86                                              ; 1       ;
+; C~85                                              ; 1       ;
 ; C~84                                              ; 1       ;
 ; C~83                                              ; 1       ;
-; C~82                                              ; 1       ;
-; C~81                                              ; 1       ;
 ; ShiftLeft2~40                                     ; 1       ;
 ; ShiftLeft2~39                                     ; 1       ;
 ; ShiftLeft2~38                                     ; 1       ;
-; C~80                                              ; 1       ;
-; C~79                                              ; 1       ;
+; C~82                                              ; 1       ;
+; C~81                                              ; 1       ;
 ; ShiftLeft4~53                                     ; 1       ;
-; C~77                                              ; 1       ;
+; C~79                                              ; 1       ;
 ; ShiftLeft4~52                                     ; 1       ;
+; C~78                                              ; 1       ;
+; C~77                                              ; 1       ;
 ; C~76                                              ; 1       ;
+; ShiftLeft2~33                                     ; 1       ;
 ; C~75                                              ; 1       ;
 ; C~74                                              ; 1       ;
-; ShiftLeft2~33                                     ; 1       ;
 ; C~73                                              ; 1       ;
+; ShiftLeft4~33                                     ; 1       ;
 ; C~72                                              ; 1       ;
 ; C~71                                              ; 1       ;
-; ShiftLeft4~33                                     ; 1       ;
 ; C~70                                              ; 1       ;
-; C~69                                              ; 1       ;
-; C~68                                              ; 1       ;
 ; ShiftLeft2~23                                     ; 1       ;
-; C~67                                              ; 1       ;
+; C~69                                              ; 1       ;
+; C~66                                              ; 1       ;
+; C~65                                              ; 1       ;
 ; C~64                                              ; 1       ;
-; C~63                                              ; 1       ;
 ; C~62                                              ; 1       ;
+; C~61                                              ; 1       ;
 ; C~60                                              ; 1       ;
 ; C~59                                              ; 1       ;
-; C~58                                              ; 1       ;
-; C~57                                              ; 1       ;
 ; ShiftLeft2~13                                     ; 1       ;
 ; ShiftLeft2~12                                     ; 1       ;
 ; ShiftLeft2~9                                      ; 1       ;
 ; ShiftLeft2~6                                      ; 1       ;
 ; ShiftLeft2~2                                      ; 1       ;
+; C~58                                              ; 1       ;
+; C~57                                              ; 1       ;
 ; C~56                                              ; 1       ;
-; C~55                                              ; 1       ;
-; C~54                                              ; 1       ;
 ; c_temp[18]~44                                     ; 1       ;
 ; c_temp[18]~43                                     ; 1       ;
 ; c_temp[18]~42                                     ; 1       ;
@@ -1722,16 +1718,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ShiftLeft4~10                                     ; 1       ;
 ; ShiftLeft0~116                                    ; 1       ;
 ; ShiftLeft0~115                                    ; 1       ;
-; C~51                                              ; 1       ;
-; C~50                                              ; 1       ;
+; C~53                                              ; 1       ;
+; C~52                                              ; 1       ;
 ; c_temp[17]~12                                     ; 1       ;
 ; c_temp[17]~11                                     ; 1       ;
 ; c_temp[17]~10                                     ; 1       ;
 ; c_temp[17]~9                                      ; 1       ;
 ; ShiftLeft0~113                                    ; 1       ;
 ; ShiftLeft0~112                                    ; 1       ;
-; C~48                                              ; 1       ;
-; C~47                                              ; 1       ;
+; C~50                                              ; 1       ;
+; C~49                                              ; 1       ;
 ; c_temp[16]~7                                      ; 1       ;
 ; c_temp[16]~6                                      ; 1       ;
 ; c_temp[16]~5                                      ; 1       ;
@@ -1919,155 +1915,158 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 1,870 / 47,787 ( 4 % ) ;
-; C16 interconnects     ; 29 / 1,804 ( 2 % )     ;
-; C4 interconnects      ; 1,141 / 31,272 ( 4 % ) ;
-; Direct links          ; 176 / 47,787 ( < 1 % ) ;
+; Block interconnects   ; 1,848 / 47,787 ( 4 % ) ;
+; C16 interconnects     ; 19 / 1,804 ( 1 % )     ;
+; C4 interconnects      ; 1,151 / 31,272 ( 4 % ) ;
+; Direct links          ; 173 / 47,787 ( < 1 % ) ;
 ; Global clocks         ; 3 / 20 ( 15 % )        ;
-; Local interconnects   ; 625 / 15,408 ( 4 % )   ;
-; R24 interconnects     ; 12 / 1,775 ( < 1 % )   ;
-; R4 interconnects      ; 1,181 / 41,310 ( 3 % ) ;
+; Local interconnects   ; 599 / 15,408 ( 4 % )   ;
+; R24 interconnects     ; 13 / 1,775 ( < 1 % )   ;
+; R4 interconnects      ; 1,133 / 41,310 ( 3 % ) ;
 +-----------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.14) ; Number of LABs  (Total = 76) ;
+; Number of Logic Elements  (Average = 13.05) ; Number of LABs  (Total = 76) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 5                            ;
-; 2                                           ; 2                            ;
-; 3                                           ; 3                            ;
-; 4                                           ; 1                            ;
+; 1                                           ; 4                            ;
+; 2                                           ; 6                            ;
+; 3                                           ; 2                            ;
+; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 2                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 2                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 2                            ;
+; 8                                           ; 1                            ;
+; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
 ; 11                                          ; 1                            ;
-; 12                                          ; 1                            ;
+; 12                                          ; 2                            ;
 ; 13                                          ; 1                            ;
-; 14                                          ; 5                            ;
-; 15                                          ; 7                            ;
-; 16                                          ; 46                           ;
+; 14                                          ; 4                            ;
+; 15                                          ; 4                            ;
+; 16                                          ; 49                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.01) ; Number of LABs  (Total = 76) ;
+; LAB-wide Signals  (Average = 2.14) ; Number of LABs  (Total = 76) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 43                           ;
-; 1 Clock                            ; 44                           ;
+; 1 Async. clear                     ; 46                           ;
+; 1 Clock                            ; 47                           ;
 ; 1 Clock enable                     ; 32                           ;
 ; 1 Sync. clear                      ; 3                            ;
-; 1 Sync. load                       ; 26                           ;
-; 2 Clock enables                    ; 5                            ;
+; 1 Sync. load                       ; 24                           ;
+; 2 Clock enables                    ; 11                           ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 14.67) ; Number of LABs  (Total = 76) ;
+; Number of Signals Sourced  (Average = 14.58) ; Number of LABs  (Total = 76) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 4                            ;
-; 2                                            ; 2                            ;
-; 3                                            ; 2                            ;
+; 1                                            ; 2                            ;
+; 2                                            ; 4                            ;
+; 3                                            ; 4                            ;
 ; 4                                            ; 2                            ;
-; 5                                            ; 1                            ;
+; 5                                            ; 0                            ;
 ; 6                                            ; 1                            ;
 ; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
+; 8                                            ; 1                            ;
 ; 9                                            ; 1                            ;
 ; 10                                           ; 1                            ;
-; 11                                           ; 2                            ;
+; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 5                            ;
-; 15                                           ; 3                            ;
-; 16                                           ; 19                           ;
-; 17                                           ; 10                           ;
-; 18                                           ; 11                           ;
-; 19                                           ; 4                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 2                            ;
+; 16                                           ; 22                           ;
+; 17                                           ; 11                           ;
+; 18                                           ; 12                           ;
+; 19                                           ; 2                            ;
 ; 20                                           ; 4                            ;
 ; 21                                           ; 0                            ;
 ; 22                                           ; 1                            ;
 ; 23                                           ; 0                            ;
-; 24                                           ; 1                            ;
+; 24                                           ; 0                            ;
 ; 25                                           ; 1                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 1                            ;
+; 26                                           ; 1                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 7.91) ; Number of LABs  (Total = 76) ;
+; Number of Signals Sourced Out  (Average = 8.14) ; Number of LABs  (Total = 76) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
 ; 1                                               ; 5                            ;
-; 2                                               ; 5                            ;
-; 3                                               ; 4                            ;
+; 2                                               ; 7                            ;
+; 3                                               ; 3                            ;
 ; 4                                               ; 2                            ;
-; 5                                               ; 5                            ;
-; 6                                               ; 2                            ;
-; 7                                               ; 6                            ;
-; 8                                               ; 13                           ;
-; 9                                               ; 10                           ;
-; 10                                              ; 7                            ;
-; 11                                              ; 2                            ;
+; 5                                               ; 3                            ;
+; 6                                               ; 6                            ;
+; 7                                               ; 7                            ;
+; 8                                               ; 4                            ;
+; 9                                               ; 2                            ;
+; 10                                              ; 13                           ;
+; 11                                              ; 9                            ;
 ; 12                                              ; 4                            ;
 ; 13                                              ; 6                            ;
 ; 14                                              ; 1                            ;
-; 15                                              ; 3                            ;
+; 15                                              ; 2                            ;
 ; 16                                              ; 1                            ;
+; 17                                              ; 0                            ;
+; 18                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 23.37) ; Number of LABs  (Total = 76) ;
+; Number of Distinct Inputs  (Average = 23.08) ; Number of LABs  (Total = 76) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 2                            ;
-; 3                                            ; 2                            ;
-; 4                                            ; 1                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 2                            ;
-; 9                                            ; 0                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 4                            ;
+; 5                                            ; 2                            ;
+; 6                                            ; 2                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 0                            ;
-; 11                                           ; 2                            ;
-; 12                                           ; 3                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 2                            ;
 ; 15                                           ; 1                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 2                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 1                            ;
 ; 18                                           ; 2                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 4                            ;
-; 23                                           ; 5                            ;
-; 24                                           ; 4                            ;
-; 25                                           ; 4                            ;
-; 26                                           ; 1                            ;
-; 27                                           ; 3                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 5                            ;
+; 21                                           ; 3                            ;
+; 22                                           ; 7                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 2                            ;
+; 26                                           ; 4                            ;
+; 27                                           ; 4                            ;
 ; 28                                           ; 2                            ;
-; 29                                           ; 5                            ;
-; 30                                           ; 3                            ;
-; 31                                           ; 1                            ;
-; 32                                           ; 7                            ;
-; 33                                           ; 4                            ;
+; 29                                           ; 1                            ;
+; 30                                           ; 7                            ;
+; 31                                           ; 6                            ;
+; 32                                           ; 3                            ;
+; 33                                           ; 2                            ;
 ; 34                                           ; 9                            ;
 +----------------------------------------------+------------------------------+
 
@@ -2231,16 +2230,11 @@ Critical Warning (169085): No exact pin location assignment(s) for 18 pins of 18
     Info (169086): Pin bit not assigned to an exact location on the device
     Info (169086): Pin rst_n not assigned to an exact location on the device
 Warning (335093): TimeQuest Timing Analyzer is analyzing 2 combinational loops as latches.
-Info (332104): Reading SDC File: 'coder_fast.out.sdc'
-Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
-    Critical Warning (332169): From step.UPDATE (Rise) to step.UPDATE (Rise) (setup and hold)
-    Critical Warning (332169): From step.UPDATE (Rise) to step.UPDATE (Fall) (setup and hold)
-Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
-Info (332111): Found 2 clocks
-    Info (332111):   Period   Clock Name
-    Info (332111): ======== ============
-    Info (332111):    1.000          clk
-    Info (332111):    1.000  step.UPDATE
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'coder_fast.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332144): No user constrained base clocks found in the design
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node clk~input (placed in PIN E1 (CLK1, DIFFCLK_0n))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
 Info (176353): Automatically promoted node step.UPDATE 
@@ -2271,30 +2265,30 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 20% of the available device resources in the region that extends from location X21_Y20 to location X30_Y29
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:05
+    Info (170196): Router estimated peak interconnect usage is 14% of the available device resources in the region that extends from location X10_Y10 to location X20_Y19
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 1.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 1.12 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/wxn/Desktop/coder_fast/output_files/coder_fast.fit.smsg
-Info: Quartus II 32-bit Fitter was successful. 0 errors, 6 warnings
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (144001): Generated suppressed messages file C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/output_files/coder_fast.fit.smsg
+Info: Quartus II 32-bit Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 661 megabytes
-    Info: Processing ended: Sat Jan 18 21:37:54 2020
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Processing ended: Sat Feb 01 10:35:29 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/wxn/Desktop/coder_fast/output_files/coder_fast.fit.smsg.
+The suppressed messages can be found in C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/output_files/coder_fast.fit.smsg.
 
 

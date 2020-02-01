@@ -7,10 +7,10 @@ import CABAC_test as coder
 import img_code
 import sources as sc
 from dewavelet import judge_subband
-
+from timeit import default_timer as timer
 
 def code_bit_plane(subband: str, bit_plane: np.ndarray, D_list: list, CX_list: list,
-                   judge_context=img_code.judge_context):
+                   judge_context=img_code.judge_context_15):
     if subband == 'LL':
         for i in range(0, 128):
             for j in range(0, 128):
@@ -56,7 +56,7 @@ def code_bit_plane(subband: str, bit_plane: np.ndarray, D_list: list, CX_list: l
 
 
 if __name__ == "__main__":
-    for pic_num in range(0, 12):
+    for pic_num in range(0, 1):
         D_list = []
         CX_list = []
         coder = mq_coder.MqCoder()
@@ -64,14 +64,16 @@ if __name__ == "__main__":
         context_coder = []
         # for t in range(0, 9):
         #     context_coder.append(coder.CabacEncoder(context=t))
-        pic_path = ".\pics\\" + pics[pic_num]
+        pic_path = ".\pics\\" + pics[0]
         bit_plane = []
         img1 = cv2.imread(pic_path, 0)
+        cv2.imshow(pics[pic_num]+"/row", img1)
         img = sc.ImageProc(img1)
         img_wavelet = img.lifted_wavelet_decomposition(2)
         subbands = ['LL', 'HL1', 'LH1', 'HH1', 'HL2', 'LH2', 'HH2']
         wavelet_reconstruction = [[0 for i in range(0, 512)] for i in range(0, 512)]
         wavelet_reconstruction = np.array(wavelet_reconstruction, 'int16')
+        start=timer()
         for i in range(0, 512):
             for j in range(0, 512):
                 subband = judge_subband((i, j))
@@ -105,6 +107,8 @@ if __name__ == "__main__":
                     code_bit_plane(subband, bit_plane=bit_plane[x], D_list=D_list, CX_list=CX_list)
         # print(np.array(img_code.sum_list))
         coder.encode_bitstream(D_list, CX_list)
+        end=timer()
+        print((end-start)/64*1000)
         length_sum = coder.output_buffer.__len__() * 8
         for i in range(0, 512):
             for j in range(0, 512):

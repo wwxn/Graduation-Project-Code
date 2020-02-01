@@ -10,7 +10,7 @@ if __name__=="__main__":
 
     for i in range(0,64):
         for j in range(0,64):
-            f.write("{:d}:{:d};\n".format((j+i*64),pic[i][j]))
+            f.write("{:08b}\n".format(pic[i][j]))
 
     # coder=mq_coder.MqCoder()
     # f=open('qe.txt','w')

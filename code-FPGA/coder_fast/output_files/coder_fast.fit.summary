@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sat Jan 18 21:37:53 2020
+Fitter Status : Successful - Sat Feb 01 10:35:28 2020
 Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : coder_fast
 Top-level Entity Name : mq_coder
 Family : Cyclone IV E
 Device : EP4CE15F17C8
 Timing Models : Final
-Total logic elements : 999 / 15,408 ( 6 % )
+Total logic elements : 992 / 15,408 ( 6 % )
     Total combinational functions : 964 / 15,408 ( 6 % )
     Dedicated logic registers : 130 / 15,408 ( < 1 % )
 Total registers : 130

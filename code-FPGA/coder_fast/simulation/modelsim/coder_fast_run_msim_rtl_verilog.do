@@ -33,16 +33,13 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/tables.v}
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/find_highest_bit.v}
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/mq_coder.v}
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/ipcore {C:/Users/wxn/Desktop/coder_fast/ipcore/bit_fifo.v}
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/ipcore {C:/Users/wxn/Desktop/coder_fast/ipcore/cx_fifo.v}
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/code_queue.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code/tables.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code/find_highest_bit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code/mq_coder.v}
 
-vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/coder_fast/code {C:/Users/wxn/Desktop/coder_fast/code/code_queue_tb.v}
+vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/coder_fast/code/testbench.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  code_queue_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
 
 add wave *
 view structure

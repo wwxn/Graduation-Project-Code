@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Jan 19 19:39:02 2020
+Fitter Status : Successful - Sat Feb 01 13:53:05 2020
 Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : wavelet
 Top-level Entity Name : img_coder
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 2,226 / 10,320 ( 22 % )
-    Total combinational functions : 2,181 / 10,320 ( 21 % )
-    Dedicated logic registers : 426 / 10,320 ( 4 % )
-Total registers : 426
+Total logic elements : 2,418 / 10,320 ( 23 % )
+    Total combinational functions : 2,295 / 10,320 ( 22 % )
+    Dedicated logic registers : 561 / 10,320 ( 5 % )
+Total registers : 561
 Total pins : 43 / 180 ( 24 % )
 Total virtual pins : 0
 Total memory bits : 147,536 / 423,936 ( 35 % )

@@ -11,41 +11,41 @@ def collect_sum_number(filename='sum_list.txt'):
         dataSet.append(int(int(line)/1000))
     return np.array(dataSet)
 
-# def center_add(center, weight):
-#     sumup = sheet.cell(center[0] - 1, center[1] - 1).value * weight[0] + \
-#             sheet.cell(center[0] - 1, center[1]).value * weight[1] + \
-#             sheet.cell(center[0] - 1, center[1] + 1).value * weight[2] + \
-#             sheet.cell(center[0], center[1] - 1).value * weight[3] + \
-#             sheet.cell(center[0], center[1] + 1).value * weight[4] + \
-#             sheet.cell(center[0] + 1, center[1] - 1).value * weight[5] + \
-#             sheet.cell(center[0] + 1, center[1]).value * weight[6] + \
-#             sheet.cell(center[0] + 1, center[1] + 1).value * weight[7]
-#
-#     return sumup
+def center_add(center, weight):
+    sumup = sheet.cell(center[0] - 1, center[1] - 1).value * weight[0] + \
+            sheet.cell(center[0] - 1, center[1]).value * weight[1] + \
+            sheet.cell(center[0] - 1, center[1] + 1).value * weight[2] + \
+            sheet.cell(center[0], center[1] - 1).value * weight[3] + \
+            sheet.cell(center[0], center[1] + 1).value * weight[4] + \
+            sheet.cell(center[0] + 1, center[1] - 1).value * weight[5] + \
+            sheet.cell(center[0] + 1, center[1]).value * weight[6] + \
+            sheet.cell(center[0] + 1, center[1] + 1).value * weight[7]
+
+    return sumup
 
 if __name__=="__main__":
-    sum_list=collect_sum_number()
-    print(sum_list)
-    total_sum=[]
-    for i in range(0,100):
-        for j in range(0,sum_list[i]):
-            total_sum.append([i,0])
-    print(total_sum)
-    total_sum = np.array(total_sum)
-    # workbook = xlrd.open_workbook(".\data\data2.xlsx")
-    # sheet = workbook.sheet_by_name("Sheet3")
-    # total_sum = []
-    # for k in range(0, 3):
-    #     center_x = k * 4 + 1
-    #     for i in range(0, 256):
-    #         w = [(i >> j) & 1 for j in range(0, 8)]
-    #         sumup = center_add((center_x, 1), w)
-    #         point = [sumup, 0]
-    #         total_sum.append(point)
+    # sum_list=collect_sum_number()
+    # print(sum_list)
+    # total_sum=[]
+    # for i in range(0,100):
+    #     for j in range(0,sum_list[i]):
+    #         total_sum.append([i,0])
+    # print(total_sum)
     # total_sum = np.array(total_sum)
+    workbook = xlrd.open_workbook(".\data\data2.xlsx")
+    sheet = workbook.sheet_by_name("Sheet3")
+    total_sum = []
+    for k in range(0, 3):
+        center_x = k * 4 + 1
+        for i in range(0, 256):
+            w = [(i >> j) & 1 for j in range(0, 8)]
+            sumup = center_add((center_x, 1), w)
+            point = [sumup, 0]
+            total_sum.append(point)
+    total_sum = np.array(total_sum)
     # print(total_sum)
     #
-    y_pred = KMeans(n_clusters=9, random_state=9).fit(total_sum)
+    y_pred = KMeans(n_clusters=15, random_state=9).fit(total_sum)
     divide_point = []
     predict_result_last = y_pred.predict([[0,0]])
     for i in range(0, 110):
@@ -61,7 +61,7 @@ if __name__=="__main__":
     print(divide_point)
 
 
-    y_pred = KMeans(n_clusters=9, random_state=9).fit(total_sum)
+    y_pred = KMeans(n_clusters=15, random_state=9).fit(total_sum)
 
     result=y_pred.predict(total_sum)
     centers=y_pred.cluster_centers_

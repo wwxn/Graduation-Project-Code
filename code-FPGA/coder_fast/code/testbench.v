@@ -48,6 +48,7 @@ mq_coder m1
 	.clk(clk),
 	.rst_n(rst_n),
 	.bit(bit_input[address]),
+	.input_valid(1'b1),
 	.cx(cx_input),
 	.update_flag(update_flag),
 	.byte_out(byte_output),
