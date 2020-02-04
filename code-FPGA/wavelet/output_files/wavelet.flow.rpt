@@ -1,5 +1,5 @@
 Flow report for wavelet
-Sat Jan 18 15:47:08 2020
+Mon Feb 03 16:27:57 2020
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Jan 18 08:05:33 2020       ;
+; Flow Status                        ; Successful - Mon Feb 03 16:27:57 2020       ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; wavelet                                     ;
 ; Top-level Entity Name              ; wavelet_transform                           ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/18/2020 08:04:52 ;
+; Start date & time ; 02/03/2020 16:27:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; wavelet             ;
 +-------------------+---------------------+
@@ -75,12 +75,12 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------------+----------------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name       ; Section Id           ;
 +--------------------------------------+---------------------------------------+---------------+-------------------+----------------------+
-; COMPILER_SIGNATURE_ID                ; 1097959291526.157930589207112         ; --            ; --                ; --                   ;
+; COMPILER_SIGNATURE_ID                ; 1097959291526.158071843309496         ; --            ; --                ; --                   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                ; testbench            ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                ; ram_testbench        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                ; waveletqueue_tb      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                ; wavelet_transform_tb ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; wavelet_transform_tb                  ; --            ; --                ; eda_simulation       ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                             ; --            ; --                ; eda_simulation       ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --                ; eda_simulation       ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                    ; <None>        ; --                ; --                   ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --                ; eda_simulation       ;
@@ -124,13 +124,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 396 MB              ; 00:00:04                           ;
-; Fitter                    ; 00:00:18     ; 1.4                     ; 654 MB              ; 00:00:19                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 376 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.6                     ; 423 MB              ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 351 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.4                     ; 414 MB              ; 00:00:06                           ;
-; Total                     ; 00:00:38     ; --                      ; --                  ; 00:00:40                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 396 MB              ; 00:00:05                           ;
+; Fitter                    ; 00:00:20     ; 1.4                     ; 659 MB              ; 00:00:22                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 376 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.3                     ; 426 MB              ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 351 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:36     ; --                      ; --                  ; 00:00:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -144,7 +143,6 @@ applicable agreement for further details.
 ; Assembler                 ; wxn-PC           ; Windows 7 ; 6.1        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; wxn-PC           ; Windows 7 ; 6.1        ; x86_64         ;
 ; EDA Netlist Writer        ; wxn-PC           ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; wxn-PC           ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -156,7 +154,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off wavelet -c wave
 quartus_asm --read_settings_files=off --write_settings_files=off wavelet -c wavelet
 quartus_sta wavelet -c wavelet
 quartus_eda --read_settings_files=off --write_settings_files=off wavelet -c wavelet
-quartus_sta wavelet -c wavelet
 
 
 

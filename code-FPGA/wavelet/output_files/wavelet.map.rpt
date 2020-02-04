@@ -1,5 +1,5 @@
 Analysis & Synthesis report for wavelet
-Sat Jan 18 08:04:57 2020
+Mon Feb 03 16:27:17 2020
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jan 18 08:04:57 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 03 16:27:17 2020       ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; wavelet                                     ;
 ; Top-level Entity Name              ; wavelet_transform                           ;
@@ -186,42 +186,42 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
-; code/wavelet_fast.v              ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/wavelet/code/wavelet_fast.v                     ;         ;
-; ipcore/ram.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/wavelet/ipcore/ram.v                            ;         ;
-; code/controller.v                ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/wavelet/code/controller.v                       ;         ;
-; ipcore/fifo.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/wavelet/ipcore/fifo.v                           ;         ;
-; code/wavelet_transform.v         ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/wavelet/code/wavelet_transform.v                ;         ;
-; code/wavelet_queue.v             ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v                    ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal131.inc                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_j5l2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/wavelet/db/altsyncram_j5l2.tdf                  ;         ;
-; pic_ram.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/wxn/Desktop/wavelet/pic_ram.mif                             ;         ;
-; scfifo.tdf                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/scfifo.tdf            ;         ;
-; a_regfifo.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_regfifo.inc         ;         ;
-; a_dpfifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_dpfifo.inc          ;         ;
-; a_i2fifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_i2fifo.inc          ;         ;
-; a_fffifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_fffifo.inc          ;         ;
-; a_f2fifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_f2fifo.inc          ;         ;
-; db/scfifo_ij31.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/wavelet/db/scfifo_ij31.tdf                      ;         ;
-; db/a_dpfifo_pp31.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/wavelet/db/a_dpfifo_pp31.tdf                    ;         ;
-; db/a_fefifo_t7e.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/wavelet/db/a_fefifo_t7e.tdf                     ;         ;
-; db/cntr_go7.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/wavelet/db/cntr_go7.tdf                         ;         ;
-; db/dpram_k811.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/wavelet/db/dpram_k811.tdf                       ;         ;
-; db/altsyncram_s3k1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/wavelet/db/altsyncram_s3k1.tdf                  ;         ;
-; db/cntr_4ob.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/wavelet/db/cntr_4ob.tdf                         ;         ;
-+----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; code/wavelet_fast.v              ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/wavelet_fast.v      ;         ;
+; ipcore/ram.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore/ram.v             ;         ;
+; code/controller.v                ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/controller.v        ;         ;
+; ipcore/fifo.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore/fifo.v            ;         ;
+; code/wavelet_transform.v         ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/wavelet_transform.v ;         ;
+; code/wavelet_queue.v             ; yes             ; User Verilog HDL File                  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/wavelet_queue.v     ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                    ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                              ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                           ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                           ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                            ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                               ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc                               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                             ;         ;
+; db/altsyncram_j5l2.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/db/altsyncram_j5l2.tdf   ;         ;
+; pic_ram.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/pic_ram.mif              ;         ;
+; scfifo.tdf                       ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/scfifo.tdf                               ;         ;
+; a_regfifo.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_regfifo.inc                            ;         ;
+; a_dpfifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_dpfifo.inc                             ;         ;
+; a_i2fifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_i2fifo.inc                             ;         ;
+; a_fffifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_fffifo.inc                             ;         ;
+; a_f2fifo.inc                     ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_f2fifo.inc                             ;         ;
+; db/scfifo_ij31.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/db/scfifo_ij31.tdf       ;         ;
+; db/a_dpfifo_pp31.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/db/a_dpfifo_pp31.tdf     ;         ;
+; db/a_fefifo_t7e.tdf              ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/db/a_fefifo_t7e.tdf      ;         ;
+; db/cntr_go7.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/db/cntr_go7.tdf          ;         ;
+; db/dpram_k811.tdf                ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/db/dpram_k811.tdf        ;         ;
+; db/altsyncram_s3k1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/db/altsyncram_s3k1.tdf   ;         ;
+; db/cntr_4ob.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/db/cntr_4ob.tdf          ;         ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -306,16 +306,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                    ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+--------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                             ; IP Include File                            ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+--------------------------------------------+
-; Altera ; RAM: 2-PORT  ; 13.1    ; N/A          ; N/A          ; |wavelet_transform|ram:b2v_ram_inst1                                        ; C:/Users/wxn/Desktop/wavelet/ipcore/ram.v  ;
-; Altera ; RAM: 2-PORT  ; 13.1    ; N/A          ; N/A          ; |wavelet_transform|ram:b2v_ram_inst2                                        ; C:/Users/wxn/Desktop/wavelet/ipcore/ram.v  ;
-; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |wavelet_transform|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_even ; C:/Users/wxn/Desktop/wavelet/ipcore/fifo.v ;
-; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |wavelet_transform|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_odd  ; C:/Users/wxn/Desktop/wavelet/ipcore/fifo.v ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+--------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                      ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                             ; IP Include File                                                              ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------------+
+; Altera ; RAM: 2-PORT  ; 13.1    ; N/A          ; N/A          ; |wavelet_transform|ram:b2v_ram_inst1                                        ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore/ram.v  ;
+; Altera ; RAM: 2-PORT  ; 13.1    ; N/A          ; N/A          ; |wavelet_transform|ram:b2v_ram_inst2                                        ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore/ram.v  ;
+; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |wavelet_transform|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_even ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore/fifo.v ;
+; Altera ; FIFO         ; 13.1    ; N/A          ; N/A          ; |wavelet_transform|wavelet_queue:b2v_wavelet_queue_inst1|fifo:b2v_fifo_odd  ; C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore/fifo.v ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------------------+------------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -798,7 +798,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sat Jan 18 08:04:52 2020
+    Info: Processing started: Mon Feb 03 16:27:12 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off wavelet -c wavelet
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file code/testbench.v
@@ -943,7 +943,7 @@ Info (21057): Implemented 1099 device resources after synthesis - the final reso
     Info (21064): Implemented 64 RAM segments
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 15 warnings
     Info: Peak virtual memory: 398 megabytes
-    Info: Processing ended: Sat Jan 18 08:04:57 2020
+    Info: Processing ended: Mon Feb 03 16:27:17 2020
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

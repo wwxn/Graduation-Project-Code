@@ -8,7 +8,7 @@ def collect_sum_number(filename='sum_list.txt'):
     dataSet = []  # 初始化一个空列表
     fr = open(filename)
     for line in fr.readlines():
-        dataSet.append(int(int(line)/1000))
+        dataSet.append(int(int(line)))
     return np.array(dataSet)
 
 def center_add(center, weight):
@@ -24,25 +24,25 @@ def center_add(center, weight):
     return sumup
 
 if __name__=="__main__":
-    # sum_list=collect_sum_number()
-    # print(sum_list)
-    # total_sum=[]
-    # for i in range(0,100):
-    #     for j in range(0,sum_list[i]):
-    #         total_sum.append([i,0])
-    # print(total_sum)
-    # total_sum = np.array(total_sum)
-    workbook = xlrd.open_workbook(".\data\data2.xlsx")
-    sheet = workbook.sheet_by_name("Sheet3")
-    total_sum = []
-    for k in range(0, 3):
-        center_x = k * 4 + 1
-        for i in range(0, 256):
-            w = [(i >> j) & 1 for j in range(0, 8)]
-            sumup = center_add((center_x, 1), w)
-            point = [sumup, 0]
-            total_sum.append(point)
+    sum_list=collect_sum_number()
+    print(sum_list)
+    total_sum=[]
+    for i in range(0,100):
+        for j in range(0,sum_list[i]):
+            total_sum.append([i,0])
+    print(total_sum)
     total_sum = np.array(total_sum)
+    # workbook = xlrd.open_workbook(".\data\data2.xlsx")
+    # sheet = workbook.sheet_by_name("Sheet3")
+    # total_sum = []
+    # for k in range(0, 3):
+    #     center_x = k * 4 + 1
+    #     for i in range(0, 256):
+    #         w = [(i >> j) & 1 for j in range(0, 8)]
+    #         sumup = center_add((center_x, 1), w)
+    #         point = [sumup, 0]
+    #         total_sum.append(point)
+    # total_sum = np.array(total_sum)
     # print(total_sum)
     #
     y_pred = KMeans(n_clusters=15, random_state=9).fit(total_sum)
@@ -68,5 +68,7 @@ if __name__=="__main__":
     print(centers)
     plt.scatter(total_sum[:, 0], total_sum[:, 1], c=result)
     plt.scatter(centers[:, 0], centers[:, 1],c='r')
-
+    plt.xlabel('S')
+    frame = plt.gca()
+    frame.axes.get_yaxis().set_visible(False)
     plt.show()

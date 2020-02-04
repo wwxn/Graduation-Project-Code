@@ -507,104 +507,74 @@
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/code {C:/Users/wxn/Desktop/wavelet/code/wavelet_fast.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/wavelet_fast.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module wavelet_fast
 # 
 # Top level modules:
 # 	wavelet_fast
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/ipcore {C:/Users/wxn/Desktop/wavelet/ipcore/ram.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore/ram.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module ram
 # 
 # Top level modules:
 # 	ram
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/code {C:/Users/wxn/Desktop/wavelet/code/controller.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/controller.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/ipcore {C:/Users/wxn/Desktop/wavelet/ipcore/fifo.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/ipcore/fifo.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module fifo
 # 
 # Top level modules:
 # 	fifo
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/code {C:/Users/wxn/Desktop/wavelet/code/wavelet_transform.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/wavelet_transform.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module wavelet_transform
 # 
 # Top level modules:
 # 	wavelet_transform
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/code {C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/wavelet_queue.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
 # -- Compiling module wavelet_queue
 # 
 # Top level modules:
 # 	wavelet_queue
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/wavelet/code {C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code {C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/testbench.v}
 # Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
-# -- Compiling module wavelet_transform_tb
+# -- Compiling module testbench
 # 
 # Top level modules:
-# 	wavelet_transform_tb
+# 	testbench
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  wavelet_transform_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps wavelet_transform_tb 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
 # ** Note: (vsim-3812) Design is being optimized...
-# 
-# ** Note: (vopt-143) Recognized 1 FSM in module "controller(fast)".
 # 
 # ** Note: (vopt-143) Recognized 1 FSM in module "wavelet_fast(fast)".
 # 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_fifo_even'.  Expected 8, found 7.
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/testbench.v(72): (vopt-2685) [TFMPC] - Too few port connections for 'lifted_wavelet_decomposition_inst1'.  Expected 14, found 12.
 # 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/testbench.v(72): (vopt-2718) [TFMPC] - Missing connection for port 'stop_flag'.
 # 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_fifo_odd'.  Expected 8, found 6.
+# ** Warning: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/testbench.v(72): (vopt-2718) [TFMPC] - Missing connection for port 'wavelet_mode'.
 # 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'full'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_queue.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'empty'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_transform.v(154): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_wavelet_queue_inst1'.  Expected 13, found 12.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_transform.v(154): (vopt-2718) [TFMPC] - Missing connection for port 'output_valid'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): (vopt-2685) [TFMPC] - Too few port connections for 'wavelet_transform_1'.  Expected 9, found 4.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): (vopt-2718) [TFMPC] - Missing connection for port 'ram_out_b'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): (vopt-2718) [TFMPC] - Missing connection for port 'ram_out_a'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): (vopt-2718) [TFMPC] - Missing connection for port 'end_flag'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): (vopt-2718) [TFMPC] - Missing connection for port 'address_b_input'.
-# 
-# ** Warning: C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): (vopt-2718) [TFMPC] - Missing connection for port 'address_a_input'.
-# 
-# Loading work.wavelet_transform_tb(fast)
-# Loading work.wavelet_transform(fast)
-# Loading work.controller(fast)
-# Loading work.ram(fast)
-# Loading altera_mf_ver.altsyncram(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
-# Loading work.wavelet_queue(fast)
-# Loading work.fifo(fast)
-# Loading altera_mf_ver.scfifo(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading work.testbench(fast)
 # Loading work.wavelet_fast(fast)
-# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): [TFMPC] - Too few port connections. Expected 9, found 6.
+# ** Warning: (vsim-3017) C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/testbench.v(72): [TFMPC] - Too few port connections. Expected 14, found 13.
 # 
-#         Region: /wavelet_transform_tb/wavelet_transform_1
-# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): [TFMPC] - Missing connection for port 'end_flag'.
+#         Region: /testbench/lifted_wavelet_decomposition_inst1
+# ** Warning: (vsim-3015) C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/testbench.v(72): [PCDPC] - Port size (12 or 12) does not match connection size (16) for port 'odd_address'. The port definition is at: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/wavelet_fast.v(14).
 # 
-# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): [TFMPC] - Missing connection for port 'ram_out_a'.
+#         Region: /testbench/lifted_wavelet_decomposition_inst1
+# ** Warning: (vsim-3015) C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/testbench.v(72): [PCDPC] - Port size (12 or 12) does not match connection size (16) for port 'even_address'. The port definition is at: C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/wavelet_fast.v(15).
 # 
-# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/wavelet/code/wavelet_transform_tb.v(50): [TFMPC] - Missing connection for port 'ram_out_b'.
+#         Region: /testbench/lifted_wavelet_decomposition_inst1
+# ** Warning: (vsim-3722) C:/Users/wxn/Desktop/Graduation-Project-Code/code-FPGA/wavelet/code/testbench.v(72): [TFMPC] - Missing connection for port 'stop_flag'.
 # 
 # 
 # add wave *
@@ -614,9 +584,4 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1 ps
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: wavelet_transform_tb.wavelet_transform_1.b2v_ram_inst1.altsyncram_component
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: wavelet_transform_tb.wavelet_transform_1.b2v_ram_inst2.altsyncram_component
-add wave -r /*
 run

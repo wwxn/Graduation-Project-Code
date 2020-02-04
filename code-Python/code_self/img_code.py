@@ -295,33 +295,33 @@ def judge_context_15_2(point: tuple, pic: np.ndarray) -> int:
         elif (x > 256) and (x < 511) and (y > 256) and (y < 511):
             sumup = sum_weighted(point, pic, weight_HH2)
     sum_list[sumup]+=1
-    if sumup <= 6:
+    if sumup <= 8:
         return 0
-    elif sumup <= 14:
+    elif sumup <= 15:
         return 1
-    elif sumup <= 22:
+    elif sumup <= 21:
         return 2
-    elif sumup <= 28:
+    elif sumup <= 26:
         return 3
-    elif sumup <= 32:
+    elif sumup <= 31:
         return 4
-    elif sumup <= 36:
+    elif sumup <= 35:
         return 5
     elif sumup <= 40:
         return 6
-    elif sumup <= 46:
+    elif sumup <= 45:
         return 7
-    elif sumup <= 52:
+    elif sumup <= 50:
         return 8
-    elif sumup <= 58:
+    elif sumup <= 53:
         return 9
-    elif sumup <= 63:
+    elif sumup <= 58:
         return 10
-    elif sumup <= 69:
+    elif sumup <= 65:
         return 11
-    elif sumup <= 77:
+    elif sumup <= 71:
         return 12
-    elif sumup <= 87:
+    elif sumup <= 78:
         return 13
     else:
         return 14
