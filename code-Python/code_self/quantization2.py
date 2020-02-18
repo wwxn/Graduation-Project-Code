@@ -19,9 +19,9 @@ if __name__=='__main__':
     # plt.plot(x,y2,label='y2')
     # plt.legend(loc="best", fontsize=10)
     # plt.show()
-    pic_num=9
+    pic_num=0
     pics = ["timg ({}).jpg".format(i) for i in range(0, 12)]
-    pic_path = ".\pics\\" + pics[9]
+    pic_path = ".\pics\\" + 'lena.png'
 
     img1 = cv2.imread(pic_path, 0)
     img = sources.ImageProc(img1)
@@ -60,5 +60,7 @@ if __name__=='__main__':
             print(rate)
             rate_list.append(rate)
         plt.plot(x,rate_list,label=subband_current)
+    plt.ylabel('Bitrate(bpp)')
+    plt.xlabel('Quantized Bits')
     plt.legend(loc="best", fontsize=10)
     plt.show()

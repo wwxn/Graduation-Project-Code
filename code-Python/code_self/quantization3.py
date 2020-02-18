@@ -16,7 +16,7 @@ if __name__=='__main__':
     # plt.show()
     pic_num=9
     pics = ["timg ({}).jpg".format(i) for i in range(0, 12)]
-    pic_path = ".\pics\\" + pics[pic_num]
+    pic_path = ".\pics\\" + 'Lena.png'
     bit_plane = []
     img1 = cv2.imread(pic_path, 0)
     img = sources.ImageProc(img1)
@@ -51,5 +51,7 @@ if __name__=='__main__':
             PSNR_list.append(PSNR)
             print(PSNR)
         plt.plot(x,PSNR_list,label=subband_current)
+    plt.ylabel('PSNR(dB)')
+    plt.xlabel('Quantized Bits')
     plt.legend(loc="best", fontsize=10)
     plt.show()
